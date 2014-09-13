@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    <title>Failed to submit batch buffer (Xorg) | noiselabs.org</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="description" content="">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Failed to submit batch buffer (Xorg)">
+    <meta name="twitter:description" content="">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Failed to submit batch buffer (Xorg)">
+    <meta property="og:description" content="">
+
+    <link href="../../../../assets/images/favicon.ico?v=33c6a6569d" rel="shortcut icon" type="image/x-icon">
+    <link href="../../../../assets/images/apple-touch-icon-precomposed.png?v=33c6a6569d" rel="apple-touch-icon">
+
+    
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Bangers|Bitter|Telex">
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/screen.css?v=33c6a6569d" />
+    <link rel="stylesheet" type="text/css" href="../../../../assets/css/prism.css?v=33c6a6569d" />
+
+    
+    <meta name="generator" content="Ghost 0.5" />
+<link rel="alternate" type="application/rss+xml" title="noiselabs.org" href="../../../../rss/index.html">
+<link rel="canonical" href="index.html" />
+
+</head>
+<body class="post-template tag-gentoo tag-linux no-js">
+
+    <span class="mobile btn-mobile-menu">
+        <i class="icon icon-list btn-mobile-menu__icon"></i>
+        <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+    </span>
+
+    <header class="panel-cover panel-cover--collapsed nl-blog" style="background-image: url(../../../../content/images/2014/Mar/bodybg.jpg)">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        
+        <a id="nl-blog-logo" href="../../../../index.html#blog" class="blog-button"><img src="../../../../content/images/2014/Mar/noisebleed-1.gif" width="50" alt="noiselabs.org logo" class="panel-cover__logo logo" /></a>
+        
+        <span class="panel-cover__welcometo">Welcome to</span>
+        <h1 class="panel-cover__title panel-title"><a href="../../../../index.html" title="">noiselabs.org</a></h1>
+        
+        <p class="panel-cover__description">Commited to Open Source.</p>
+        <span class="panel-cover__subtitle panel-subtitle">&ndash;&nbsp;by Vítor Brandão&nbsp;&ndash;</span>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        <div class="navigation-wrapper">
+
+          
+
+<nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+    
+    <li class="navigation__item">
+      <a href="https://github.com/noisebleed" title="GitHub">
+        <i class='icon icon-social-github'></i>
+        <span class="label">GitHub</span>
+      </a>
+    </li>
+    
+    <li class="navigation__item">
+      <a href="https://stackoverflow.com/users/545442/noisebleed" title="Stack Overflow">
+        <i class='icon icon-social-stack-overflow'></i>
+        <span class="label">Stack Overflow</span>
+      </a>
+    </li>
+    
+    <li class="navigation__item">
+        <a href="http://twitter.com/noiselabs" title="Twitter">
+        <i class='icon icon-social-twitter'></i>
+        <span class="label">Twitter</span>
+        </a>
+    </li>
+    
+    <li class="navigation__item">
+      <a href="https://plus.google.com/u/0/115752578182957353373" title="Google+">
+        <i class='icon icon-social-google-plus'></i>
+        <span class="label">Google</span>
+      </a>
+    </li>
+    
+    <li class="navigation__item">
+      <a href="https://www.linkedin.com/in/vitorbrandao" title="LinkedIn">
+        <i class='icon icon-social-linkedin'></i>
+        <span class="label">LinkedIn</span>
+      </a>
+    </li>
+    
+    <li class="navigation__item">
+      <a href="mailto:vitor@noiselabs.org" title="Email">
+        <i class='icon icon-mail'></i>
+        <span class="label">Email</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="../../../../index.html#blog" title="Go to the Blog" class="blog-button">Blog</a></li>
+            </ul>
+          </nav>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="panel-cover--overlay cover-simple"></div>
+  </div>
+</header>
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            
+
+
+
+  <article class="post-container post-container--single">
+
+    <header class="post-header">
+      <div class="post-meta">
+        <time datetime="25 Apr 2011" class="post-meta__date date">25 Apr 2011</time> &#8226; <span class="post-meta__tags tags">on <a href="../../../../tag/gentoo/index.html">Gentoo</a>, <a href="../../../../tag/linux/index.html">Linux</a></span>
+        <span class="post-meta__author author"><img src="http://www.gravatar.com/avatar/ff6c0924f29e34b3b3da41a36c4851a8?d=404" alt="Vítor Brandão" class="avatar post-meta__avatar" /> by Vítor Brandão</span>
+      </div>
+      <h1 class="post-title">Failed to submit batch buffer (Xorg)</h1>
+    </header>
+
+    <section class="post tag-gentoo tag-linux">
+      <h3 id="anotherxorgupdate">Another Xorg update</h3>
+
+<p>After my last Xorg update I've lost the nice ability to log into my KDE. Well, this <em>sucks</em> because I spent a long time compiling kdelibs and friends so I really want to use it.</p>
+
+<h3 id="symptoms">Symptoms</h3>
+
+<p>A blank screen on <em><insert preferred window manager here></em> login. You can even see your mouse pointer but nothing else.</p>
+
+<p>If you take a look at the Xorg log you'll see X is mad about a "batch buffer thingie".</p>
+
+<pre><code>Error in /var/log/Xorg.0.log:
+(EE) intel(0): Failed to submit batch buffer, expect rendering corruption or even a frozen display: No such device
+</code></pre>
+
+<h3 id="thesolution">The Solution</h3>
+
+<p>Pretty ease to solve this one. Either <strong>upgrade your kernel to something like 2.6.36 or better</strong> (recommended) or block xf86-video-intel>2.14.</p>
+
+<h4 id="permanentsolution">Permanent solution</h4>
+
+<p>Upgrade your kernel. I was running an old 2.6.32-tuxonice-r7. Upgraded to 2.6.36 and... Welcome back, KDE.</p>
+
+<pre><code># emerge --sync &amp;&amp; emerge --update gentoo-sources
+</code></pre>
+
+<h4 id="workaroundifyoureinahurry">Workaround (if you're in a hurry)</h4>
+
+<p>Add this to <code>/etc/portage/package.mask</code></p>
+
+<pre><code>&gt;=x11-drivers/xf86-video-intel-2.14.0
+</code></pre>
+
+<p>and recompile.</p>
+
+<pre><code># emerge --update x11-drivers/xf86-video-intel
+</code></pre>
+    </section>
+
+  </article>
+
+  <section class="nl-post-share">
+    <nav class="cover-navigation navigation--social">
+        <ul class="navigation">
+            <li class="navigation__item nl-post-share-title">
+                Share this post:
+            </li>
+            <li class="navigation__item">
+                <a href="http://twitter.com/share?text=Failed to submit batch buffer (Xorg)&url=http://127.0.0.1:2368/2011/04/25/failed-to-submit-batch-buffer-xorg/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <i class="icon icon-social-twitter"></i>
+                </a>
+            </li>
+            <li class="navigation__item">
+                <a href="https://www.facebook.com/sharer/sharer.php?u=http://127.0.0.1:2368/2011/04/25/failed-to-submit-batch-buffer-xorg/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <i class="icon icon-social-facebook"></i>
+                </a>
+            </li>
+            <li class="navigation__item">
+                <a href="https://plus.google.com/share?url=http://127.0.0.1:2368/2011/04/25/failed-to-submit-batch-buffer-xorg/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <i class="icon icon-social-google-plus"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+  </section>
+  <section class="post-comments">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+      var disqus_shortname = 'noiselabsblog'; // required: replace example with your forum shortname
+      /* * * DON'T EDIT BELOW THIS LINE * * */
+      (function() {
+          var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+          dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+          (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+
+
+            <footer class="footer">
+    <span class="footer__copyright footer__author">&copy; 2014 <a href="mailto:vitor@noiselabs.org">Vítor Brandão</a>. All rights reserved.</span>
+    <br>
+    <span class="footer__copyright">Background image from the Wordpress <a rel="external" href="http://www.beacontechnologies.com/">Light Graffiti.</a> theme</span>
+    <span class="footer__copyright">Based on the <a href="http://uno.daleanthony.com" title="Uno Ghost theme">Uno theme</a> by <a href="http://daleanthony.com" title="Dale-Anthony website">Dale-Anthony</a>.</span>
+    <span class="footer__copyright">Terminal icon from the <a rel="external" href="http://www.oxygen-icons.org/">Oxygen</a> package.</span>
+    <span class="footer__copyright">Proudly published with <a class="icon-ghost" href="http://ghost.org" title="Ghost website">Ghost</a>.</span>
+</footer>
+        </div>
+    </div>
+
+    
+    <script src="../../../../public/jquery.js?v=33c6a6569d"></script>
+
+    
+    <script type="text/javascript" src="../../../../assets/js/main.js?v=33c6a6569d"></script>
+    <script type="text/javascript" src="../../../../assets/js/prism.js?v=33c6a6569d"></script>
+
+</body>
+</html>
