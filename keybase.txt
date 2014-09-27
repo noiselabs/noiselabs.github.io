@@ -1,0 +1,81 @@
+==================================================================
+https://keybase.io/noiselabs
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://noiselabs.org
+  * I am noiselabs (https://keybase.io/noiselabs) on keybase.
+  * I have a public key with fingerprint 3AAB E94B 277F 7D44 29AB  4318 9944 5351 2250 E987
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.7.2"
+        },
+        "key": {
+            "fingerprint": "3aabe94b277f7d4429ab4318994453512250e987",
+            "host": "keybase.io",
+            "key_id": "994453512250E987",
+            "uid": "5c729d530b0c6e53ce2be45edd03a700",
+            "username": "noiselabs"
+        },
+        "merkle_root": {
+            "ctime": 1411780535,
+            "hash": "c610c4b63d9f0222b924d9d648712545b68edead4acf86f5ae105206dff350d7c3f89521fa4413192db5bc64059b27d7cd79690ef97d8029736bcdf0d006b2be",
+            "seqno": 63144
+        },
+        "service": {
+            "hostname": "noiselabs.org",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1411780590,
+    "expire_in": 157680000,
+    "prev": "6e8ea282881f91076b1d6c02c10739f7e5370f12813645e3a812d9d510d4bbf1",
+    "seqno": 10,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owFdkntQFVUcxy9SxqOksYF8DdhKakmXc86efV0Y7WWjTXR9omF428dZ7sr17mX3
+cgn0zpSW0aAmomWmIw2C6Qy+JUcp8maDQOAjzZFBSyZHeYxamqKQtms2mfvX2fP7
+/L6/3/f3O6ueiHbERbWd6Nu1s3373aiWLskxa2zCwCJK0pViyrWIkn0a8Qftk19c
+SCgXlU+KJdEkTk0f7dcV4lxgjr7PpFEhYpia7rco4OSciAqn2bidrGr+PGIEDM3W
+omhRlIiAJcRxKqdgjARRwjTkBQFjhmYgQgwgAs9Zkl7dDP6vKnVP06Mp1u2D/OR/
++MJ7AUbmkKAwNJCAzBKGlgmSCGaIogBa5ACwQZMY9y35dc0kPlEy7YYXEiPfRzyG
+rt9zLQc1m4EYQo4HVjGrJdH0WlkyC4GMJZZWBBUghCQBYUVQWMxzEDGYkVieKERU
+sCirPKsyIoGAQYBVVJVmgMLJtMoLDIKqiDGkoYAUiZFkFgNGsAZjxRVOYAVAVIFT
+eIAEjmYlWVGBAgArWXYsDyYp8OuUi6UhxmH71whpMrHbtsf2sDunbuRZSQFDD+qy
+7rNC3mAw4LJNB4sDNlpEpB2e+yoeSfMr1tYeXCu00IcGIoA0irwb0Azi0WyC4Vge
+WJ9dh4QsTZbwREQ84nmoChBwrAQVVgZIts60oHLWdjigQsRDmrU2RIs8RNYYGQgU
+LEkq/M8mtESDYp6laWp5fjFYaBAq/PGgUY84ouIcgx8dZD9cR1zsk/++5m99CXdl
+F4r0jap8PvTjiMMho7TmmHdeaE3n6Gk/V+W4978wbsLZrKTmsxNDMetSenI7Pj/Z
+0j3r5filv9Y9t9GM6068EylILstujT/f9H3yLUcJPujJl75pXx6pTAouG3HhXI3f
+3V15YSzRq3LnXj3y1IZ15a7a97Ij4yqwf2nKtPRPjw/JQtAdf47Lm1Cyfkh26pZt
+p3Z40oavj5nurts69J2BjUUvfjSj+5V50cVFrfuXf9bb+9P1QmfmsfHVoWtX2ro2
+5K+ZXLdjd2JP+dPPruo7vbbm0vWXMh/rTBlTkrqkLmYNlXIeT71Zvg6Fm8rmnypH
+CTf2dnbXNzFU1kj4150J3oaK5piO7ceGuuY09H1ws/rEnuRbMRnByKTMUYdnLmmL
+Lz/av+kXX1njtU++0/Z9tXPctFXTr6ZW9Kysz8gYWbxpfMuWzobVb8kc/8WB1VkH
+Nh98dVg/c7oyrihjxd7EQfu84T2PX9EO1Vaji2eO5A7ryZk6dgWzeVJ4cHRO/Wup
+bnd0zfTe94+m35iVf3X37NpbBbcbh8du7t21eLgRLN1a0dt58+v025Pm5vq27Sos
+m78yp39i143ojcqyvgUzAwV0e/sUXMXue7PjUiZGpYuaD1wa8IxZG5lx/GSP+kaS
+djG2+be21zsOfVji+OP3nV/OzvwzNrdrSlXb5Tk/GKFqpfWZxMbWk2+fWdyxp/Sy
+afb/DQ==
+=PUtU
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/noiselabs
+
+==================================================================
