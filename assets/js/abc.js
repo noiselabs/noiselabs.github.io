@@ -54,7 +54,7 @@ var abc = (function ($) {
             results: '.js-search-results',
             result_template: '<a href="{{link}}"><p><h2><i class="fa fa-fw fa-dot-circle-o"></i> {{title}}</h2></p></a>',
             onKeyUp: true,
-            rss: '/rss/'
+            rss: '/rss/index.rss'
         });
         $openSearchBtn.on('click', function (e) {
             e.preventDefault();
