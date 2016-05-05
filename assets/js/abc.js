@@ -4,8 +4,7 @@ var abc = (function ($) {
 
     var
     mainMenu = function () {
-        var menuOvrl = $('.js-main-menu-ovrl'),
-            menuHamburger = $('.js-main-menu-open');
+        var menuOvrl = $('.js-main-menu-ovrl');
         $('.js-main-menu-open').on('click', function (e) {
             e.preventDefault();
             menuOvrl.addClass('open');
