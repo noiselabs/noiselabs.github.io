@@ -3,15 +3,14 @@
     <meta charset="utf-8">
 
     <title>Howto Gentoo Linux with UTF-8 and Portuguese (Portugal) localization</title>
-    <meta name="description" content="">
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../../../../assets/images/favicon.ico?v=4b5747ca10">
+    <link rel="shortcut icon" href="../../../../favicon.ico">
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
-    <script type="text/javascript" src="../../../../assets/js/vendor/webfont.js?v=4b5747ca10"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/webfont.js?v=b9ee0e28b5"></script>
     <script>
         WebFont.load({
             google: {
@@ -31,11 +30,13 @@
         ga('send', 'pageview');
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../../../assets/css/highlightjs-github.min.css?v=4b5747ca10">
-    <link rel="stylesheet" href="../../../../assets/css/style.css?v=4b5747ca10">
+    <link rel="stylesheet" href="../../../../assets/css/highlightjs-github.min.css?v=b9ee0e28b5">
+    <link rel="stylesheet" href="../../../../assets/css/style.css?v=b9ee0e28b5">
 
-    <link rel="canonical" href="index.html">
-    <meta name="referrer" content="origin">
+    <link rel="shortcut icon" href="../../../../favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/amp/">
     
     <meta property="og:site_name" content="Noiselabs">
     <meta property="og:type" content="article">
@@ -43,7 +44,7 @@
     <meta property="og:description" content="Purpose How to configure a Gentoo Linux system to use UTF-8 character encoding and Portuguese (Portugal) localization (language and keyboard). Background UTF-8 is a variable-length character encoding, which in this instance means that it uses 1 to 4 bytes per symbol. So, the first UTF-8 byte is used for encoding">
     <meta property="og:url" content="https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/">
     <meta property="article:published_time" content="2009-03-31T14:21:00.000Z">
-    <meta property="article:modified_time" content="2014-03-23T00:23:16.356Z">
+    <meta property="article:modified_time" content="2014-03-23T00:23:16.000Z">
     <meta property="article:tag" content="Gentoo">
     
     <meta name="twitter:card" content="summary">
@@ -54,32 +55,60 @@
     <meta name="twitter:data1" content="Vítor Brandão">
     <meta name="twitter:label2" content="Filed under">
     <meta name="twitter:data2" content="Gentoo">
+    <meta name="twitter:site" content="@noiselabs">
     
     <script type="application/ld+json">
 {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "Article",
-    "publisher": "Noiselabs",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Noiselabs",
+        "logo": {
+            "@type": "ImageObject",
+            "url": "https://noiselabs.io/favicon.ico",
+            "width": 60,
+            "height": 60
+        }
+    },
     "author": {
         "@type": "Person",
         "name": "Vítor Brandão",
-        "image": "https://noiselabs.io/content/images/2016/04/green-2.jpg",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://noiselabs.io/content/images/2016/04/green-2.jpg",
+            "width": 450,
+            "height": 450
+        },
         "url": "https://noiselabs.io/author/vitor-brandao/",
-        "sameAs": "https://twitter.com/noiselabs"
+        "sameAs": [
+            "https://twitter.com/noiselabs"
+        ]
     },
     "headline": "Howto Gentoo Linux with UTF-8 and Portuguese (Portugal) localization",
     "url": "https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/",
     "datePublished": "2009-03-31T14:21:00.000Z",
-    "dateModified": "2014-03-23T00:23:16.356Z",
+    "dateModified": "2014-03-23T00:23:16.000Z",
     "keywords": "Gentoo",
-    "description": "Purpose How to configure a Gentoo Linux system to use UTF-8 character encoding and Portuguese (Portugal) localization (language and keyboard). Background UTF-8 is a variable-length character encoding, which in this instance means that it uses 1 to 4 bytes per symbol. So, the first UTF-8 byte is used for encoding"
+    "description": "Purpose How to configure a Gentoo Linux system to use UTF-8 character encoding and Portuguese (Portugal) localization (language and keyboard). Background UTF-8 is a variable-length character encoding, which in this instance means that it uses 1 to 4 bytes per symbol. So, the first UTF-8 byte is used for encoding",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://noiselabs.io/"
+    }
 }
     </script>
 
-    <meta name="generator" content="Ghost 0.7">
-    <link rel="alternate" type="application/rss+xml" title="Noiselabs" href="../../../../rss/index.rss">
+    <script type="text/javascript" src="../../../../public/ghost-sdk.min.js?v=b9ee0e28b5"></script>
+<script type="text/javascript">
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "ec7eedbe6d8a"
+});
+</script>
+    <meta name="generator" content="Ghost 1.14">
+    <link rel="alternate" type="application/rss+xml" title="Noiselabs" href="https://noiselabs.io/rss/">
 
-    <script src="../../../../assets/js/vendor/modernizr.js?v=4b5747ca10"></script>
+    <script src="../../../../assets/js/vendor/modernizr.js?v=b9ee0e28b5"></script>
 </head>
 <body class="post-template tag-gentoo">
     
@@ -95,7 +124,7 @@
             </progress>
             <div class="read-estimation">
                 <div class="reading-time-blog-logo">
-                    <a class="blog-logo" href="../../../../"><i class="fa fa fa-chevron-left"></i></a>
+                    <a class="blog-logo" href="https://noiselabs.io"><i class="fa fa fa-chevron-left"></i></a>
                 </div>
                 <div class="read-estimation-content">
                     <div class="title">Howto Gentoo Linux with UTF-8 and Portuguese (Portugal) localization</div>
@@ -108,7 +137,7 @@
     </div>
 
 <nav class="main-nav">
-    <a href="../../../../" class="header-back-btn js-bg-check left">
+    <a href="https://noiselabs.io" class="header-back-btn js-bg-check left">
         Noiselabs
     </a>
     <i class="fa fa-fw fa-search main-nav-ico js-bg-check js-open-search right"></i></nav>
@@ -126,21 +155,14 @@
     <article class="post tag-gentoo">
 
         <section class="post-content row">
-            <div class="small-12 columns"><h2 id="purpose">Purpose</h2>
-
+            <div class="small-12 columns"><div class="kg-card-markdown"><h2 id="purpose">Purpose</h2>
 <p>How to configure a Gentoo Linux system to use UTF-8 character encoding and Portuguese (Portugal) localization (language and keyboard).</p>
-
 <h2 id="background">Background</h2>
-
-<p><strong>UTF-8</strong> is a variable-length character encoding, which in this instance means that it uses 1 to 4 bytes per symbol. So, the first UTF-8 byte is used for encoding ASCII, giving the character set full backwards compatibility with ASCII. UTF-8 means that ASCII and Latin characters are interchangeable with little increase in the size of the data, because only the first bit is used.
+<p><strong>UTF-8</strong> is a variable-length character encoding, which in this instance means that it uses 1 to 4 bytes per symbol. So, the first UTF-8 byte is used for encoding ASCII, giving the character set full backwards compatibility with ASCII. UTF-8 means that ASCII and Latin characters are interchangeable with little increase in the size of the data, because only the first bit is used.<br>
 UTF-8 allows you to work in a standards-compliant and internationally accepted multilingual environment, with a comparatively low data redundancy. UTF-8 is the preferred way for transmitting non-ASCII characters over the Internet, through Email, IRC or almost any other medium.</p>
-
 <p>A <strong>Locale</strong> is a set of information that most programs use for determining country and language specific settings. The locales and their data are part of the system library and can be found at <code>/usr/share/locale</code> on most systems. A locale name is generally named <em>ab_CD</em> where <em>ab</em> is your two (or three) letter language code (as specified in ISO-639) and <code>CD</code> is your two letter country code (as specified in ISO-3166). Variants are often appended to locale names, e.g. <code>en_GB.utf8</code> or <code>de_DE@euro</code>.</p>
-
 <h2 id="solution">Solution</h2>
-
 <p>Specify the locales we will need in <code>/etc/locale.gen:</code></p>
-
 <pre><code># vi /etc/locale.gen
 en_GB ISO-8859-1
 en_GB.UTF-8 UTF-8
@@ -149,62 +171,46 @@ pt_PT@euro ISO-8859-15
 pt_PT.UTF-8 UTF-8
 pt_PT.UTF-8@euro UTF-8
 </code></pre>
-
 <p>The next step is to run <code>locale-gen</code>. It will generate all the locales we have specified in the <code>/etc/locale.gen</code> file.</p>
-
 <pre><code># locale-gen
 </code></pre>
-
 <p>There is one environment variable that needs to be set in order to use our new UTF-8 locales: <code>LC_CTYPE</code> (or optionally <code>LANG</code>, if you want to change the system language as well). Setting the locale globally should be done using <code>/etc/env.d/02locale</code>.</p>
-
 <pre><code># vi /etc/env.d/02locale
 LANG="pt_PT.UTF-8@euro"
 </code></pre>
-
 <p>Now update the update the environment after the change</p>
-
 <pre><code># env-update &amp;&amp; source /etc/profile
 </code></pre>
-
 <p>The keyboard layout used by the console is set in <code>/etc/conf.d/keymaps</code> by the <code>KEYMAP</code> variable. For a Portuguese keyboard use pt-latin1 or pt-latin9. Set also EXTENDED_KEYMAPS attributes like "euro".</p>
-
 <pre><code># vi /etc/conf.d/keymaps&lt;/pre&gt;
 KEYMAP="pt-latin9"
 SET_WINDOWKEYS="yes"
 EXTENDED_KEYMAPS="backspace keypad euro"
 </code></pre>
-
 <p>To enable UTF-8 on the console, you need to edit <code>/etc/rc.conf</code> and set <code>UNICODE="yes"</code>.</p>
-
 <pre><code># vi /etc/rc.conf
 UNICODE="yes"
 </code></pre>
-
 <p>The keyboard layout to be used by the X server is specified in <code>/etc/X11/xorg.conf</code> by the <code>XkbLayout</code> option.</p>
-
 <pre><code># vi /etc/X11/xorg.conf
 Section "InputDevice"
 Identifier  "Keyboard0"
-Driver      "kbd"
-Option      "XkbLayout" "pt"
+Driver  	"kbd"
+Option	  	"XkbLayout" "pt"
 ...
 EndSection
 </code></pre>
-
 <p>There is also additional localisation variable called LINGUAS, which affects to localisation files that get installed in gettext-based programs, and decides used localisation for some specific software packages, such as <code>kde-base/kde-i18n</code> and <code>app-office/openoffice</code>. The variable takes in <em>space</em>-separated list of language codes, and suggested place to set it is <code>/etc/make.conf</code>:</p>
-
 <pre><code># vi /etc/make.conf
 LINGUAS="pt pt_PT en en_GB"
 </code></pre>
-
 <p>And that's it! Hopefully your system should now be running in full UTF-8/Portuguese support. Good linuxing ;)</p>
-
 <h2 id="sources">Sources</h2>
-
 <ul>
-<li><a href="http://www.gentoo.org/doc/en/utf-8.xml">http://www.gentoo.org/doc/en/utf-8.xml"&gt;Using UTF-8 with Gentoo</a></li>
+<li><a href="http://www.gentoo.org/doc/en/utf-8.xml%22%3Ehttp://www.gentoo.org/doc/en/utf-8.xml">Using UTF-8 with Gentoo</a></li>
 <li><a href="http://www.gentoo.org/doc/en/guide-localization.xml">Gentoo Linux Localization Guide</a></li>
-</ul></div>
+</ul>
+</div></div>
         </section>
 
         <footer class="post-footer row">
@@ -305,35 +311,18 @@ LINGUAS="pt pt_PT en en_GB"
         </div>
     </div>
 </footer>
-    <div class="big-search">
-    <i class="fa fa-times-circle big-search-close-btn js-close-search"></i>
-    <div class="big-search-container">
-        <div class="row">
-            <div class="small-12 columns">
-                <form class="big-search-form">
-                    <input class="big-search-form-input js-search-input" type="text" placeholder="Search...">
-                </form>
-            </div>
-        </div>
-        <div class="row">
-            <div class="small-12 columns">
-                <div class="big-search-results js-search-results"></div>
-            </div>
-        </div>
-    </div>
-</div>
 
     <div class="back-to-top js-back-to-top-btn hidden">
         <i class="fa fa-angle-up"></i>
     </div>
 
     
-    <script type="text/javascript" src="../../../../assets/js/vendor/jquery-2.1.4.min.js?v=4b5747ca10"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/foundation.min.js?v=4b5747ca10"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/background-check.js?v=4b5747ca10"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/ghost-hunter.js?v=4b5747ca10"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/images-loaded.js?v=4b5747ca10"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/reading-time.js?v=4b5747ca10"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/highlight.min.js?v=4b5747ca10"></script>
-    <script type="text/javascript" src="../../../../assets/js/abc.js?v=4b5747ca10"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/jquery-2.1.4.min.js?v=b9ee0e28b5"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/foundation.min.js?v=b9ee0e28b5"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/background-check.js?v=b9ee0e28b5"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/ghost-hunter.js?v=b9ee0e28b5"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/images-loaded.js?v=b9ee0e28b5"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/reading-time.js?v=b9ee0e28b5"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/highlight.min.js?v=b9ee0e28b5"></script>
+    <script type="text/javascript" src="../../../../assets/js/abc.js?v=b9ee0e28b5"></script>
 </body>

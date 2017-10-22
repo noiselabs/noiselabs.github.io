@@ -1,104 +1,63 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Vítor Brandão - Noiselabs</title><description>Software Consultancy</description><link>https://noiselabs.io/</link><generator>Ghost 0.7</generator><lastBuildDate>Sat, 07 May 2016 13:57:54 GMT</lastBuildDate><atom:link href="https://noiselabs.io/author/vitor-brandao/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Introducing SmartyBundle, a Smarty3 bundle for Symfony2</title><description>&lt;p&gt;Hello all! I've released yesterday the first version of &lt;a href="https://github.com/noiselabs/SmartyBundle"&gt;SmartyBundle&lt;/a&gt; on GitHub.&lt;/p&gt;
-
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" version="2.0"><channel><title>Vítor Brandão - Noiselabs</title><description>Software Consultancy</description><link>https://noiselabs.io/</link><image><url>https://noiselabs.io/favicon.png</url><title>Vítor Brandão - Noiselabs</title><link>https://noiselabs.io/</link></image><generator>Ghost 1.14</generator><lastBuildDate>Sun, 22 Oct 2017 19:32:54 GMT</lastBuildDate><atom:link href="https://noiselabs.io/author/vitor-brandao/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title>Introducing SmartyBundle, a Smarty3 bundle for Symfony2</title><description>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;Hello all! I've released yesterday the first version of &lt;a href="https://github.com/noiselabs/SmartyBundle"&gt;SmartyBundle&lt;/a&gt; on GitHub.&lt;/p&gt;
 &lt;h2 id="smartybundle"&gt;SmartyBundle&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;SmartyBundle&lt;/strong&gt; is a &lt;a href="http://symfony.com/"&gt;Symfony2&lt;/a&gt;  &lt;a href="http://symfony.com/doc/current/book/page_creation.html#page-creation-bundles"&gt;bundle&lt;/a&gt; that provides integration for the &lt;a href="http://www.smarty.net/"&gt;Smarty3&lt;/a&gt; template engine. It will allow the usage of the Smarty template engine in Symfony2, instead of Twig or PHP templates. SmartyBundle is released under a LPGLv3&lt;/p&gt;</description><link>https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/</link><guid isPermaLink="false">65dc20a3-19c7-47cb-93a9-aededc3df2e6</guid><category>Symfony</category><category>Smarty</category><category>SmartyBundle</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Sun, 04 Dec 2011 22:30:00 GMT</pubDate><content:encoded>&lt;p&gt;Hello all! I've released yesterday the first version of &lt;a href="https://github.com/noiselabs/SmartyBundle"&gt;SmartyBundle&lt;/a&gt; on GitHub.&lt;/p&gt;
-
+&lt;p&gt;&lt;strong&gt;SmartyBundle&lt;/strong&gt; is a &lt;a href="http://symfony.com/"&gt;Symfony2&lt;/a&gt;  &lt;a href="http://symfony.com/doc/current/book/page_creation.html#page-creation-bundles"&gt;bundle&lt;/a&gt; that provides integration for the &lt;a href="http://www.smarty.net/"&gt;Smarty3&lt;/a&gt; template engine. It will allow the usage of the Smarty template engine in Symfony2, instead of Twig or PHP templates. SmartyBundle is released under a LPGLv3&lt;/p&gt;&lt;/div&gt;</description><link>https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/</link><guid isPermaLink="false">59ec9985ebb7c300b0ab1ae4</guid><category>Symfony</category><category>Smarty</category><category>SmartyBundle</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Sun, 04 Dec 2011 22:30:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;Hello all! I've released yesterday the first version of &lt;a href="https://github.com/noiselabs/SmartyBundle"&gt;SmartyBundle&lt;/a&gt; on GitHub.&lt;/p&gt;
 &lt;h2 id="smartybundle"&gt;SmartyBundle&lt;/h2&gt;
-
 &lt;p&gt;&lt;strong&gt;SmartyBundle&lt;/strong&gt; is a &lt;a href="http://symfony.com/"&gt;Symfony2&lt;/a&gt;  &lt;a href="http://symfony.com/doc/current/book/page_creation.html#page-creation-bundles"&gt;bundle&lt;/a&gt; that provides integration for the &lt;a href="http://www.smarty.net/"&gt;Smarty3&lt;/a&gt; template engine. It will allow the usage of the Smarty template engine in Symfony2, instead of Twig or PHP templates. SmartyBundle is released under a LPGLv3 license. To download it you may:&lt;/p&gt;
-
 &lt;p&gt;Git-clone-it:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;$ git clone https://github.com/noiselabs/SmartyBundle.git&amp;lt;/pre&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;or download the repository as a zip file:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;$ wget https://github.com/noiselabs/SmartyBundle/zipball/master
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;Full documentation is available on &lt;a href="https://github.com/noiselabs/SmartyBundle/blob/master/Resources/doc/index.rst"&gt;GitHub&lt;/a&gt; and after download in the &lt;em&gt;Resources/doc/&lt;/em&gt; folder.&lt;/p&gt;
-
 &lt;h2 id="whatissymfony"&gt;What is Symfony&lt;/h2&gt;
-
 &lt;p&gt;Symfony is a Open Source PHP Web Development Framework. It is currently my PHP framework of choice that first grabbed my attention by its &lt;a href="http://symfony.com/components"&gt;standalone components&lt;/a&gt; and got me back to PHP after digging into the, Python-based, &lt;a href="http://turbogears.org/"&gt;TurboGears&lt;/a&gt; Web framework.&lt;/p&gt;
-
 &lt;h2 id="whatissmarty"&gt;What is Smarty&lt;/h2&gt;
-
 &lt;p&gt;Smarty is a template engine for PHP, facilitating the separation of presentation (HTML/CSS) from application logic. Version 3 brings some important improvements like the addition of template inheritance and a complete code rewrite to make use of new PHP5 capabilities.&lt;/p&gt;
-
 &lt;h2 id="tryit"&gt;Try it!&lt;/h2&gt;
-
 &lt;p&gt;I welcome everyone interested to try it, test it and to improve its code by sending comments, suggestions and GitHub pull requests. Bugs and feature requests are tracked on &lt;a href="https://github.com/noiselabs/SmartyBundle/issues"&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Thanks and see you soon.&lt;/p&gt;</content:encoded></item><item><title>Failed to submit batch buffer (Xorg)</title><description>&lt;h3 id="anotherxorgupdate"&gt;Another Xorg update&lt;/h3&gt;
-
+&lt;p&gt;Thanks and see you soon.&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title>Failed to submit batch buffer (Xorg)</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="anotherxorgupdate"&gt;Another Xorg update&lt;/h3&gt;
 &lt;p&gt;After my last Xorg update I've lost the nice ability to log into my KDE. Well, this &lt;em&gt;sucks&lt;/em&gt; because I spent a long time compiling kdelibs and friends so I really want to use it.&lt;/p&gt;
-
 &lt;h3 id="symptoms"&gt;Symptoms&lt;/h3&gt;
-
-&lt;p&gt;A blank screen on &lt;em&gt;&lt;insert preferred="" window="" manager="" here=""&gt;&lt;/insert&gt;&lt;/em&gt; login. You can even see your mouse&lt;/p&gt;</description><link>https://noiselabs.io/2011/04/25/failed-to-submit-batch-buffer-xorg/</link><guid isPermaLink="false">7c63f2f1-0578-4dde-8f3c-ef74e1562d4b</guid><category>Gentoo</category><category>Linux</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Mon, 25 Apr 2011 17:19:00 GMT</pubDate><content:encoded>&lt;h3 id="anotherxorgupdate"&gt;Another Xorg update&lt;/h3&gt;
-
+&lt;p&gt;A blank screen on &lt;em&gt;&lt;insert preferred="" window="" manager="" here=""&gt;&lt;/insert&gt;&lt;/em&gt; login. You can even see your mouse&lt;/p&gt;&lt;/div&gt;</description><link>https://noiselabs.io/2011/04/25/failed-to-submit-batch-buffer-xorg/</link><guid isPermaLink="false">59ec9985ebb7c300b0ab1ae3</guid><category>Gentoo</category><category>Linux</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Mon, 25 Apr 2011 17:19:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="anotherxorgupdate"&gt;Another Xorg update&lt;/h3&gt;
 &lt;p&gt;After my last Xorg update I've lost the nice ability to log into my KDE. Well, this &lt;em&gt;sucks&lt;/em&gt; because I spent a long time compiling kdelibs and friends so I really want to use it.&lt;/p&gt;
-
 &lt;h3 id="symptoms"&gt;Symptoms&lt;/h3&gt;
-
 &lt;p&gt;A blank screen on &lt;em&gt;&lt;insert preferred="" window="" manager="" here=""&gt;&lt;/insert&gt;&lt;/em&gt; login. You can even see your mouse pointer but nothing else.&lt;/p&gt;
-
-&lt;p&gt;If you take a look at the Xorg log you'll see X is mad about a "batch buffer thingie".&lt;/p&gt;
-
+&lt;p&gt;If you take a look at the Xorg log you'll see X is mad about a &amp;quot;batch buffer thingie&amp;quot;.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;Error in /var/log/Xorg.0.log:
 (EE) intel(0): Failed to submit batch buffer, expect rendering corruption or even a frozen display: No such device
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;h3 id="thesolution"&gt;The Solution&lt;/h3&gt;
-
-&lt;p&gt;Pretty ease to solve this one. Either &lt;strong&gt;upgrade your kernel to something like 2.6.36 or better&lt;/strong&gt; (recommended) or block xf86-video-intel&gt;2.14.&lt;/p&gt;
-
+&lt;p&gt;Pretty ease to solve this one. Either &lt;strong&gt;upgrade your kernel to something like 2.6.36 or better&lt;/strong&gt; (recommended) or block xf86-video-intel&amp;gt;2.14.&lt;/p&gt;
 &lt;h4 id="permanentsolution"&gt;Permanent solution&lt;/h4&gt;
-
 &lt;p&gt;Upgrade your kernel. I was running an old 2.6.32-tuxonice-r7. Upgraded to 2.6.36 and... Welcome back, KDE.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;# emerge --sync &amp;amp;&amp;amp; emerge --update gentoo-sources
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;h4 id="workaroundifyoureinahurry"&gt;Workaround (if you're in a hurry)&lt;/h4&gt;
-
 &lt;p&gt;Add this to &lt;code&gt;/etc/portage/package.mask&lt;/code&gt;&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;&amp;gt;=x11-drivers/xf86-video-intel-2.14.0
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;and recompile.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# emerge --update x11-drivers/xf86-video-intel
-&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title>Sanitize filenames with PHP</title><description>&lt;h3 id="pdfgenerationandinvalidcharacters"&gt;PDF generation and invalid characters&lt;/h3&gt;
-
+&lt;pre&gt;&lt;code&gt;# emerge --update x11-drivers/xf86-video-intel&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content:encoded></item><item><title>Sanitize filenames with PHP</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="pdfgenerationandinvalidcharacters"&gt;PDF generation and invalid characters&lt;/h3&gt;
 &lt;p&gt;While working with the &lt;a href="http://www.datatables.net/extras/tabletools/"&gt;TableTools&lt;/a&gt; PDF generator included in the great &lt;a href="http://www.datatables.net/"&gt;DataTables&lt;/a&gt; jQuery plugin I've noticed that sometimes the script failed to generate the PDF file. The cause? Invalid characters in the filename.&lt;/p&gt;
-
-&lt;p&gt;Well, to solve this issue I've made a simple PHP function to&lt;/p&gt;</description><link>https://noiselabs.io/2011/04/25/sanitize-filenames-with-php/</link><guid isPermaLink="false">633df5fe-da2e-4126-b72a-a41e13feea12</guid><category>PHP</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Mon, 25 Apr 2011 16:13:00 GMT</pubDate><content:encoded>&lt;h3 id="pdfgenerationandinvalidcharacters"&gt;PDF generation and invalid characters&lt;/h3&gt;
-
+&lt;p&gt;Well, to solve this issue I've made a simple PHP function to&lt;/p&gt;&lt;/div&gt;</description><link>https://noiselabs.io/2011/04/25/sanitize-filenames-with-php/</link><guid isPermaLink="false">59ec9985ebb7c300b0ab1ae2</guid><category>PHP</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Mon, 25 Apr 2011 16:13:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="pdfgenerationandinvalidcharacters"&gt;PDF generation and invalid characters&lt;/h3&gt;
 &lt;p&gt;While working with the &lt;a href="http://www.datatables.net/extras/tabletools/"&gt;TableTools&lt;/a&gt; PDF generator included in the great &lt;a href="http://www.datatables.net/"&gt;DataTables&lt;/a&gt; jQuery plugin I've noticed that sometimes the script failed to generate the PDF file. The cause? Invalid characters in the filename.&lt;/p&gt;
-
 &lt;p&gt;Well, to solve this issue I've made a simple PHP function to return a safe version of the given filename.&lt;/p&gt;
-
 &lt;h3 id="howitworks"&gt;How it works?&lt;/h3&gt;
-
 &lt;p&gt;Reads a filename string and replace each &lt;em&gt;dangerous&lt;/em&gt; character with an underscore. Of course you can use any other &lt;em&gt;safe&lt;/em&gt; character instead of an underscore.&lt;/p&gt;
-
 &lt;p&gt;The Code:&lt;/p&gt;
+&lt;pre&gt;&lt;code class="language-language-php"&gt;&amp;lt;?php
 
-&lt;pre&gt;&lt;code class="language- language-php"&gt;&amp;lt;?php
-
-class Helper  
+class Helper
 {
     /**
      * Returns a safe filename, for a given platform (OS), by
      * replacing all dangerous characters with an underscore.
      *
      * @param string $dangerousFilename The source filename
-     * to be "sanitized"
+     * to be &amp;quot;sanitized&amp;quot;
      * @param string $platform The target OS
      *
      * @return string A safe version of the input
@@ -107,9 +66,9 @@ class Helper
     public static function sanitizeFileName($dangerousFilename, $platform = 'Unix')
     {
         if (in_array(strtolower($platform), array('unix', 'linux'))) {
-            // our list of "dangerous characters", add/remove
+            // our list of &amp;quot;dangerous characters&amp;quot;, add/remove
             // characters if necessary
-            $dangerousCharacters = array(" ", '"', "'", "&amp;amp;", "/", "\\", "?", "#");
+            $dangerousCharacters = array(&amp;quot; &amp;quot;, '&amp;quot;', &amp;quot;'&amp;quot;, &amp;quot;&amp;amp;&amp;quot;, &amp;quot;/&amp;quot;, &amp;quot;\\&amp;quot;, &amp;quot;?&amp;quot;, &amp;quot;#&amp;quot;);
         } else {
             // no OS matched? return the original filename then...
             return $dangerousFilename;
@@ -120,44 +79,26 @@ class Helper
         }
     }
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;Usage:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class="language- language-php"&gt;$safeFilename = Helper::sanitizeFileName('#my  unsaf&amp;amp;/file\name?"');
+&lt;pre&gt;&lt;code class="language-language-php"&gt;$safeFilename = Helper::sanitizeFileName('#my  unsaf&amp;amp;/file\name?&amp;quot;');
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;h3 id="downloadthisandmore"&gt;Download this and more...&lt;/h3&gt;
-
 &lt;p&gt;This snippet and other useful [at least, I hope so] PHP methods are grouped on a git repo available via GitHub. This is also the best [and only] way to get the updated version of the code.&lt;/p&gt;
-
 &lt;p&gt;Go to the &lt;a href="https://github.com/noiselabs/noiselabs-php-toolkit"&gt;project's web page on GitHub&lt;/a&gt; or download it right way with (you must have &lt;a href="http://git-scm.com/"&gt;Git&lt;/a&gt; installed first):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;$ git clone git://github.com/noiselabs/noiselabs-php-toolkit.git
-&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title>Don't let updatedb take your Linux down</title><description>&lt;h3 id="coffeebreakeveryone"&gt;Coffee break everyone?&lt;/h3&gt;
-
+&lt;pre&gt;&lt;code&gt;$ git clone git://github.com/noiselabs/noiselabs-php-toolkit.git&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content:encoded></item><item><title>Don't let updatedb take your Linux down</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="coffeebreakeveryone"&gt;Coffee break everyone?&lt;/h3&gt;
 &lt;p&gt;Everyday morning was the same: &lt;strong&gt;updatedb&lt;/strong&gt; came and took my Gentoo away. The symptoms were clear, X/KDE applications starting to become &lt;strong&gt;slow and unresponsive&lt;/strong&gt;, and then the two inevitable choices: go for a coffee and wait or pkill the bastard.&lt;/p&gt;
-
-&lt;h3 id="askingupdatedbtobenicethewrongway"&gt;Asking updatedb to be nice (&lt;em&gt;the&lt;/em&gt;&lt;/h3&gt;</description><link>https://noiselabs.io/2010/05/01/dont-let-updatedb-take-your-linux-down/</link><guid isPermaLink="false">b9892644-ee5d-442a-9b8b-51e119ee114a</guid><category>Gentoo</category><category>Linux</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Sat, 01 May 2010 15:37:00 GMT</pubDate><content:encoded>&lt;h3 id="coffeebreakeveryone"&gt;Coffee break everyone?&lt;/h3&gt;
-
+&lt;h3 id="askingupdatedbtobenicethewrongway"&gt;Asking updatedb to be nice (&lt;em&gt;the&lt;/em&gt;&lt;/h3&gt;&lt;/div&gt;</description><link>https://noiselabs.io/2010/05/01/dont-let-updatedb-take-your-linux-down/</link><guid isPermaLink="false">59ec9985ebb7c300b0ab1ae1</guid><category>Gentoo</category><category>Linux</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Sat, 01 May 2010 15:37:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h3 id="coffeebreakeveryone"&gt;Coffee break everyone?&lt;/h3&gt;
 &lt;p&gt;Everyday morning was the same: &lt;strong&gt;updatedb&lt;/strong&gt; came and took my Gentoo away. The symptoms were clear, X/KDE applications starting to become &lt;strong&gt;slow and unresponsive&lt;/strong&gt;, and then the two inevitable choices: go for a coffee and wait or pkill the bastard.&lt;/p&gt;
-
 &lt;h3 id="askingupdatedbtobenicethewrongway"&gt;Asking updatedb to be nice (&lt;em&gt;the wrong way&lt;/em&gt;)&lt;/h3&gt;
-
-&lt;p&gt;To fix this came to my mind the &lt;code&gt;nice&lt;/code&gt; command. This is well known to Gentoo users because of the &lt;code&gt;PORTAGE_NICENESS&lt;/code&gt; feature include in &lt;code&gt;make.conf&lt;/code&gt;. Nice is a program that adjusts the process scheduling (aka niceness) of the desired programs so setting a value of 19 (the maximum) would make updatedb to be "nicer" to other applications and therefore being less bossy. So I've edited &lt;code&gt;/etc/cron.daily/slocate&lt;/code&gt;, placed &lt;code&gt;"nice -n 19"&lt;/code&gt; before the updatedb command and waited. But, once again, updatedb came and owned my computer.&lt;/p&gt;
-
+&lt;p&gt;To fix this came to my mind the &lt;code&gt;nice&lt;/code&gt; command. This is well known to Gentoo users because of the &lt;code&gt;PORTAGE_NICENESS&lt;/code&gt; feature include in &lt;code&gt;make.conf&lt;/code&gt;. Nice is a program that adjusts the process scheduling (aka niceness) of the desired programs so setting a value of 19 (the maximum) would make updatedb to be &amp;quot;nicer&amp;quot; to other applications and therefore being less bossy. So I've edited &lt;code&gt;/etc/cron.daily/slocate&lt;/code&gt;, placed &lt;code&gt;&amp;quot;nice -n 19&amp;quot;&lt;/code&gt; before the updatedb command and waited. But, once again, updatedb came and owned my computer.&lt;/p&gt;
 &lt;h3 id="askingupdatedbtobeionicetherightway"&gt;Asking updatedb to be I/O-nice (&lt;em&gt;the right way&lt;/em&gt;)&lt;/h3&gt;
-
 &lt;p&gt;So. what's wrong here? Updatedb is not a CPU-intensive application so nice won't change a thing. The bottleneck is disk access so what we need here is a &lt;strong&gt;nice for I/O&lt;/strong&gt;. The solution? &lt;strong&gt;Ionice&lt;/strong&gt;.&lt;/p&gt;
-
 &lt;p&gt;&lt;code&gt;Ionice&lt;/code&gt; is able to set the I/O scheduling class and priority for a given program. To give updatedb a low priority we pick the class 3, the idle one.&lt;/p&gt;
-
 &lt;p&gt;Again, let's go to crontab and edit the slocate entry.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;# vim /etc/cron.daily/slocate
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;Put ionice -c 3 before the updatedb command.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;#! /bin/sh
 
 if [ -x /usr/bin/updatedb ]
@@ -170,250 +111,157 @@ then
     fi
 fi
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And if you're asking where (in Gentoo) is this ionice program, the solution is &lt;code&gt;sys-apps/util-linux&lt;/code&gt;, which I'm pretty sure is already installed. If not: &lt;br&gt;
-    # emerge -a sys-apps/util-linux&lt;/p&gt;
-
+&lt;p&gt;And if you're asking where (in Gentoo) is this ionice program, the solution is &lt;code&gt;sys-apps/util-linux&lt;/code&gt;, which I'm pretty sure is already installed. If not:&lt;br&gt;
+# emerge -a sys-apps/util-linux&lt;/p&gt;
 &lt;h3 id="thisisallgoodbutwhatsthisupdatedbthing"&gt;This is all good but... what's this updatedb thing?&lt;/h3&gt;
-
-&lt;p&gt;Updatedb is a tool ran daily by cron to update the slocate database. And &lt;strong&gt;Slocate&lt;/strong&gt; (Secure Locate) is a security enhanced version of the GNU Locate, which is used to &lt;em&gt;index all the files&lt;/em&gt; of your system allowing a (very) &lt;em&gt;quick search&lt;/em&gt; of them. In Gentoo Linux the slocate is available in Portage through &lt;code&gt;sys-apps/slocate&lt;/code&gt;.&lt;/p&gt;</content:encoded></item><item><title>Meme Miner: the translation tool I've been looking for</title><description>&lt;p&gt;No, this will not replace &lt;a href="http://translate.google.com"&gt;Google Translate&lt;/a&gt; or &lt;a href="http://babelfish.yahoo.com"&gt;Babel Fish&lt;/a&gt;. But it does something that these tools simply can't offer.&lt;/p&gt;
-
+&lt;p&gt;Updatedb is a tool ran daily by cron to update the slocate database. And &lt;strong&gt;Slocate&lt;/strong&gt; (Secure Locate) is a security enhanced version of the GNU Locate, which is used to &lt;em&gt;index all the files&lt;/em&gt; of your system allowing a (very) &lt;em&gt;quick search&lt;/em&gt; of them. In Gentoo Linux the slocate is available in Portage through &lt;code&gt;sys-apps/slocate&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title>Meme Miner: the translation tool I've been looking for</title><description>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;No, this will not replace &lt;a href="http://translate.google.com"&gt;Google Translate&lt;/a&gt; or &lt;a href="http://babelfish.yahoo.com"&gt;Babel Fish&lt;/a&gt;. But it does something that these tools simply can't offer.&lt;/p&gt;
 &lt;p&gt;For some time I've been using &lt;a href="http://www.wikipedia.org/"&gt;Wikipedia&lt;/a&gt; to translate expressions that a normal translator couldn't give exact results, because they use literal translations. Now there is a faster way.&lt;/p&gt;
-
-&lt;h3 id="entermememiner"&gt;Enter&lt;/h3&gt;</description><link>https://noiselabs.io/2010/03/14/meme-miner-the-translation-tool-ive-been-looking-for/</link><guid isPermaLink="false">0e903f54-dcaf-4713-a1ae-7f8f1786da86</guid><dc:creator>Vítor Brandão</dc:creator><pubDate>Sun, 14 Mar 2010 23:23:00 GMT</pubDate><content:encoded>&lt;p&gt;No, this will not replace &lt;a href="http://translate.google.com"&gt;Google Translate&lt;/a&gt; or &lt;a href="http://babelfish.yahoo.com"&gt;Babel Fish&lt;/a&gt;. But it does something that these tools simply can't offer.&lt;/p&gt;
-
+&lt;h3 id="entermememiner"&gt;Enter&lt;/h3&gt;&lt;/div&gt;</description><link>https://noiselabs.io/2010/03/14/meme-miner-the-translation-tool-ive-been-looking-for/</link><guid isPermaLink="false">59ec9985ebb7c300b0ab1ae0</guid><dc:creator>Vítor Brandão</dc:creator><pubDate>Sun, 14 Mar 2010 23:23:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;No, this will not replace &lt;a href="http://translate.google.com"&gt;Google Translate&lt;/a&gt; or &lt;a href="http://babelfish.yahoo.com"&gt;Babel Fish&lt;/a&gt;. But it does something that these tools simply can't offer.&lt;/p&gt;
 &lt;p&gt;For some time I've been using &lt;a href="http://www.wikipedia.org/"&gt;Wikipedia&lt;/a&gt; to translate expressions that a normal translator couldn't give exact results, because they use literal translations. Now there is a faster way.&lt;/p&gt;
-
 &lt;h3 id="entermememiner"&gt;Enter MemeMiner&lt;/h3&gt;
-
 &lt;p&gt;&lt;em&gt;MemeMiner&lt;/em&gt;, brought to us by &lt;a href="http://fredrocha.net"&gt;Fred Rocha&lt;/a&gt;, is a Web tool that does this work and gives us a easy and fast way to get this translations.&lt;/p&gt;
-
 &lt;p&gt;From the author own words:&lt;/p&gt;
-
 &lt;blockquote&gt;
-  &lt;p&gt;For most of it's articles, Wikipedia provides the equivalent expression of that concept in other languages. With MemeMiner you can effortlessly find out how a certain idea is expressed across the language spectrum.&lt;/p&gt;
+&lt;p&gt;For most of it's articles, Wikipedia provides the equivalent expression of that concept in other languages. With MemeMiner you can effortlessly find out how a certain idea is expressed across the language spectrum.&lt;/p&gt;
 &lt;/blockquote&gt;
-
 &lt;p&gt;Now go ahead and try this tool at &lt;a href="http://fredrocha.net/MemeMiner/"&gt;http://fredrocha.net/MemeMiner/&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src="http://noisebleed.blogetery.com/files/2010/03/fredrocha-mememiner.jpg" alt="alt"&gt;&lt;/p&gt;</content:encoded></item><item><title>Ebuild for CoovaChilli v1.2.2 coming soon</title><description>&lt;p&gt;It has been a while since I took &lt;a href="http://bugs.gentoo.org/217141"&gt;Laurento Fritella contributions on bugzilla for CoovaChilli-1.0.11&lt;/a&gt;  and made them available through &lt;a href="http://overlays.gentoo.org/proj/sunrise"&gt;Sunrise overlay&lt;/a&gt;. In the meantime I've tried to submit version 1.0.14 but run into some problems with SSL and I was back then completely out of&lt;/p&gt;</description><link>https://noiselabs.io/2010/03/08/ebuild-for-coovachilli-v1-2-2-coming-soon/</link><guid isPermaLink="false">11db1e94-f329-43c8-be49-cab3f878ebfb</guid><category>Gentoo</category><category>Ebuild</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Mon, 08 Mar 2010 00:56:00 GMT</pubDate><content:encoded>&lt;p&gt;It has been a while since I took &lt;a href="http://bugs.gentoo.org/217141"&gt;Laurento Fritella contributions on bugzilla for CoovaChilli-1.0.11&lt;/a&gt;  and made them available through &lt;a href="http://overlays.gentoo.org/proj/sunrise"&gt;Sunrise overlay&lt;/a&gt;. In the meantime I've tried to submit version 1.0.14 but run into some problems with SSL and I was back then completely out of time to fix it. Ebuild for &lt;em&gt;version 1.0.11&lt;/em&gt; remains the only available.&lt;/p&gt;
-
+&lt;p&gt;&lt;img src="http://noisebleed.blogetery.com/files/2010/03/fredrocha-mememiner.jpg" alt="alt"&gt;&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title>Ebuild for CoovaChilli v1.2.2 coming soon</title><description>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;It has been a while since I took &lt;a href="http://bugs.gentoo.org/217141"&gt;Laurento Fritella contributions on bugzilla for CoovaChilli-1.0.11&lt;/a&gt;  and made them available through &lt;a href="http://overlays.gentoo.org/proj/sunrise"&gt;Sunrise overlay&lt;/a&gt;. In the meantime I've tried to submit version 1.0.14 but run into some problems with SSL and I was back then completely out of&lt;/p&gt;&lt;/div&gt;</description><link>https://noiselabs.io/2010/03/08/ebuild-for-coovachilli-v1-2-2-coming-soon/</link><guid isPermaLink="false">59ec9985ebb7c300b0ab1adf</guid><category>Gentoo</category><category>Ebuild</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Mon, 08 Mar 2010 00:56:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;It has been a while since I took &lt;a href="http://bugs.gentoo.org/217141"&gt;Laurento Fritella contributions on bugzilla for CoovaChilli-1.0.11&lt;/a&gt;  and made them available through &lt;a href="http://overlays.gentoo.org/proj/sunrise"&gt;Sunrise overlay&lt;/a&gt;. In the meantime I've tried to submit version 1.0.14 but run into some problems with SSL and I was back then completely out of time to fix it. Ebuild for &lt;em&gt;version 1.0.11&lt;/em&gt; remains the only available.&lt;/p&gt;
 &lt;p&gt;Recently I decided to visit &lt;a href="http://coova.org/wiki/index.php/CoovaChilli"&gt;CoovaChilli website&lt;/a&gt; and check the latest version of the software. CoovaChilli is now at &lt;em&gt;version 1.2.2&lt;/em&gt;. I've decided to dedicate some time to make this version available in Gentoo and started working on it. It's also my intention to shorten the gap between new releases of CoovaChilli and their availability in the Overlay ;)&lt;/p&gt;
-
 &lt;h3 id="okbutwhatiscoovachilli"&gt;OK, but.. what is CoovaChilli?&lt;/h3&gt;
-
 &lt;p&gt;Here goes a description taken from the website:&lt;/p&gt;
-
 &lt;blockquote&gt;
-  &lt;p&gt;CoovaChilli is an open-source software access controller, based on the popular (but now defunct) ChilliSpot project, and is actively maintained by an original ChilliSpot contributor. CoovaChilli is released under the GNU General Public License (GPL). CoovaChilli is a feature rich software access controller that provides a captive portal/walled-garden environment and uses RADIUS or a HTTP protocol for access provisioning and accounting.  CoovaChilli is an integral part of the CoovaAP OpenWRT-based firmware which is specialized for hotspots.&lt;/p&gt;
+&lt;p&gt;CoovaChilli is an open-source software access controller, based on the popular (but now defunct) ChilliSpot project, and is actively maintained by an original ChilliSpot contributor. CoovaChilli is released under the GNU General Public License (GPL). CoovaChilli is a feature rich software access controller that provides a captive portal/walled-garden environment and uses RADIUS or a HTTP protocol for access provisioning and accounting.  CoovaChilli is an integral part of the CoovaAP OpenWRT-based firmware which is specialized for hotspots.&lt;/p&gt;
 &lt;/blockquote&gt;
-
 &lt;p&gt;So CoovaChilli is a Wireless LAN Access Point Controller. For those who used Chillispot this is the natural successor.&lt;/p&gt;
-
 &lt;h3 id="followthedevelopmentprocessongithub"&gt;Follow the development process on GitHub&lt;/h3&gt;
-
 &lt;p&gt;I'm storing the Ebuild on &lt;a href="http://github.com/noisebleed"&gt;my GitHub account&lt;/a&gt; so for those wishing to check out the evolution of the Ebuild (&lt;em&gt;not sure why would someone want to do this but... here it goes&lt;/em&gt;) just open &lt;a href="http://github.com/noisebleed/noisebleed-overlay/blob/master/net-wireless/coova-chilli/coova-chilli-1.2.2.ebuild"&gt;this link&lt;/a&gt;.&lt;/p&gt;
-
 &lt;p&gt;Of course is always possible to checkout the git repo and retrieve &lt;a href="http://github.com/noisebleed/noisebleed-overlay"&gt;my personal Gentoo overlay&lt;/a&gt; which includes the CoovaChilli ebuilds. To do this just execute:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;$ git clone git://github.com/noisebleed/noisebleed-overlay.git
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;Make sure to keep the repo updated:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;$ git pull remote origin
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;h3 id="tryversion1011availableonsunriseoverlay"&gt;Try version 1.0.11 available on Sunrise overlay&lt;/h3&gt;
-
-&lt;p&gt;The &lt;strong&gt;Sunrise overlay&lt;/strong&gt; is the place I choose to provide the CoovaChilli ebuilds. To use the ebuild (coova-chilli-1.0.11) first bring the overlay into your system through &lt;a &lt;a="" href="http://layman.sourceforge.net/"&gt;Layman&lt;/a&gt;:&lt;/p&gt;
-
+&lt;p&gt;The &lt;strong&gt;Sunrise overlay&lt;/strong&gt; is the place I choose to provide the CoovaChilli ebuilds. To use the ebuild (coova-chilli-1.0.11) first bring the overlay into your system through &amp;lt;a &lt;a href="http://layman.sourceforge.net/"&gt;Layman&lt;/a&gt;:&lt;/p&gt;
 &lt;p&gt;Install layman:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# USE="subversion" emerge -va app-portage/layman
+&lt;pre&gt;&lt;code&gt;# USE=&amp;quot;subversion&amp;quot; emerge -va app-portage/layman
 # layman -f -a sunrise
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;Since layman 1.2.3 use &lt;code&gt;/var/lib/&lt;/code&gt; instead of &lt;code&gt;/usr/local/portage/&lt;/code&gt;:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# echo "source /var/lib/layman/make.conf" &amp;gt;&amp;gt; /etc/make.conf
+&lt;pre&gt;&lt;code&gt;# echo &amp;quot;source /var/lib/layman/make.conf&amp;quot; &amp;gt;&amp;gt; /etc/make.conf
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;Update the overlay:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;# layman -s sunrise
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;Then just emerge the normal way:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;# emerge -av net-wireless/coova-chilli
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;More information about using overlays can be found on the &lt;a href="http://www.gentoo.org/proj/en/overlays/userguide.xml"&gt;Gentoo documentation&lt;/a&gt;. Specific Sunrise instructions are available on &lt;a href="http://overlays.gentoo.org/proj/sunrise"&gt;Sunrise's wiki&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title>tar: file name is too long (max 99)</title><description>&lt;p&gt;I was doing the usual &lt;code&gt;make dist&lt;/code&gt; process to launch a tarball for one of my apps when &lt;em&gt;tar&lt;/em&gt; died with the following message:&lt;/p&gt;
-
+&lt;p&gt;More information about using overlays can be found on the &lt;a href="http://www.gentoo.org/proj/en/overlays/userguide.xml"&gt;Gentoo documentation&lt;/a&gt;. Specific Sunrise instructions are available on &lt;a href="http://overlays.gentoo.org/proj/sunrise"&gt;Sunrise's wiki&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title>tar: file name is too long (max 99)</title><description>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;I was doing the usual &lt;code&gt;make dist&lt;/code&gt; process to launch a tarball for one of my apps when &lt;em&gt;tar&lt;/em&gt; died with the following message:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;tar: file name is too long (max 99); not dumped
 tar: Error exit delayed from previous errors
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;If you happen to see the same error message&lt;/p&gt;</description><link>https://noiselabs.io/2010/02/27/tar-file-name-is-too-long-max-99/</link><guid isPermaLink="false">255d65dc-ef06-42b5-8e03-3790fd330325</guid><category>Linux</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Sat, 27 Feb 2010 00:16:00 GMT</pubDate><content:encoded>&lt;p&gt;I was doing the usual &lt;code&gt;make dist&lt;/code&gt; process to launch a tarball for one of my apps when &lt;em&gt;tar&lt;/em&gt; died with the following message:&lt;/p&gt;
-
+&lt;p&gt;If you happen to see the same error message&lt;/p&gt;&lt;/div&gt;</description><link>https://noiselabs.io/2010/02/27/tar-file-name-is-too-long-max-99/</link><guid isPermaLink="false">59ec9985ebb7c300b0ab1ade</guid><category>Linux</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Sat, 27 Feb 2010 00:16:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;I was doing the usual &lt;code&gt;make dist&lt;/code&gt; process to launch a tarball for one of my apps when &lt;em&gt;tar&lt;/em&gt; died with the following message:&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;tar: file name is too long (max 99); not dumped
 tar: Error exit delayed from previous errors
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;If you happen to see the same error message it is quite likely that you (and by &lt;em&gt;you&lt;/em&gt; I mean &lt;em&gt;Automake&lt;/em&gt;) are using the old V7 tar format.&lt;/p&gt;
-
 &lt;p&gt;&lt;em&gt;Want to skip details? Then just scroll to the end and check the solution ;-)&lt;/em&gt;&lt;/p&gt;
-
 &lt;h3 id="v7andothertarformats"&gt;V7 and other tar formats&lt;/h3&gt;
-
 &lt;p&gt;By default &lt;strong&gt;Automake is pulling the historical V7 format&lt;/strong&gt; to generate the tarball with make dist. This tar format supports file names only up to 99 characters and that's why tar is refusing to build the tarball.&lt;/p&gt;
-
 &lt;p&gt;Since automake 1.9, the tar format can be chosen with the options &lt;code&gt;tar-v7&lt;/code&gt;, &lt;code&gt;tar-ustar&lt;/code&gt; and &lt;code&gt;tar-pax&lt;/code&gt;.&lt;/p&gt;
-
 &lt;p&gt;This is what the &lt;a href="http://www.gnu.org/software/hello/manual/automake/Options.html"&gt;Automake manual&lt;/a&gt; says about each option:&lt;/p&gt;
-
 &lt;h4 id="tarv7"&gt;tar-v7&lt;/h4&gt;
-
 &lt;blockquote&gt;
-  &lt;p&gt;This is the historical default. This antiquated format is understood by all tar implementations and supports file names with up to 99 characters. When given longer file names some tar implementations will diagnose the problem while other will generate broken tarballs or use non-portable extensions. Furthermore, the V7 format cannot store empty directories.&lt;/p&gt;
+&lt;p&gt;This is the historical default. This antiquated format is understood by all tar implementations and supports file names with up to 99 characters. When given longer file names some tar implementations will diagnose the problem while other will generate broken tarballs or use non-portable extensions. Furthermore, the V7 format cannot store empty directories.&lt;/p&gt;
 &lt;/blockquote&gt;
-
 &lt;h4 id="tarustar"&gt;tar-ustar&lt;/h4&gt;
-
 &lt;blockquote&gt;
-  &lt;p&gt;(...) format defined by POSIX 1003.1-1988. This format is believed to be old enough to be portable. It fully supports empty directories. It can store file names with up to 256 characters, provided that the file name can be split at directory separator in two parts, first of them being at most 155 bytes long. So, in most cases the maximum file name length will be shorter than 256 characters. However you may run against broken tar implementations that incorrectly handle file names longer than 99 characters.&lt;/p&gt;
+&lt;p&gt;(...) format defined by POSIX 1003.1-1988. This format is believed to be old enough to be portable. It fully supports empty directories. It can store file names with up to 256 characters, provided that the file name can be split at directory separator in two parts, first of them being at most 155 bytes long. So, in most cases the maximum file name length will be shorter than 256 characters. However you may run against broken tar implementations that incorrectly handle file names longer than 99 characters.&lt;/p&gt;
 &lt;/blockquote&gt;
-
 &lt;h4 id="tarpax"&gt;tar-pax&lt;/h4&gt;
-
 &lt;blockquote&gt;
-  &lt;p&gt;(...) the new pax interchange format defined by POSIX 1003.1-2001. It does not limit the length of file names. However, this format is very young and should probably be restricted to packages that target only very modern platforms. There are moves to change the pax format in an upward-compatible way, so this option may refer to a more recent version in the future.&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;/p&gt;
-
+&lt;p&gt;(...) the new pax interchange format defined by POSIX 1003.1-2001. It does not limit the length of file names. However, this format is very young and should probably be restricted to packages that target only very modern platforms. There are moves to change the pax format in an upward-compatible way, so this option may refer to a more recent version in the future.&lt;/p&gt;&lt;/blockquote&gt;&lt;p&gt;&lt;/p&gt;
 
 &lt;h3 id="howtofixit"&gt;How to fix it?&lt;/h3&gt;
-
 &lt;p&gt;The solution is to &lt;strong&gt;pick a newer and better tar implementation like tar-pax&lt;/strong&gt;. Go to &lt;code&gt;configure.ac&lt;/code&gt; or &lt;code&gt;configure.in&lt;/code&gt; and change the &lt;code&gt;AM_INIT_AUTOMAKE&lt;/code&gt; macro so it specifies the tar format and requires automake version to be 1.9 or better as tar-pax is only supported since 1.9.&lt;/p&gt;
-
 &lt;p&gt;Edit &lt;code&gt;configure.ac/configure.in&lt;/code&gt;:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;AM_INIT_AUTOMAKE([1.9 tar-pax])
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now run &lt;code&gt;make dist&lt;/code&gt; again and tar won't bother you anymore (at least with this error :)).&lt;/p&gt;</content:encoded></item><item><title>Chromium OS using Portage build environment</title><description>&lt;p&gt;These are good news for the &lt;strong&gt;Gentoo&lt;/strong&gt; community. &lt;strong&gt;Portage is being used to build Chromium OS&lt;/strong&gt; packages. As you may know, Portage is the Gentoo Linux default package management system which has its roots on FreeBSD's &lt;em&gt;ports&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;As of February 5, Google developer &lt;strong&gt;Ryan Cairns&lt;/strong&gt; has made &lt;a href="http://groups.google.com/a/chromium.org/group/chromium-os-dev/browse_thread/thread/337cca9a0da59ad6/9354a38894da5df5" "=""&gt;this statement&lt;/a&gt; on the Chromium OS dev mailing list:&lt;/p&gt;
-
+&lt;p&gt;Now run &lt;code&gt;make dist&lt;/code&gt; again and tar won't bother you anymore (at least with this error :)).&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title>Chromium OS using Portage build environment</title><description>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;These are good news for the &lt;strong&gt;Gentoo&lt;/strong&gt; community. &lt;strong&gt;Portage is being used to build Chromium OS&lt;/strong&gt; packages. As you may know, Portage is the Gentoo Linux default package management system which has its roots on FreeBSD's &lt;em&gt;ports&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;As of February 5, Google developer &lt;strong&gt;Ryan Cairns&lt;/strong&gt; has made &lt;a href="http://groups.google.com/a/chromium.org/group/chromium-os-dev/browse_thread/thread/337cca9a0da59ad6/9354a38894da5df5%22"&gt;this statement&lt;/a&gt; on&lt;/p&gt;&lt;/div&gt;</description><link>https://noiselabs.io/2010/02/22/chromium-os-using-portage-build-environment/</link><guid isPermaLink="false">59ec9985ebb7c300b0ab1add</guid><category>Gentoo</category><category>Portage</category><category>ChromiumOS</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Mon, 22 Feb 2010 01:34:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;These are good news for the &lt;strong&gt;Gentoo&lt;/strong&gt; community. &lt;strong&gt;Portage is being used to build Chromium OS&lt;/strong&gt; packages. As you may know, Portage is the Gentoo Linux default package management system which has its roots on FreeBSD's &lt;em&gt;ports&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;As of February 5, Google developer &lt;strong&gt;Ryan Cairns&lt;/strong&gt; has made &lt;a href="http://groups.google.com/a/chromium.org/group/chromium-os-dev/browse_thread/thread/337cca9a0da59ad6/9354a38894da5df5%22"&gt;this statement&lt;/a&gt; on the Chromium OS dev mailing list:&lt;/p&gt;
 &lt;blockquote&gt;
-  &lt;p&gt;As we’ve been growing and working with more partners, the need to support board specific builds and improve our tools has become more urgent. In order to get there more quickly, we’ve been investigating several different build tools. We found that the Portage build tools suit our needs well and we will be transitioning 100% within the next week. &lt;/p&gt;
+&lt;p&gt;As we’ve been growing and working with more partners, the need to support board specific builds and improve our tools has become more urgent. In order to get there more quickly, we’ve been investigating several different build tools. We found that the Portage build tools suit our needs well and we will be transitioning 100% within the next week.&lt;/p&gt;
 &lt;/blockquote&gt;
-
 &lt;p&gt;As a Gentoo user and supporter, I'm happy to see Portage being picked by major projects like the Chromium OS. Hopefully, it will bring more (positive) attention to Gentoo and maybe we will see the Google folks contributing with improvements and bug fixes back to Portage.&lt;/p&gt;
-
 &lt;p&gt;For those interested in checking out the Portage-based build environment and &lt;strong&gt;build a bootable Chromium OS image&lt;/strong&gt; take a look at &lt;a href="http://dev.chromium.org/chromium-os/building-chromium-os/portage-based-build"&gt;this Chromium OS documentation page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you are interested in &lt;strong&gt;Portage features and usage&lt;/strong&gt; check the &lt;a href="http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&amp;amp;chap=1" "=""&gt;Gentoo Handbook page&lt;/p&gt;</description><link>https://noiselabs.io/2010/02/22/chromium-os-using-portage-build-environment/</link><guid isPermaLink="false">d94294d4-685d-489e-b609-1b08094ae967</guid><category>Gentoo</category><category>Portage</category><category>ChromiumOS</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Mon, 22 Feb 2010 01:34:00 GMT</pubDate><content:encoded>&lt;p&gt;These are good news for the &lt;strong&gt;Gentoo&lt;/strong&gt; community. &lt;strong&gt;Portage is being used to build Chromium OS&lt;/strong&gt; packages. As you may know, Portage is the Gentoo Linux default package management system which has its roots on FreeBSD's &lt;em&gt;ports&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;As of February 5, Google developer &lt;strong&gt;Ryan Cairns&lt;/strong&gt; has made &lt;a href="http://groups.google.com/a/chromium.org/group/chromium-os-dev/browse_thread/thread/337cca9a0da59ad6/9354a38894da5df5" "=""&gt;this statement&lt;/a&gt; on the Chromium OS dev mailing list:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;p&gt;As we’ve been growing and working with more partners, the need to support board specific builds and improve our tools has become more urgent. In order to get there more quickly, we’ve been investigating several different build tools. We found that the Portage build tools suit our needs well and we will be transitioning 100% within the next week. &lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;As a Gentoo user and supporter, I'm happy to see Portage being picked by major projects like the Chromium OS. Hopefully, it will bring more (positive) attention to Gentoo and maybe we will see the Google folks contributing with improvements and bug fixes back to Portage.&lt;/p&gt;
-
-&lt;p&gt;For those interested in checking out the Portage-based build environment and &lt;strong&gt;build a bootable Chromium OS image&lt;/strong&gt; take a look at &lt;a href="http://dev.chromium.org/chromium-os/building-chromium-os/portage-based-build"&gt;this Chromium OS documentation page&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you are interested in &lt;strong&gt;Portage features and usage&lt;/strong&gt; check the &lt;a href="http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&amp;amp;chap=1" "=""&gt;Gentoo Handbook page about Portage&lt;/a&gt;. And if you got curious about &lt;strong&gt;Portage history&lt;/strong&gt; I recommend the &lt;a href="http://www.gentoo.org/doc/en/articles/making-the-distro-p3.xml"&gt;this article&lt;/a&gt; by &lt;strong&gt;Daniel Robbins&lt;/strong&gt;, the founder of Gentoo.&lt;/p&gt;
-
-&lt;p&gt;To know more about the Chromium OS project and Google Chrome OS check &lt;a href="http://www.chromium.org/chromium-os"&gt;this&lt;/a&gt;.&lt;/p&gt;</content:encoded></item><item><title>Mark all messages as Read in Gmail (in 3 easy steps)</title><description>&lt;p&gt;Want to get rid of all those unread messages in Gmail? Or, just like me, have some unread messages you can't find and want to reset the unread count to zero? Well, here is the solution:&lt;/p&gt;
-
-&lt;p&gt;Type "&lt;strong&gt;is:unread&lt;/strong&gt;" in the search bar. Then select "&lt;strong&gt;Unread&lt;/strong&gt;" as seen in the&lt;/p&gt;</description><link>https://noiselabs.io/2010/02/21/mark-all-messages-as-read-in-gmail-in-3-easy-steps/</link><guid isPermaLink="false">3a5cb74c-38b7-4ed9-aea5-a8b376c57e12</guid><category>GMail</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Sun, 21 Feb 2010 16:42:00 GMT</pubDate><content:encoded>&lt;p&gt;Want to get rid of all those unread messages in Gmail? Or, just like me, have some unread messages you can't find and want to reset the unread count to zero? Well, here is the solution:&lt;/p&gt;
-
-&lt;p&gt;Type "&lt;strong&gt;is:unread&lt;/strong&gt;" in the search bar. Then select "&lt;strong&gt;Unread&lt;/strong&gt;" as seen in the picture below.&lt;/p&gt;
-
+&lt;p&gt;If you are interested in &lt;strong&gt;Portage features and usage&lt;/strong&gt; check the &lt;a href="http://www.gentoo.org/doc/en/handbook/handbook-x86.xml?part=2&amp;amp;chap=1%22"&gt;Gentoo Handbook page about Portage&lt;/a&gt;. And if you got curious about &lt;strong&gt;Portage history&lt;/strong&gt; I recommend the &lt;a href="http://www.gentoo.org/doc/en/articles/making-the-distro-p3.xml"&gt;this article&lt;/a&gt; by &lt;strong&gt;Daniel Robbins&lt;/strong&gt;, the founder of Gentoo.&lt;/p&gt;
+&lt;p&gt;To know more about the Chromium OS project and Google Chrome OS check &lt;a href="http://www.chromium.org/chromium-os"&gt;this&lt;/a&gt;.&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title>Mark all messages as Read in Gmail (in 3 easy steps)</title><description>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;Want to get rid of all those unread messages in Gmail? Or, just like me, have some unread messages you can't find and want to reset the unread count to zero? Well, here is the solution:&lt;/p&gt;
+&lt;p&gt;Type &amp;quot;&lt;strong&gt;is:unread&lt;/strong&gt;&amp;quot; in the search bar. Then select &amp;quot;&lt;strong&gt;Unread&lt;/strong&gt;&amp;quot;&lt;/p&gt;&lt;/div&gt;</description><link>https://noiselabs.io/2010/02/21/mark-all-messages-as-read-in-gmail-in-3-easy-steps/</link><guid isPermaLink="false">59ec9985ebb7c300b0ab1adc</guid><category>GMail</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Sun, 21 Feb 2010 16:42:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;Want to get rid of all those unread messages in Gmail? Or, just like me, have some unread messages you can't find and want to reset the unread count to zero? Well, here is the solution:&lt;/p&gt;
+&lt;p&gt;Type &amp;quot;&lt;strong&gt;is:unread&lt;/strong&gt;&amp;quot; in the search bar. Then select &amp;quot;&lt;strong&gt;Unread&lt;/strong&gt;&amp;quot; as seen in the picture below.&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://noisebleed.blogetery.com/files/2010/02/mark-all-messages-read-gmail_1.jpg" alt="alt"&gt;&lt;/p&gt;
-
-&lt;p&gt;In the "More actions" dropdown select "&lt;strong&gt;Mark as read&lt;/strong&gt;".&lt;/p&gt;
-
+&lt;p&gt;In the &amp;quot;More actions&amp;quot; dropdown select &amp;quot;&lt;strong&gt;Mark as read&lt;/strong&gt;&amp;quot;.&lt;/p&gt;
 &lt;p&gt;&lt;img src="http://noisebleed.blogetery.com/files/2010/02/mark-all-messages-read-gmail_2.jpg" alt="alt"&gt;&lt;/p&gt;
-
-&lt;p&gt;And that's it. Your inbox shouldn't be reporting any unread messages by now.&lt;/p&gt;</content:encoded></item><item><title>Check UTF-8 input in PHP: only letters</title><description>&lt;p&gt;This is a simple way to check a UTF-8 string with PHP function &lt;a href="http://us3.php.net/manual/en/function.preg-match.php"&gt;preg_match&lt;/a&gt;  in search for anything that isn't a letter, which includes all UTF-8 letters and not just ASCII. Preg&lt;em&gt;match performs a regular match on the given input using a pattern. The pattern used tells preg&lt;/em&gt;&lt;/p&gt;</description><link>https://noiselabs.io/2010/02/18/check-utf-8-input-in-php-only-letters/</link><guid isPermaLink="false">eabd943b-bbd6-4707-ba89-3fbfa059464c</guid><category>PHP</category><category>UTF-8</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Thu, 18 Feb 2010 10:58:00 GMT</pubDate><content:encoded>&lt;p&gt;This is a simple way to check a UTF-8 string with PHP function &lt;a href="http://us3.php.net/manual/en/function.preg-match.php"&gt;preg_match&lt;/a&gt;  in search for anything that isn't a letter, which includes all UTF-8 letters and not just ASCII. Preg&lt;em&gt;match performs a regular match on the given input using a pattern. The pattern used tells preg&lt;/em&gt;match to look for letters (&lt;code&gt;\p{L}&lt;/code&gt;) using Unicode (&lt;code&gt;/u&lt;/code&gt;).&lt;/p&gt;
-
+&lt;p&gt;And that's it. Your inbox shouldn't be reporting any unread messages by now.&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title>Check UTF-8 input in PHP: only letters</title><description>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;This is a simple way to check a UTF-8 string with PHP function &lt;a href="http://us3.php.net/manual/en/function.preg-match.php"&gt;preg_match&lt;/a&gt;  in search for anything that isn't a letter, which includes all UTF-8 letters and not just ASCII. Preg_match performs a regular match on the given input using a pattern. The pattern used tells preg_&lt;/p&gt;&lt;/div&gt;</description><link>https://noiselabs.io/2010/02/18/check-utf-8-input-in-php-only-letters/</link><guid isPermaLink="false">59ec9985ebb7c300b0ab1adb</guid><category>PHP</category><category>UTF-8</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Thu, 18 Feb 2010 10:58:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;This is a simple way to check a UTF-8 string with PHP function &lt;a href="http://us3.php.net/manual/en/function.preg-match.php"&gt;preg_match&lt;/a&gt;  in search for anything that isn't a letter, which includes all UTF-8 letters and not just ASCII. Preg_match performs a regular match on the given input using a pattern. The pattern used tells preg_match to look for letters (&lt;code&gt;\p{L}&lt;/code&gt;) using Unicode (&lt;code&gt;/u&lt;/code&gt;).&lt;/p&gt;
 &lt;p&gt;The function to accomplish this could look like this:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;&amp;lt;?php
 
 function checkUTF8Input($input) {
-    $pattern = '/^[\p{L} ]+$/u';
+	$pattern = '/^[\p{L} ]+$/u';
 
-    preg_match($pattern, $string, $matches);
+	preg_match($pattern, $string, $matches);
 
-    if (count($matches) &amp;gt; 0) {
-        return true; // String is OK (only letters)
+	if (count($matches) &amp;gt; 0) {
+  		return true; // String is OK (only letters)
     } else {
-      return false; // String has non-utf8 letters
+	  return false; // String has non-utf8 letters
     }
 }
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Take a look at &lt;a href="http://us3.php.net/manual/en/function.preg-match.php"&gt;preg_match&lt;/a&gt; to know more about this function used for regex operations.&lt;/p&gt;</content:encoded></item><item><title>How to prevent caching (force image reload) in PHP and/or JavaScript/jQuery</title><description>&lt;p&gt;If you are &lt;strong&gt;using images generated on-the-fly by a PHP script&lt;/strong&gt; (or another server language), like I'm doing on my web application, you surely do not want images to be read from cache as your users will be seeing the same first generated image (saved into cache) and not the&lt;/p&gt;</description><link>https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/</link><guid isPermaLink="false">c674357b-17b3-425c-81bc-360e81976114</guid><category>PHP</category><category>JavaScript</category><category>jQuery</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Fri, 12 Feb 2010 19:11:00 GMT</pubDate><content:encoded>&lt;p&gt;If you are &lt;strong&gt;using images generated on-the-fly by a PHP script&lt;/strong&gt; (or another server language), like I'm doing on my web application, you surely do not want images to be read from cache as your users will be seeing the same first generated image (saved into cache) and not the new generated versions.&lt;/p&gt;
-
+&lt;p&gt;Take a look at &lt;a href="http://us3.php.net/manual/en/function.preg-match.php"&gt;preg_match&lt;/a&gt; to know more about this function used for regex operations.&lt;/p&gt;
+&lt;/div&gt;</content:encoded></item><item><title>How to prevent caching (force image reload) in PHP and/or JavaScript/jQuery</title><description>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;If you are &lt;strong&gt;using images generated on-the-fly by a PHP script&lt;/strong&gt; (or another server language), like I'm doing on my web application, you surely do not want images to be read from cache as your users will be seeing the same first generated image (saved into cache) and not the&lt;/p&gt;&lt;/div&gt;</description><link>https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/</link><guid isPermaLink="false">59ec9985ebb7c300b0ab1ada</guid><category>PHP</category><category>JavaScript</category><category>jQuery</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Fri, 12 Feb 2010 19:11:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;p&gt;If you are &lt;strong&gt;using images generated on-the-fly by a PHP script&lt;/strong&gt; (or another server language), like I'm doing on my web application, you surely do not want images to be read from cache as your users will be seeing the same first generated image (saved into cache) and not the new generated versions.&lt;/p&gt;
 &lt;p&gt;You can play with some header commands and build a function like this...&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;function cacheKiller() {
-    header("Cache-Control: no-cache, must-revalidate");
-    header("Expires: Mon, 26 Jul 1997 05:00:00 GMT\n");
-    header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
+	header(&amp;quot;Cache-Control: no-cache, must-revalidate&amp;quot;);
+	header(&amp;quot;Expires: Mon, 26 Jul 1997 05:00:00 GMT\n&amp;quot;);
+	header(&amp;quot;Last-Modified: &amp;quot; . gmdate(&amp;quot;D, d M Y H:i:s&amp;quot;) . &amp;quot; GMT&amp;quot;);
 }
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;...but this will work for the whole page and not only for images.&lt;/p&gt;
-
 &lt;p&gt;So, to make sure the images shown are always up-to-date the simple way is to add a query section with a random number to the image URL in order to make the browser think that this is a different image, while keeping the same name.&lt;/p&gt;
-
 &lt;h3 id="php"&gt;PHP&lt;/h3&gt;
-
 &lt;p&gt;In PHP it works like this:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;// Generate a number that will never be repeated using the time function
-// that "returns the current time measured in the number of seconds since
-// the Unix Epoch (January 1 1970 00:00:00 GMT)"
+// that &amp;quot;returns the current time measured in the number of seconds since
+// the Unix Epoch (January 1 1970 00:00:00 GMT)&amp;quot;
 $cachekiller = time();
 
 // Include the generated number in the image URL
-&amp;lt;img src="path/to/image.png?{$cachekiller}"&amp;gt;&amp;lt;/pre&amp;gt;
+&amp;lt;img src=&amp;quot;path/to/image.png?{$cachekiller}&amp;quot;&amp;gt;&amp;lt;/pre&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;h3 id="javascriptjquery"&gt;JavaScript / jQuery&lt;/h3&gt;
-
 &lt;p&gt;If the image URL is built using JavaScript/jQuery the Math function is good choice to generate a random number.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;// Generate random number between 1 and 1000.
 var cachekiller = Math.floor(Math.random()*1001);
 
-$("#thumbnail").attr("src", "path/to/image.png?"+cachekiller);
-&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title>Howto Gentoo Linux with UTF-8 and Portuguese (Portugal) localization</title><description>&lt;h2 id="purpose"&gt;Purpose&lt;/h2&gt;
-
+$(&amp;quot;#thumbnail&amp;quot;).attr(&amp;quot;src&amp;quot;, &amp;quot;path/to/image.png?&amp;quot;+cachekiller);&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content:encoded></item><item><title>Howto Gentoo Linux with UTF-8 and Portuguese (Portugal) localization</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h2 id="purpose"&gt;Purpose&lt;/h2&gt;
 &lt;p&gt;How to configure a Gentoo Linux system to use UTF-8 character encoding and Portuguese (Portugal) localization (language and keyboard).&lt;/p&gt;
-
 &lt;h2 id="background"&gt;Background&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;UTF-8&lt;/strong&gt; is a variable-length character encoding, which in this instance means that it uses 1 to 4 bytes per symbol. So, the first UTF-8 byte is used for encoding&lt;/p&gt;</description><link>https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/</link><guid isPermaLink="false">929f62eb-2383-4398-99b9-a1c40cb1c5fb</guid><category>Gentoo</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Tue, 31 Mar 2009 14:21:00 GMT</pubDate><content:encoded>&lt;h2 id="purpose"&gt;Purpose&lt;/h2&gt;
-
+&lt;p&gt;&lt;strong&gt;UTF-8&lt;/strong&gt; is a variable-length character encoding, which in this instance means that it uses 1 to 4 bytes per symbol. So, the first UTF-8 byte is used for encoding&lt;/p&gt;&lt;/div&gt;</description><link>https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/</link><guid isPermaLink="false">59ec9985ebb7c300b0ab1ad9</guid><category>Gentoo</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Tue, 31 Mar 2009 14:21:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h2 id="purpose"&gt;Purpose&lt;/h2&gt;
 &lt;p&gt;How to configure a Gentoo Linux system to use UTF-8 character encoding and Portuguese (Portugal) localization (language and keyboard).&lt;/p&gt;
-
 &lt;h2 id="background"&gt;Background&lt;/h2&gt;
-
-&lt;p&gt;&lt;strong&gt;UTF-8&lt;/strong&gt; is a variable-length character encoding, which in this instance means that it uses 1 to 4 bytes per symbol. So, the first UTF-8 byte is used for encoding ASCII, giving the character set full backwards compatibility with ASCII. UTF-8 means that ASCII and Latin characters are interchangeable with little increase in the size of the data, because only the first bit is used.
+&lt;p&gt;&lt;strong&gt;UTF-8&lt;/strong&gt; is a variable-length character encoding, which in this instance means that it uses 1 to 4 bytes per symbol. So, the first UTF-8 byte is used for encoding ASCII, giving the character set full backwards compatibility with ASCII. UTF-8 means that ASCII and Latin characters are interchangeable with little increase in the size of the data, because only the first bit is used.&lt;br&gt;
 UTF-8 allows you to work in a standards-compliant and internationally accepted multilingual environment, with a comparatively low data redundancy. UTF-8 is the preferred way for transmitting non-ASCII characters over the Internet, through Email, IRC or almost any other medium.&lt;/p&gt;
-
 &lt;p&gt;A &lt;strong&gt;Locale&lt;/strong&gt; is a set of information that most programs use for determining country and language specific settings. The locales and their data are part of the system library and can be found at &lt;code&gt;/usr/share/locale&lt;/code&gt; on most systems. A locale name is generally named &lt;em&gt;ab_CD&lt;/em&gt; where &lt;em&gt;ab&lt;/em&gt; is your two (or three) letter language code (as specified in ISO-639) and &lt;code&gt;CD&lt;/code&gt; is your two letter country code (as specified in ISO-3166). Variants are often appended to locale names, e.g. &lt;code&gt;en_GB.utf8&lt;/code&gt; or &lt;code&gt;de_DE@euro&lt;/code&gt;.&lt;/p&gt;
-
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
-
 &lt;p&gt;Specify the locales we will need in &lt;code&gt;/etc/locale.gen:&lt;/code&gt;&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;# vi /etc/locale.gen
 en_GB ISO-8859-1
 en_GB.UTF-8 UTF-8
@@ -422,124 +270,84 @@ pt_PT@euro ISO-8859-15
 pt_PT.UTF-8 UTF-8
 pt_PT.UTF-8@euro UTF-8
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;The next step is to run &lt;code&gt;locale-gen&lt;/code&gt;. It will generate all the locales we have specified in the &lt;code&gt;/etc/locale.gen&lt;/code&gt; file.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;# locale-gen
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;There is one environment variable that needs to be set in order to use our new UTF-8 locales: &lt;code&gt;LC_CTYPE&lt;/code&gt; (or optionally &lt;code&gt;LANG&lt;/code&gt;, if you want to change the system language as well). Setting the locale globally should be done using &lt;code&gt;/etc/env.d/02locale&lt;/code&gt;.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;# vi /etc/env.d/02locale
-LANG="pt_PT.UTF-8@euro"
+LANG=&amp;quot;pt_PT.UTF-8@euro&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;Now update the update the environment after the change&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;# env-update &amp;amp;&amp;amp; source /etc/profile
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The keyboard layout used by the console is set in &lt;code&gt;/etc/conf.d/keymaps&lt;/code&gt; by the &lt;code&gt;KEYMAP&lt;/code&gt; variable. For a Portuguese keyboard use pt-latin1 or pt-latin9. Set also EXTENDED_KEYMAPS attributes like "euro".&lt;/p&gt;
-
+&lt;p&gt;The keyboard layout used by the console is set in &lt;code&gt;/etc/conf.d/keymaps&lt;/code&gt; by the &lt;code&gt;KEYMAP&lt;/code&gt; variable. For a Portuguese keyboard use pt-latin1 or pt-latin9. Set also EXTENDED_KEYMAPS attributes like &amp;quot;euro&amp;quot;.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;# vi /etc/conf.d/keymaps&amp;lt;/pre&amp;gt;
-KEYMAP="pt-latin9"
-SET_WINDOWKEYS="yes"
-EXTENDED_KEYMAPS="backspace keypad euro"
+KEYMAP=&amp;quot;pt-latin9&amp;quot;
+SET_WINDOWKEYS=&amp;quot;yes&amp;quot;
+EXTENDED_KEYMAPS=&amp;quot;backspace keypad euro&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;To enable UTF-8 on the console, you need to edit &lt;code&gt;/etc/rc.conf&lt;/code&gt; and set &lt;code&gt;UNICODE="yes"&lt;/code&gt;.&lt;/p&gt;
-
+&lt;p&gt;To enable UTF-8 on the console, you need to edit &lt;code&gt;/etc/rc.conf&lt;/code&gt; and set &lt;code&gt;UNICODE=&amp;quot;yes&amp;quot;&lt;/code&gt;.&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;# vi /etc/rc.conf
-UNICODE="yes"
+UNICODE=&amp;quot;yes&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;The keyboard layout to be used by the X server is specified in &lt;code&gt;/etc/X11/xorg.conf&lt;/code&gt; by the &lt;code&gt;XkbLayout&lt;/code&gt; option.&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;# vi /etc/X11/xorg.conf
-Section "InputDevice"
-Identifier  "Keyboard0"
-Driver      "kbd"
-Option      "XkbLayout" "pt"
+Section &amp;quot;InputDevice&amp;quot;
+Identifier  &amp;quot;Keyboard0&amp;quot;
+Driver  	&amp;quot;kbd&amp;quot;
+Option	  	&amp;quot;XkbLayout&amp;quot; &amp;quot;pt&amp;quot;
 ...
 EndSection
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;There is also additional localisation variable called LINGUAS, which affects to localisation files that get installed in gettext-based programs, and decides used localisation for some specific software packages, such as &lt;code&gt;kde-base/kde-i18n&lt;/code&gt; and &lt;code&gt;app-office/openoffice&lt;/code&gt;. The variable takes in &lt;em&gt;space&lt;/em&gt;-separated list of language codes, and suggested place to set it is &lt;code&gt;/etc/make.conf&lt;/code&gt;:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;# vi /etc/make.conf
-LINGUAS="pt pt_PT en en_GB"
+LINGUAS=&amp;quot;pt pt_PT en en_GB&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;And that's it! Hopefully your system should now be running in full UTF-8/Portuguese support. Good linuxing ;)&lt;/p&gt;
-
 &lt;h2 id="sources"&gt;Sources&lt;/h2&gt;
-
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="http://www.gentoo.org/doc/en/utf-8.xml"&gt;http://www.gentoo.org/doc/en/utf-8.xml"&gt;Using UTF-8 with Gentoo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="http://www.gentoo.org/doc/en/utf-8.xml%22%3Ehttp://www.gentoo.org/doc/en/utf-8.xml"&gt;Using UTF-8 with Gentoo&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="http://www.gentoo.org/doc/en/guide-localization.xml"&gt;Gentoo Linux Localization Guide&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title>Resume wget broken downloads</title><description>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
-
+&lt;/ul&gt;
+&lt;/div&gt;</content:encoded></item><item><title>Resume wget broken downloads</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;How to resume a partial file downloaded from wget instead of downloading the same file from the beginning?&lt;/p&gt;
-
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
-
 &lt;p&gt;Use the &lt;code&gt;-c/--continue&lt;/code&gt; option of wget&lt;/p&gt;
-
 &lt;p&gt;From man wget:&lt;/p&gt;
-
 &lt;blockquote&gt;
-  &lt;p&gt;"Continue getting a partially-downloaded file.  This is useful when you want to finish up a download started by a previous&lt;/p&gt;&lt;/blockquote&gt;</description><link>https://noiselabs.io/2008/10/16/gentoo-resume-wget-broken-downloads/</link><guid isPermaLink="false">f70b1c8f-a6c3-493d-b271-e649df98d028</guid><category>Linux</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Thu, 16 Oct 2008 10:02:00 GMT</pubDate><content:encoded>&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
-
+&lt;p&gt;&amp;quot;Continue getting a partially-downloaded file.  This is useful when you want to finish up a download started by a&lt;/p&gt;&lt;/blockquote&gt;&lt;/div&gt;</description><link>https://noiselabs.io/2008/10/16/gentoo-resume-wget-broken-downloads/</link><guid isPermaLink="false">59ec9985ebb7c300b0ab1ad8</guid><category>Linux</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Thu, 16 Oct 2008 10:02:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h2 id="problem"&gt;Problem&lt;/h2&gt;
 &lt;p&gt;How to resume a partial file downloaded from wget instead of downloading the same file from the beginning?&lt;/p&gt;
-
 &lt;h2 id="solution"&gt;Solution&lt;/h2&gt;
-
 &lt;p&gt;Use the &lt;code&gt;-c/--continue&lt;/code&gt; option of wget&lt;/p&gt;
-
 &lt;p&gt;From man wget:&lt;/p&gt;
-
 &lt;blockquote&gt;
-  &lt;p&gt;"Continue getting a partially-downloaded file.  This is useful when you want to finish up a download started by a previous instance of Wget, or by another program."&lt;/p&gt;
+&lt;p&gt;&amp;quot;Continue getting a partially-downloaded file.  This is useful when you want to finish up a download started by a previous instance of Wget, or by another program.&amp;quot;&lt;/p&gt;
 &lt;/blockquote&gt;
-
 &lt;p&gt;First fetch:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;# wget http://build.chromium.org/buildbot/archives/chromium.tgz
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;p&gt;Resume partial file:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;# wget -c http://build.chromium.org/buildbot/archives/chromium.tgz
-&lt;/code&gt;&lt;/pre&gt;</content:encoded></item><item><title>Emerge of subversion fails on java-config</title><description>&lt;h2 id="theproblem"&gt;The problem&lt;/h2&gt;
-
+&lt;pre&gt;&lt;code&gt;# wget -c http://build.chromium.org/buildbot/archives/chromium.tgz&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content:encoded></item><item><title>Emerge of subversion fails on java-config</title><description>&lt;div class="kg-card-markdown"&gt;&lt;h2 id="theproblem"&gt;The problem&lt;/h2&gt;
 &lt;p&gt;I was trying to install dev-util/subversion but emerge failed when java-config was called.&lt;/p&gt;
-
 &lt;p&gt;The output:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;Traceback (most recent call last):
-File "/usr/bin/java-config-2", line 8, in &amp;amp;lt;module&amp;amp;gt;
+File &amp;quot;/usr/bin/java-config-2&amp;quot;, line 8, in &amp;amp;lt;module&amp;amp;gt;
 from java_config_2 import __version__
-ImportError: No module named java_config_2&amp;lt;/span&amp;&lt;/code&gt;&lt;/pre&gt;</description><link>https://noiselabs.io/2008/09/25/gentoo-emerge-of-subversion-fails-on-java-config/</link><guid isPermaLink="false">42a0806f-a4b0-499c-ae17-aa799b364988</guid><category>Gentoo</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Thu, 25 Sep 2008 14:56:00 GMT</pubDate><content:encoded>&lt;h2 id="theproblem"&gt;The problem&lt;/h2&gt;
-
+ImportError: No module named java_config_2&amp;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description><link>https://noiselabs.io/2008/09/25/gentoo-emerge-of-subversion-fails-on-java-config/</link><guid isPermaLink="false">59ec9985ebb7c300b0ab1ad7</guid><category>Gentoo</category><dc:creator>Vítor Brandão</dc:creator><pubDate>Thu, 25 Sep 2008 14:56:00 GMT</pubDate><content:encoded>&lt;div class="kg-card-markdown"&gt;&lt;h2 id="theproblem"&gt;The problem&lt;/h2&gt;
 &lt;p&gt;I was trying to install dev-util/subversion but emerge failed when java-config was called.&lt;/p&gt;
-
 &lt;p&gt;The output:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;Traceback (most recent call last):
-File "/usr/bin/java-config-2", line 8, in &amp;amp;lt;module&amp;amp;gt;
+File &amp;quot;/usr/bin/java-config-2&amp;quot;, line 8, in &amp;amp;lt;module&amp;amp;gt;
 from java_config_2 import __version__
 ImportError: No module named java_config_2&amp;lt;/span&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;h2 id="possiblesolutionspanh4"&gt;Possible solution&lt;/h2&gt;
-
 &lt;p&gt;python-updater was not executed after a python upgrade so run it now:&lt;/p&gt;
-
 &lt;pre&gt;&lt;code&gt;# python-updater -iv
 &lt;/code&gt;&lt;/pre&gt;
-
 &lt;h2 id="sources"&gt;Sources&lt;/h2&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;a href="http://bugs.gentoo.org/show_bug.cgi?id=236131"&gt;Gentoo Bug 236131 - Stabilize dev-util/subversion-1.5.1&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item></channel></rss>
+&lt;/ul&gt;
+&lt;/div&gt;</content:encoded></item></channel></rss>
