@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Ebuild - Noiselabs]]></title><description><![CDATA[Software Consultancy]]></description><link>https://noiselabs.io/</link><image><url>https://noiselabs.io/favicon.png</url><title>Ebuild - Noiselabs</title><link>https://noiselabs.io/</link></image><generator>Ghost 1.16</generator><lastBuildDate>Sun, 05 Nov 2017 16:29:46 GMT</lastBuildDate><atom:link href="https://noiselabs.io/tag/ebuild/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Ebuild for CoovaChilli v1.2.2 coming soon]]></title><description><![CDATA[<div class="kg-card-markdown"><p>It has been a while since I took <a href="http://bugs.gentoo.org/217141">Laurento Fritella contributions on bugzilla for CoovaChilli-1.0.11</a>  and made them available through <a href="http://overlays.gentoo.org/proj/sunrise">Sunrise overlay</a>. In the meantime I've tried to submit version 1.0.14 but run into some problems with SSL and I was back then completely out of</p></div>]]></description><link>https://noiselabs.io/2010/03/08/ebuild-for-coovachilli-v1-2-2-coming-soon/</link><guid isPermaLink="false">59ff243c63672a00aadb806a</guid><category><![CDATA[Gentoo]]></category><category><![CDATA[Ebuild]]></category><dc:creator><![CDATA[Vítor Brandão]]></dc:creator><pubDate>Mon, 08 Mar 2010 00:56:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><p>It has been a while since I took <a href="http://bugs.gentoo.org/217141">Laurento Fritella contributions on bugzilla for CoovaChilli-1.0.11</a>  and made them available through <a href="http://overlays.gentoo.org/proj/sunrise">Sunrise overlay</a>. In the meantime I've tried to submit version 1.0.14 but run into some problems with SSL and I was back then completely out of time to fix it. Ebuild for <em>version 1.0.11</em> remains the only available.</p>
+<p>Recently I decided to visit <a href="http://coova.org/wiki/index.php/CoovaChilli">CoovaChilli website</a> and check the latest version of the software. CoovaChilli is now at <em>version 1.2.2</em>. I've decided to dedicate some time to make this version available in Gentoo and started working on it. It's also my intention to shorten the gap between new releases of CoovaChilli and their availability in the Overlay ;)</p>
+<h3 id="okbutwhatiscoovachilli">OK, but.. what is CoovaChilli?</h3>
+<p>Here goes a description taken from the website:</p>
+<blockquote>
+<p>CoovaChilli is an open-source software access controller, based on the popular (but now defunct) ChilliSpot project, and is actively maintained by an original ChilliSpot contributor. CoovaChilli is released under the GNU General Public License (GPL). CoovaChilli is a feature rich software access controller that provides a captive portal/walled-garden environment and uses RADIUS or a HTTP protocol for access provisioning and accounting.  CoovaChilli is an integral part of the CoovaAP OpenWRT-based firmware which is specialized for hotspots.</p>
+</blockquote>
+<p>So CoovaChilli is a Wireless LAN Access Point Controller. For those who used Chillispot this is the natural successor.</p>
+<h3 id="followthedevelopmentprocessongithub">Follow the development process on GitHub</h3>
+<p>I'm storing the Ebuild on <a href="http://github.com/noisebleed">my GitHub account</a> so for those wishing to check out the evolution of the Ebuild (<em>not sure why would someone want to do this but... here it goes</em>) just open <a href="http://github.com/noisebleed/noisebleed-overlay/blob/master/net-wireless/coova-chilli/coova-chilli-1.2.2.ebuild">this link</a>.</p>
+<p>Of course is always possible to checkout the git repo and retrieve <a href="http://github.com/noisebleed/noisebleed-overlay">my personal Gentoo overlay</a> which includes the CoovaChilli ebuilds. To do this just execute:</p>
+<pre><code>$ git clone git://github.com/noisebleed/noisebleed-overlay.git
+</code></pre>
+<p>Make sure to keep the repo updated:</p>
+<pre><code>$ git pull remote origin
+</code></pre>
+<h3 id="tryversion1011availableonsunriseoverlay">Try version 1.0.11 available on Sunrise overlay</h3>
+<p>The <strong>Sunrise overlay</strong> is the place I choose to provide the CoovaChilli ebuilds. To use the ebuild (coova-chilli-1.0.11) first bring the overlay into your system through &lt;a <a href="http://layman.sourceforge.net/">Layman</a>:</p>
+<p>Install layman:</p>
+<pre><code># USE=&quot;subversion&quot; emerge -va app-portage/layman
+# layman -f -a sunrise
+</code></pre>
+<p>Since layman 1.2.3 use <code>/var/lib/</code> instead of <code>/usr/local/portage/</code>:</p>
+<pre><code># echo &quot;source /var/lib/layman/make.conf&quot; &gt;&gt; /etc/make.conf
+</code></pre>
+<p>Update the overlay:</p>
+<pre><code># layman -s sunrise
+</code></pre>
+<p>Then just emerge the normal way:</p>
+<pre><code># emerge -av net-wireless/coova-chilli
+</code></pre>
+<p>More information about using overlays can be found on the <a href="http://www.gentoo.org/proj/en/overlays/userguide.xml">Gentoo documentation</a>. Specific Sunrise instructions are available on <a href="http://overlays.gentoo.org/proj/sunrise">Sunrise's wiki</a>.</p>
+</div>]]></content:encoded></item></channel></rss>

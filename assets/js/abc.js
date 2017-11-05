@@ -2,8 +2,7 @@
 
 var abc = (function ($) {
 
-    var
-    mainMenu = function () {
+    var mainMenu = function () {
         var menuOvrl = $('.js-main-menu-ovrl');
         $('.js-main-menu-open').on('click', function (e) {
             e.preventDefault();
@@ -17,6 +16,8 @@ var abc = (function ($) {
 
     // change color according to the background
     headerTitles = function () {
+        return;
+
         if ($('.js-bg-check').length && $('.js-blog-bg-image').length) {
             var imgPath = $('.js-blog-bg-image').css('background-image');
             imgPath = imgPath && imgPath.match(/url\((['"])?(.*?)\1\)/);

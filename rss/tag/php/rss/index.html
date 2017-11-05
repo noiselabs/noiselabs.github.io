@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[PHP - Noiselabs]]></title><description><![CDATA[Software Consultancy]]></description><link>https://noiselabs.io/</link><image><url>https://noiselabs.io/favicon.png</url><title>PHP - Noiselabs</title><link>https://noiselabs.io/</link></image><generator>Ghost 1.16</generator><lastBuildDate>Sun, 05 Nov 2017 16:38:01 GMT</lastBuildDate><atom:link href="https://noiselabs.io/tag/php/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Sanitize filenames with PHP]]></title><description><![CDATA[<div class="kg-card-markdown"><h3 id="pdfgenerationandinvalidcharacters">PDF generation and invalid characters</h3>
+<p>While working with the <a href="http://www.datatables.net/extras/tabletools/">TableTools</a> PDF generator included in the great <a href="http://www.datatables.net/">DataTables</a> jQuery plugin I've noticed that sometimes the script failed to generate the PDF file. The cause? Invalid characters in the filename.</p>
+<p>Well, to solve this issue I've made a simple PHP function to</p></div>]]></description><link>https://noiselabs.io/2011/04/25/sanitize-filenames-with-php/</link><guid isPermaLink="false">59ff243c63672a00aadb806d</guid><category><![CDATA[PHP]]></category><dc:creator><![CDATA[Vítor Brandão]]></dc:creator><pubDate>Mon, 25 Apr 2011 16:13:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><h3 id="pdfgenerationandinvalidcharacters">PDF generation and invalid characters</h3>
+<p>While working with the <a href="http://www.datatables.net/extras/tabletools/">TableTools</a> PDF generator included in the great <a href="http://www.datatables.net/">DataTables</a> jQuery plugin I've noticed that sometimes the script failed to generate the PDF file. The cause? Invalid characters in the filename.</p>
+<p>Well, to solve this issue I've made a simple PHP function to return a safe version of the given filename.</p>
+<h3 id="howitworks">How it works?</h3>
+<p>Reads a filename string and replace each <em>dangerous</em> character with an underscore. Of course you can use any other <em>safe</em> character instead of an underscore.</p>
+<p>The Code:</p>
+<pre><code class="language-language-php">&lt;?php
+
+class Helper
+{
+    /**
+     * Returns a safe filename, for a given platform (OS), by
+     * replacing all dangerous characters with an underscore.
+     *
+     * @param string $dangerousFilename The source filename
+     * to be &quot;sanitized&quot;
+     * @param string $platform The target OS
+     *
+     * @return string A safe version of the input
+     * filename
+     */
+    public static function sanitizeFileName($dangerousFilename, $platform = 'Unix')
+    {
+        if (in_array(strtolower($platform), array('unix', 'linux'))) {
+            // our list of &quot;dangerous characters&quot;, add/remove
+            // characters if necessary
+            $dangerousCharacters = array(&quot; &quot;, '&quot;', &quot;'&quot;, &quot;&amp;&quot;, &quot;/&quot;, &quot;\\&quot;, &quot;?&quot;, &quot;#&quot;);
+        } else {
+            // no OS matched? return the original filename then...
+            return $dangerousFilename;
+        }
+
+        // every forbidden character is replace by an underscore
+        return str_replace($dangerousCharacters, '_', $dangerousFilename);
+        }
+    }
+</code></pre>
+<p>Usage:</p>
+<pre><code class="language-language-php">$safeFilename = Helper::sanitizeFileName('#my  unsaf&amp;/file\name?&quot;');
+</code></pre>
+<h3 id="downloadthisandmore">Download this and more...</h3>
+<p>This snippet and other useful [at least, I hope so] PHP methods are grouped on a git repo available via GitHub. This is also the best [and only] way to get the updated version of the code.</p>
+<p>Go to the <a href="https://github.com/noiselabs/noiselabs-php-toolkit">project's web page on GitHub</a> or download it right way with (you must have <a href="http://git-scm.com/">Git</a> installed first):</p>
+<pre><code>$ git clone git://github.com/noiselabs/noiselabs-php-toolkit.git</code></pre>
+</div>]]></content:encoded></item><item><title><![CDATA[Check UTF-8 input in PHP: only letters]]></title><description><![CDATA[<div class="kg-card-markdown"><p>This is a simple way to check a UTF-8 string with PHP function <a href="http://us3.php.net/manual/en/function.preg-match.php">preg_match</a>  in search for anything that isn't a letter, which includes all UTF-8 letters and not just ASCII. Preg_match performs a regular match on the given input using a pattern. The pattern used tells preg_</p></div>]]></description><link>https://noiselabs.io/2010/02/18/check-utf-8-input-in-php-only-letters/</link><guid isPermaLink="false">59ff243c63672a00aadb8066</guid><category><![CDATA[PHP]]></category><category><![CDATA[UTF-8]]></category><dc:creator><![CDATA[Vítor Brandão]]></dc:creator><pubDate>Thu, 18 Feb 2010 10:58:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><p>This is a simple way to check a UTF-8 string with PHP function <a href="http://us3.php.net/manual/en/function.preg-match.php">preg_match</a>  in search for anything that isn't a letter, which includes all UTF-8 letters and not just ASCII. Preg_match performs a regular match on the given input using a pattern. The pattern used tells preg_match to look for letters (<code>\p{L}</code>) using Unicode (<code>/u</code>).</p>
+<p>The function to accomplish this could look like this:</p>
+<pre><code>&lt;?php
+
+function checkUTF8Input($input) {
+	$pattern = '/^[\p{L} ]+$/u';
+
+	preg_match($pattern, $string, $matches);
+
+	if (count($matches) &gt; 0) {
+  		return true; // String is OK (only letters)
+    } else {
+	  return false; // String has non-utf8 letters
+    }
+}
+</code></pre>
+<p>Take a look at <a href="http://us3.php.net/manual/en/function.preg-match.php">preg_match</a> to know more about this function used for regex operations.</p>
+</div>]]></content:encoded></item><item><title><![CDATA[How to prevent caching (force image reload) in PHP and/or JavaScript/jQuery]]></title><description><![CDATA[<div class="kg-card-markdown"><p>If you are <strong>using images generated on-the-fly by a PHP script</strong> (or another server language), like I'm doing on my web application, you surely do not want images to be read from cache as your users will be seeing the same first generated image (saved into cache) and not the</p></div>]]></description><link>https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/</link><guid isPermaLink="false">59ff243c63672a00aadb8065</guid><category><![CDATA[PHP]]></category><category><![CDATA[JavaScript]]></category><category><![CDATA[jQuery]]></category><dc:creator><![CDATA[Vítor Brandão]]></dc:creator><pubDate>Fri, 12 Feb 2010 19:11:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><p>If you are <strong>using images generated on-the-fly by a PHP script</strong> (or another server language), like I'm doing on my web application, you surely do not want images to be read from cache as your users will be seeing the same first generated image (saved into cache) and not the new generated versions.</p>
+<p>You can play with some header commands and build a function like this...</p>
+<pre><code>function cacheKiller() {
+	header(&quot;Cache-Control: no-cache, must-revalidate&quot;);
+	header(&quot;Expires: Mon, 26 Jul 1997 05:00:00 GMT\n&quot;);
+	header(&quot;Last-Modified: &quot; . gmdate(&quot;D, d M Y H:i:s&quot;) . &quot; GMT&quot;);
+}
+</code></pre>
+<p>...but this will work for the whole page and not only for images.</p>
+<p>So, to make sure the images shown are always up-to-date the simple way is to add a query section with a random number to the image URL in order to make the browser think that this is a different image, while keeping the same name.</p>
+<h3 id="php">PHP</h3>
+<p>In PHP it works like this:</p>
+<pre><code>// Generate a number that will never be repeated using the time function
+// that &quot;returns the current time measured in the number of seconds since
+// the Unix Epoch (January 1 1970 00:00:00 GMT)&quot;
+$cachekiller = time();
+
+// Include the generated number in the image URL
+&lt;img src=&quot;path/to/image.png?{$cachekiller}&quot;&gt;&lt;/pre&gt;
+</code></pre>
+<h3 id="javascriptjquery">JavaScript / jQuery</h3>
+<p>If the image URL is built using JavaScript/jQuery the Math function is good choice to generate a random number.</p>
+<pre><code>// Generate random number between 1 and 1000.
+var cachekiller = Math.floor(Math.random()*1001);
+
+$(&quot;#thumbnail&quot;).attr(&quot;src&quot;, &quot;path/to/image.png?&quot;+cachekiller);</code></pre>
+</div>]]></content:encoded></item></channel></rss>
