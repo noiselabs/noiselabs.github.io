@@ -1,3 +1,3 @@
 User-agent: *
-Sitemap: https://noiselabs.io/sitemap.xml
+Sitemap: http://localhost:2367/sitemap.xml
 Disallow: /ghost/
