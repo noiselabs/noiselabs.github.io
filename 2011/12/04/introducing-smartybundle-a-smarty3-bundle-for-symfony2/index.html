@@ -11,14 +11,15 @@
     <link rel="shortcut icon" href="../../../../favicon.ico">
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
-    <script type="text/javascript" src="../../../../assets/js/vendor/webfont.js?v=711ddc6e7b"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/webfont.js?v=4e3f135229"></script>
     <script>
         WebFont.load({
             google: {
                 families: [
+                    'Roboto:300,300i,400,400i,700,700i',
                     'Roboto Slab:400,300',
-                    'Merriweather:400,300,300italic,400italic,700,700italic',
-                    'Source Sans Pro:200,300,400,600,700,900']
+                    'Source Sans Pro:200,300,400,600,700,900'
+                ]
             }
         });
     </script>
@@ -31,33 +32,37 @@
         ga('send', 'pageview');
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../../../assets/css/highlightjs-github.min.css?v=711ddc6e7b">
-    <link rel="stylesheet" href="../../../../assets/css/style.css?v=711ddc6e7b">
+    <link rel="stylesheet" href="../../../../assets/css/highlightjs-github.min.css?v=4e3f135229">
+    <link rel="stylesheet" href="../../../../assets/css/style.css?v=4e3f135229">
 
-    <link rel="shortcut icon" href="../../../../favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <link rel="amphtml" href="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/amp/">
+    <link rel="shortcut icon" href="../../../../favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/amp/" />
     
-    <meta property="og:site_name" content="Noiselabs">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Introducing SmartyBundle, a Smarty3 bundle for Symfony2">
-    <meta property="og:description" content="Hello all! I've released yesterday the first version of SmartyBundle on GitHub. SmartyBundle SmartyBundle is a Symfony2  bundle that provides integration for the Smarty3 template engine. It will allow the usage of the Smarty template engine in Symfony2, instead of Twig or PHP templates. SmartyBundle is released under a LPGLv3">
-    <meta property="og:url" content="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/">
-    <meta property="article:published_time" content="2011-12-04T22:30:00.000Z">
-    <meta property="article:modified_time" content="2014-03-23T02:36:52.000Z">
-    <meta property="article:tag" content="Symfony">
-    <meta property="article:tag" content="Smarty">
-    <meta property="article:tag" content="SmartyBundle">
+    <meta property="og:site_name" content="Noiselabs" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Introducing SmartyBundle, a Smarty3 bundle for Symfony2" />
+    <meta property="og:description" content="Hello all! I&#x27;ve released yesterday the first version of SmartyBundle on GitHub. SmartyBundle SmartyBundle is a Symfony2  bundle that provides integration for the Smarty3 template engine. It will allow the usage of the Smarty template engine in Symfony2, instead of Twig or PHP templates. SmartyBundle is released under a LPGLv3" />
+    <meta property="og:url" content="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/" />
+    <meta property="og:image" content="https://noiselabs.io/content/images/2018/01/mikael-kristenson-242079.jpg" />
+    <meta property="article:published_time" content="2011-12-04T22:30:00.000Z" />
+    <meta property="article:modified_time" content="2018-01-22T21:38:34.000Z" />
+    <meta property="article:tag" content="Symfony" />
+    <meta property="article:tag" content="Smarty" />
+    <meta property="article:tag" content="SmartyBundle" />
     
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Introducing SmartyBundle, a Smarty3 bundle for Symfony2">
-    <meta name="twitter:description" content="Hello all! I've released yesterday the first version of SmartyBundle on GitHub. SmartyBundle SmartyBundle is a Symfony2  bundle that provides integration for the Smarty3 template engine. It will allow the usage of the Smarty template engine in Symfony2, instead of Twig or PHP templates. SmartyBundle is released under a LPGLv3">
-    <meta name="twitter:url" content="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/">
-    <meta name="twitter:label1" content="Written by">
-    <meta name="twitter:data1" content="Vítor Brandão">
-    <meta name="twitter:label2" content="Filed under">
-    <meta name="twitter:data2" content="Symfony, Smarty, SmartyBundle">
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Introducing SmartyBundle, a Smarty3 bundle for Symfony2" />
+    <meta name="twitter:description" content="Hello all! I&#x27;ve released yesterday the first version of SmartyBundle on GitHub. SmartyBundle SmartyBundle is a Symfony2  bundle that provides integration for the Smarty3 template engine. It will allow the usage of the Smarty template engine in Symfony2, instead of Twig or PHP templates. SmartyBundle is released under a LPGLv3" />
+    <meta name="twitter:url" content="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/" />
+    <meta name="twitter:image" content="https://noiselabs.io/content/images/2018/01/mikael-kristenson-242079.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Vítor Brandão" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Symfony, Smarty, SmartyBundle" />
+    <meta property="og:image:width" content="6480" />
+    <meta property="og:image:height" content="4320" />
     
     <script type="application/ld+json">
 {
@@ -73,19 +78,23 @@
         "name": "Vítor Brandão",
         "image": {
             "@type": "ImageObject",
-            "url": "https://noiselabs.io/content/images/2016/04/green-2.jpg",
-            "width": 450,
-            "height": 450
+            "url": "https://noiselabs.io/content/images/2018/01/2014-Hong-Kong-750x750-1.jpg",
+            "width": 750,
+            "height": 750
         },
-        "url": "https://noiselabs.io/author/vitor-brandao/",
-        "sameAs": [
-            "https://twitter.com/noiselabs"
-        ]
+        "url": "https://noiselabs.io/author/vitor/",
+        "sameAs": []
     },
     "headline": "Introducing SmartyBundle, a Smarty3 bundle for Symfony2",
     "url": "https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/",
     "datePublished": "2011-12-04T22:30:00.000Z",
-    "dateModified": "2014-03-23T02:36:52.000Z",
+    "dateModified": "2018-01-22T21:38:34.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://noiselabs.io/content/images/2018/01/mikael-kristenson-242079.jpg",
+        "width": 6480,
+        "height": 4320
+    },
     "keywords": "Symfony, Smarty, SmartyBundle",
     "description": "Hello all! I&#x27;ve released yesterday the first version of SmartyBundle on GitHub. SmartyBundle SmartyBundle is a Symfony2  bundle that provides integration for the Smarty3 template engine. It will allow the usage of the Smarty template engine in Symfony2, instead of Twig or PHP templates. SmartyBundle is released under a LPGLv3",
     "mainEntityOfPage": {
@@ -95,17 +104,10 @@
 }
     </script>
 
-    <script type="text/javascript" src="../../../../public/ghost-sdk.js?v=711ddc6e7b"></script>
-<script type="text/javascript">
-ghost.init({
-	clientId: "ghost-frontend",
-	clientSecret: "a703928d6198"
-});
-</script>
-    <meta name="generator" content="Ghost 1.16">
-    <link rel="alternate" type="application/rss+xml" title="Noiselabs" href="https://noiselabs.io/rss/index.rss">
+    <meta name="generator" content="Ghost 1.20" />
+    <link rel="alternate" type="application/rss+xml" title="Noiselabs" href="https://noiselabs.io/rss/" />
 
-    <script src="../../../../assets/js/vendor/modernizr.js?v=711ddc6e7b"></script>
+    <script src="../../../../assets/js/vendor/modernizr.js?v=4e3f135229"></script>
 </head>
 <body class="post-template tag-symfony tag-smarty tag-smartybundle">
     
@@ -137,9 +139,9 @@ ghost.init({
     <a href="https://noiselabs.io" class="header-back-btn js-bg-check left">
         Noiselabs
     </a>
-    <i class="fa fa-fw fa-search main-nav-ico element-dark js-open-search right"></i>
+    <i class="fa fa-fw fa-search main-nav-ico js-bg-check js-open-search right"></i>
 </nav>
-<header class="post-view-header js-blog-bg-image no-cover">
+<header class="post-view-header js-blog-bg-image " style="background-image: url(../../../../content/images/2018/01/mikael-kristenson-242079.jpg)">
     <div class="post-header-content">
         <h1 class="post-title js-bg-check">Introducing SmartyBundle, a Smarty3 bundle for Symfony2</h1>
         <section class="post-meta js-bg-check">
@@ -155,7 +157,7 @@ ghost.init({
         <section class="post-content row">
             <div class="small-12 columns"><div class="kg-card-markdown"><p>Hello all! I've released yesterday the first version of <a href="https://github.com/noiselabs/SmartyBundle">SmartyBundle</a> on GitHub.</p>
 <h2 id="smartybundle">SmartyBundle</h2>
-<p><strong>SmartyBundle</strong> is a <a href="http://symfony.com/">Symfony2</a>  <a href="http://symfony.com/doc/current/book/page_creation.html#page-creation-bundles">bundle</a> that provides integration for the <a href="http://www.smarty.net/">Smarty3</a> template engine. It will allow the usage of the Smarty template engine in Symfony2, instead of Twig or PHP templates. SmartyBundle is released under a LPGLv3 license. To download it you may:</p>
+<p><strong>SmartyBundle</strong> is a <a href="http://symfony.com/">Symfony2</a>  <a href="http://symfony.com/doc/current/book/page_creation.html#page-creation-bundles">bundle</a> that provides integration for the <a href="http://www.smarty.net/">Smarty3</a></a></strong> template engine. It will allow the usage of the Smarty template engine in Symfony2, instead of Twig or PHP templates. SmartyBundle is released under a LPGLv3 license. To download it you may:</p>
 <p>Git-clone-it:</p>
 <pre><code>$ git clone https://github.com/noiselabs/SmartyBundle.git&lt;/pre&gt;
 </code></pre>
@@ -170,24 +172,30 @@ ghost.init({
 <h2 id="tryit">Try it!</h2>
 <p>I welcome everyone interested to try it, test it and to improve its code by sending comments, suggestions and GitHub pull requests. Bugs and feature requests are tracked on <a href="https://github.com/noiselabs/SmartyBundle/issues">GitHub</a>.</p>
 <p>Thanks and see you soon.</p>
+<blockquote>
+<p><em>Header photo by <a href="https://unsplash.com/photos/MYXf7tGEntk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mikael Kristenson</a> on <a href="https://unsplash.com/collections/1547571/blog/6fa6b2f41e0ff1b74d84e7eaa94673f5?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p>
+</blockquote>
 </div></div>
         </section>
 
         <footer class="post-footer row">
             <div class="small-12 columns">
                 <section class="post-tags">
-                    Tags: <a href="../../../../tag/symfony/">Symfony</a>, <a href="../../../../tag/smarty/">Smarty</a>, <a href="../../../../tag/smartybundle/">SmartyBundle</a>
+                    Tags: <a href="../../../../tag/symfony/index.html">Symfony</a>, <a href="../../../../tag/smarty/index.html">Smarty</a>, <a href="../../../../tag/smartybundle/index.html">SmartyBundle</a>
                 </section>
 
                 <section class="share">
                     <h5>Share this post:</h5>
-                    <a class="icon-twitter" href="https://twitter.com/share?text=Introducing%20SmartyBundle%2C%20a%20Smarty3%20bundle%20for%20Symfony2&amp;url=https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <a class="icon-twitter" href="https://twitter.com/share?text=Introducing%20SmartyBundle%2C%20a%20Smarty3%20bundle%20for%20Symfony2&amp;url=https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/"
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                         <span class="hidden"><i class="fa fa-twitter-square"></i></span>
                     </a>
-                    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/"
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                         <span class="hidden"><i class="fa fa-facebook-square"></i></span>
                     </a>
-                    <a class="icon-google-plus" href="https://plus.google.com/share?url=https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <a class="icon-google-plus" href="https://plus.google.com/share?url=https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                         <span class="hidden"><i class="fa fa-google-plus-square"></i></span>
                     </a>
                 </section>
@@ -197,25 +205,32 @@ ghost.init({
         <div class="row post-prev-next-pagination">
             <div class="prev small-6 columns text-left">
                     <div class="prev-next-label">
-                        <a href="../../../04/25/failed-to-submit-batch-buffer-xorg/">
+                        <a href="../../../04/25/failed-to-submit-batch-buffer-xorg/index.html">
                             <i class="fa fa-angle-double-left"></i> Previous
                         </a>
                     </div>
-                    <a href="../../../04/25/failed-to-submit-batch-buffer-xorg/" class="title">
+                    <a href="../../../04/25/failed-to-submit-batch-buffer-xorg/index.html" class="title">
                         Failed to submit batch buffer (Xorg)
                     </a>
             </div>
             <div class="next small-6 columns text-right">
+                    <div class="prev-next-label">
+                        <a href="../../../../2018/01/22/ghost-docker/index.html">
+                            Next <i class="fa fa-angle-double-right"></i>
+                        </a>
+                    </div>
+                    <a href="../../../../2018/01/22/ghost-docker/index.html" class="title">
+                        Ghost, Dockerized.
+                    </a>
             </div>
         </div>
 
             <section class="author-info">
                 <div class="row">
                     <section class="post-author small-12 columns">
-                            <img src="../../../../content/images/2016/04/green-2.jpg" class="post-author-avatar" alt="Vítor Brandão">
+                            <img src="../../../../content/images/2018/01/2014-Hong-Kong-750x750-1.jpg" class="post-author-avatar" alt="Vítor Brandão">
                             <span class="author-label">Author</span>
-                            <h1><a href="../../../../author/vitor-brandao/" class="author-link-name">Vítor Brandão</a></h1>
-                            <p><a href="https://twitter.com/noiselabs" class="author-website">https://twitter.com/noiselabs</a></p>
+                            <h1><a href="../../../../author/vitor/index.html" class="author-link-name">Vítor Brandão</a></h1>
                     </section>
                 </div>
             </section>
@@ -254,14 +269,14 @@ ghost.init({
     <div class="row expanded">
         <div class="small-6 columns align-justify">
             <ul class="no-bullet">
-                <li>© 2017 <a href="mailto:vitor@noiselabs.io">Vítor Brandão</a>. All rights reserved.</li>
+                <li>&copy; 2017 <a href="mailto:vitor@noiselabs.io">Vítor Brandão</a>. All rights reserved.</li>
                 <li>Based on the ABC theme by <a href="http://pxt.be">pxt.be</a></li>
                 <li>Background photo by <a href="https://unsplash.com/@brxdlxy">Brad Huchteman</a></li>
                 <li>Proudly published with <a href="https://ghost.org">Ghost</a></li>
             </ul>
             <ul class="no-bullet">
                 <li><em><b>Noiselabs Consulting</b></em> is a <a href="http://team-neev.com" style="color: #00CCFF;"><em><b>Team Neev</b></em></a> partner.</li>
-                <li style="padding-top: 1em; padding-bottom: 1em;"><img src="../../../../assets/images/neev_white_wordmark.png?v=711ddc6e7b"></li>
+                <li style="padding-top: 1em; padding-bottom: 1em;"><img src="../../../../assets/images/neev_white_wordmark.png?v=4e3f135229"></li>
             </ul>
         </div>
         <div class="small-6 columns align-justify text-right">
@@ -291,13 +306,13 @@ ghost.init({
     </div>
 
     
-    <script type="text/javascript" src="../../../../assets/js/vendor/jquery-2.1.4.min.js?v=711ddc6e7b"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/foundation.min.js?v=711ddc6e7b"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/background-check.js?v=711ddc6e7b"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/jquery.ghostHunter.min.js?v=711ddc6e7b"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/images-loaded.js?v=711ddc6e7b"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/reading-time.js?v=711ddc6e7b"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/highlight.min.js?v=711ddc6e7b"></script>
-    <script type="text/javascript" src="../../../../assets/js/abc.js?v=711ddc6e7b"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/jquery-2.1.4.min.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/foundation.min.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/background-check.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/jquery.ghostHunter.min.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/images-loaded.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/reading-time.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/highlight.min.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/abc.js?v=4e3f135229"></script>
 </body>
 </html>

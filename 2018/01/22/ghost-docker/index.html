@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>Ghost, Dockerized.</title>
+
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../../../../favicon.ico">
+
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+    <script type="text/javascript" src="../../../../assets/js/vendor/webfont.js?v=4e3f135229"></script>
+    <script>
+        WebFont.load({
+            google: {
+                families: [
+                    'Roboto:300,300i,400,400i,700,700i',
+                    'Roboto Slab:400,300',
+                    'Source Sans Pro:200,300,400,600,700,900'
+                ]
+            }
+        });
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-77419315-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/highlightjs-github.min.css?v=4e3f135229">
+    <link rel="stylesheet" href="../../../../assets/css/style.css?v=4e3f135229">
+
+    <link rel="shortcut icon" href="../../../../favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="https://noiselabs.io/2018/01/22/ghost-docker/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="https://noiselabs.io/2018/01/22/ghost-docker/amp/" />
+    
+    <meta property="og:site_name" content="Noiselabs" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Ghost, Dockerized." />
+    <meta property="og:description" content="In this blogpost we&#x27;ll see how to Dockerize a local Ghost app for fun and profit. In a rush? Already familiar with Ghost? Jump to the technical bits. Posting, again It&#x27;s been a *looong* time since my last post. The time has come to break the silence and start posting" />
+    <meta property="og:url" content="https://noiselabs.io/2018/01/22/ghost-docker/" />
+    <meta property="og:image" content="https://noiselabs.io/content/images/2018/01/godslar-300303.jpg" />
+    <meta property="article:published_time" content="2018-01-22T20:25:03.000Z" />
+    <meta property="article:modified_time" content="2018-01-22T22:23:32.000Z" />
+    <meta property="article:tag" content="Ghost" />
+    <meta property="article:tag" content="Docker" />
+    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ghost, Dockerized." />
+    <meta name="twitter:description" content="In this blogpost we&#x27;ll see how to Dockerize a local Ghost app for fun and profit. In a rush? Already familiar with Ghost? Jump to the technical bits. Posting, again It&#x27;s been a *looong* time since my last post. The time has come to break the silence and start posting" />
+    <meta name="twitter:url" content="https://noiselabs.io/2018/01/22/ghost-docker/" />
+    <meta name="twitter:image" content="https://noiselabs.io/content/images/2018/01/godslar-300303.jpg" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Vítor Brandão" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Ghost, Docker" />
+    <meta property="og:image:width" content="6600" />
+    <meta property="og:image:height" content="4294" />
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Noiselabs",
+        "logo": "https://noiselabs.io/favicon.ico"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Vítor Brandão",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://noiselabs.io/content/images/2018/01/2014-Hong-Kong-750x750-1.jpg",
+            "width": 750,
+            "height": 750
+        },
+        "url": "https://noiselabs.io/author/vitor/",
+        "sameAs": []
+    },
+    "headline": "Ghost, Dockerized.",
+    "url": "https://noiselabs.io/2018/01/22/ghost-docker/",
+    "datePublished": "2018-01-22T20:25:03.000Z",
+    "dateModified": "2018-01-22T22:23:32.000Z",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://noiselabs.io/content/images/2018/01/godslar-300303.jpg",
+        "width": 6600,
+        "height": 4294
+    },
+    "keywords": "Ghost, Docker",
+    "description": "In this blogpost we&#x27;ll see how to Dockerize a local Ghost app for fun and profit. In a rush? Already familiar with Ghost? Jump to the technical bits. Posting, again It&#x27;s been a *looong* time since my last post. The time has come to break the silence and start posting",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://noiselabs.io/"
+    }
+}
+    </script>
+
+    <meta name="generator" content="Ghost 1.20" />
+    <link rel="alternate" type="application/rss+xml" title="Noiselabs" href="https://noiselabs.io/rss/" />
+
+    <script src="../../../../assets/js/vendor/modernizr.js?v=4e3f135229"></script>
+</head>
+<body class="post-template tag-ghost-tag tag-docker">
+    
+
+
+    <div class="reading-time-indicator js-post-sticky-header">
+        <div class="post-reading-time js-post-reading-time">
+            <div class="percent js-percent-count">0%</div>
+            <progress value="0" class="read-progress-indicator single">
+                <div class="progress-container">
+                    <span class="progress-bar"></span>
+                </div>
+            </progress>
+            <div class="read-estimation">
+                <div class="reading-time-blog-logo">
+                    <a class="blog-logo" href="https://noiselabs.io"><i class="fa fa fa-chevron-left"></i></a>
+                </div>
+                <div class="read-estimation-content">
+                    <div class="title">Ghost, Dockerized.</div>
+                    <div class="estimated-time">
+                        <span class="js-word-count"></span> words - <span class="eta"></span> read.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<nav class="main-nav">
+    <a href="https://noiselabs.io" class="header-back-btn js-bg-check left">
+        Noiselabs
+    </a>
+    <i class="fa fa-fw fa-search main-nav-ico js-bg-check js-open-search right"></i>
+</nav>
+<header class="post-view-header js-blog-bg-image " style="background-image: url(../../../../content/images/2018/01/godslar-300303.jpg)">
+    <div class="post-header-content">
+        <h1 class="post-title js-bg-check">Ghost, Dockerized.</h1>
+        <section class="post-meta js-bg-check">
+            <time class="post-date" datetime="2018-01-22">22 January 2018</time>
+        </section>
+    </div>
+</header>
+
+<main class="post-view-content" role="main">
+
+    <article class="post tag-ghost-tag tag-docker">
+
+        <section class="post-content row">
+            <div class="small-12 columns"><div class="kg-card-markdown"><p>In this blogpost we'll see how to Dockerize a local Ghost app for fun and profit.</p>
+<blockquote>
+<p><em>In a rush? Already familiar with <a href="https://ghost.org/">Ghost</a>? Jump to the <a href="index.html#dockerisingtheghostinstalation">technical bits</a>.</em></p>
+</blockquote>
+<h3 id="postingagain">Posting, again</h3>
+<p>It's been a *looong* time since my <a href="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/">last post</a>. The time has come to break the silence and start posting again. And what best way to make a comeback than with a blog post about blog posting? That's <em>meta</em>.</p>
+<p><img src="https://imgs.xkcd.com/comics/hofstadter.png" alt="xkcd 917: Hofstadter"></p>
+<h3 id="fromwordpresstoghost">From Wordpress to Ghost</h3>
+<p>Last time I blogged I was using an hosted version of Wordpress on Blogetery.com (<a href="https://www.wired.com/2010/07/blogetery-al-qaeda/">Blogetery is no more</a>, nothing to link here) and prior to that on <a href="https://wordpress.com/">Wordpress.com</a> itself. It worked pretty well but I was nurturing the idea of ditching all that HTML markup and writting in <a href="https://daringfireball.net/projects/markdown/">Markdown</a> instead, and at the same time being able to use the new blog platform as a static site generator.</p>
+<p>After some research, in a competiton that included the likes of <a href="http://web/2018/01/22/ghost-docker/jekyllrb.com">Jekyll</a> and <a href="http://octopress.org/">Octopress</a> I decided to settle on <a href="https://ghost.org/">Ghost</a>.</p>
+<p>And here I am.</p>
+<blockquote>
+<p>I know, Ghost isn't a static site generator, but it has a <em>Santa's little helper</em>. More on that later.</p>
+</blockquote>
+<h2 id="ghostjustabloggingplatform">“Ghost: Just a Blogging Platform”</h2>
+<p>Ghost was founded in April 2013, backed by a successful <a href="https://www.kickstarter.com/projects/johnonolan/ghost-just-a-blogging-platform/description">Kickstarter campaign</a>, advertised as a <em>open source blogging platform which makes writing pleasurable and publishing simple</em> and with a Markdown-based editing environment. Looked great and under active development. Promising.</p>
+<p><img src="https://john.onolan.org/content/images/2014/Jun/g-1.jpg" alt="ghost-kickstarter-1"></p>
+<p>Instead of the hosted version I've decided to install Ghost on my laptop and hack away. Moved my posts from the Wordpress installation and converted them to Markdown. A &quot;few&quot; <a href="https://www.npmjs.com/">npm</a> packages later I had Ghost running on my machine with my content. Happy days.</p>
+<h2 id="from0xto10">From <em>0.x</em> to <em>1.0</em></h2>
+<p>I ported my Wordpress posts initially to a Ghost <em>0.x</em> version and that's what powered <a href="https://noiselabs.io">https://noiselabs.io</a> since the beggining. Dependencies were directly installed on my OS. Life was simple.</p>
+<p>Or was it?</p>
+<p>Several months later I noticed the launch of <a href="https://blog.ghost.org/1-0/">Ghost 1.0</a> and decided to upgrade.</p>
+<p>Nope. Upgrade b0rked. The <em>0.1</em> to <em>1.0</em> migration proved to be quite a frustrating task, read impossible, with conflicting Node versions and whatnot. But hey, it's 2017, we don't let software such as Node roam free anymore. We <em>contain</em> it, right? Bad pun, sorry.</p>
+<p>Anyway, <a href="https://www.docker.com/">Docker</a> to the rescue.</p>
+<h2 id="dockerisingtheghostinstalation">Dockerising the Ghost instalation</h2>
+<p>Went back to the <a href="https://docs.ghost.org/v1.0.0/docs/install">Ghost instalation guide</a> and searched for Docker. Weirdly Docker is not mentioned in the installation docs even though a Docker image for Ghost does <a href="https://store.docker.com/images/ghost">exist</a>. The guide seemed to be entirely focused on a bare-metal setup.</p>
+<p><img src="../../../../content/images/2017/11/no-results-found-for-docker.png" alt="no-results-found-for-docker"></p>
+<p>Fear not. Inspired by the <a href="https://docs.ghost.org/v1/docs/install-local">local/dev</a> and <a href="https://docs.ghost.org/v1/docs/install">production</a> guides I set myself to <em>Dockerize</em> the Ghost setup.</p>
+<h2 id="enterghostbase">Enter Ghost-Base</h2>
+<blockquote>
+<p><em>Ghost-Base: A Dockerized environment ready for developing and deploying Ghost applications.</em></p>
+</blockquote>
+<p>The setup that I eventually settled on is now published on GitHub at<br>
+<a href="https://github.com/noiselabs/ghost-base">https://github.com/noiselabs/ghost-base</a> and it's meant to be used as a base layout for you Ghost setup. It includes <a href="https://docs.docker.com/compose/">docker-compose</a> files for <em>development</em> and <em>production</em> setups, with the ability to launch a Ghost app using the latest available version and with a <a href="https://www.mysql.com/">MySQL</a> database and a <a href="https://www.nginx.com/resources/wiki/">Nginx</a> reverse proxy.</p>
+<p><img src="../../../../content/images/2017/11/ghost-docker.png" alt="ghost-docker"></p>
+<p>The workflow will be roughly:</p>
+<ol>
+<li>Fine tune your theme using the <em>dev</em> environment</li>
+<li>Write posts in your <em>prod</em> environment</li>
+<li>(optional) Generate and preview static content using <a href="https://github.com/axitkhurana/buster">Buster</a></li>
+</ol>
+<h3 id="configuration">Configuration</h3>
+<p>Start by copying the example config provided in the <code>./config/.dist</code> folder to <code>./config/</code>. Four files are provided:</p>
+<pre><code>config/.dist
+├── config.development.json
+├── config.production.json
+├── development.env
+└── production.env
+</code></pre>
+<p>You'll need to edit <code>config/development.env</code> and <code>config/production.env</code> and fill the missing values for the database user and password.</p>
+<pre><code>ghost-base $ cp config/.dist/* config/
+
+ghost-base $ vim config/development.env
+MYSQL_DATABASE=ghost_dev
+MYSQL_USER=
+MYSQL_PASSWORD=
+MYSQL_ROOT_PASSWORD=
+NODE_ENV=development
+NPM_CONFIG_LOGLEVEL=debug
+
+ghost-base $ vim config/production.env
+MYSQL_DATABASE=ghost_prod
+MYSQL_USER=
+MYSQL_PASSWORD=
+MYSQL_ROOT_PASSWORD=
+NODE_ENV=production
+NPM_CONFIG_LOGLEVEL=info
+</code></pre>
+<h3 id="ghostdatabases">Ghost Database(s)</h3>
+<p>For both the development and production environments described below <a href="https://docs.docker.com/engine/admin/volumes/volumes/">Docker Volumes</a> are used to persist the Ghost database.</p>
+<p>More specifically the following setup is used:</p>
+<pre><code># docker-compose.override.yml:
+services:
+  db_dev:
+    image: mysql:8
+    env_file: config/development.env
+    volumes:
+      - ghost-db-dev-data:/var/lib/mysql:delegated
+volumes:
+  ghost-db-dev-data:
+
+
+# docker-compose.production.yml:
+services:
+  db_prod:
+    image: mysql:8
+    env_file: config/production.env
+    volumes:
+      - ghost-db-prod-data:/var/lib/mysql:delegated
+volumes:
+  ghost-db-prod-data:
+</code></pre>
+<p>If you don't mind using the same database instance for <em>dev</em> and <em>prod</em> environments then you can simplify the setup above by just using a simple volume, called <code>ghost-db-data</code> for example. You will end up with:</p>
+<pre><code># docker-compose.yml:
+service:
+  db:
+    image: mysql:8
+    env_file: config/development.env
+    volumes:
+      - ghost-db-data:/var/lib/mysql:delegated
+volumes:
+  ghost-db-data:
+</code></pre>
+<p>This is the setup that I personally use as I don't need to separate the data between my <em>dev</em> and <em>prod</em> environments. YMMV.</p>
+<p>On that note, <strong>please be aware</strong> that stopping your blog with <code>docker-compose down -v</code> or by running a cleanup task such as <code>docker system prune</code> when your blog is stopped will result in the Docker Volumes above being <em>removed</em>. <strong>Make sure you backup</strong> using the export functionality included in the <a href="https://noiselabs.io/ghost/#/settings/labs/">Labs section</a> of your Ghost app!</p>
+<h3 id="developmentenvironment">Development environment</h3>
+<p>To start your Ghost blog in development mode run:</p>
+<pre><code>ghost-base $ docker-compose up --build -d web
+</code></pre>
+<p>This development environment will use <a href="https://nodemon.io/"><em>nodemon</em></a> in order to pick up changes automatically and is especially useful if you are <a href="https://docs.ghost.org/docs/install-local#section-developing-themes">making changes to a theme</a>.</p>
+<p>Your Ghost blog will now be running on <a href="http://localhost:12368/">http://localhost:12368/</a>. Happy hacking.</p>
+<p>To stop it do:</p>
+<pre><code>ghost-base $ docker-compose stop web
+</code></pre>
+<h3 id="productionenvironment">Production environment</h3>
+<p>Once you're happy with the changes to your theme it's now time to boot your app in production mode. We are going to use <code>docker-compose.prod.yml</code> now:</p>
+<pre><code>ghost-base $ docker-compose -f docker-compose.yml \
+  -f docker-compose.prod.yml up --build -d ghost
+</code></pre>
+<p>Your Ghost blog will now be running on <a href="https://noiselabs.io/">https://noiselabs.io/</a>. Enjoy.</p>
+<p>To stop it do:</p>
+<pre><code>ghost-base $ docker-compose -f docker-compose.yml \
+  -f docker-compose.prod.yml stop web
+</code></pre>
+<h3 id="bonushostingongithubpages">Bonus: Hosting on GitHub Pages</h3>
+<p>To generate static content we'll need the last piece of the puzzle: <a href="https://github.com/axitkhurana/buster">Buster</a>.</p>
+<p>In their own words Buster is a:</p>
+<blockquote>
+<p><em>Super simple, Totally awesome, Brute force static site generator for Ghost.</em></p>
+</blockquote>
+<p>Ghost-Base ships with a <code>buster</code> service exposing a Python script that we will use to generate HTML files from a running Ghost instance.</p>
+<pre><code class="language-yaml"># docker-compose.yml:
+  buster:
+    image: noiselabs/buster
+    build: docker/buster
+    env_file: config/development.env
+    volumes:
+      - ./build/buster:/var/tmp/buster:delegated
+      - ./docker/buster/entrypoint.py:/usr/local/bin/entrypoint.py:delegated
+</code></pre>
+<p>To generate static content we will invoke <code>buster generate</code> against the <code>prod</code> setup which we left running:</p>
+<pre><code>$ docker-compose -f docker-compose.yml -f docker-compose.prod.yml \
+  run --rm buster generate
+</code></pre>
+<p>The static content (HTML, CSS, JS, images) is now available at <code>./build/buster</code> and can be pushed to GitHub. Simply follow the steps at <a href="https://pages.github.com/">https://pages.github.com/</a> for creating a repository that will include the files that we just generated.</p>
+<p>If you want to preview your static website before pushing it into the wild start the <code>live</code> service:</p>
+<pre><code>ghost-base $ docker-compose -f docker-compose.yml \
+  -f docker-compose.prod.yml up -d live
+</code></pre>
+<p>and head on to <a href="http://localhost:80">http://localhost:80</a>. If it looks good, ship it!</p>
+<p>To update my GitHub Pages repo with content generated by <code>Buster</code> I use <code>rsync</code>:</p>
+<pre><code>rsync -av --delete --cvs-exclude --exclude=/.git ./build/buster/* \
+  /path/to/my-username.github.io/
+</code></pre>
+<p>Then just:</p>
+<pre><code>cd /path/to/my-username.github.io/
+git commit -a -m 'website updated' &amp;&amp; git push
+</code></pre>
+<p>Wait a couple of minutes and <em>voilà</em>, enjoy your freshly updated website, quickly delivered by GitHub Pages and without an hackable (Ghost) admin panel or database behind it.</p>
+<blockquote>
+<p><em>Header photo by <a href="https://unsplash.com/photos/zboO0K1WfY4?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">郑 无忌</a> on <a href="https://unsplash.com/collections/1547571/blog/6fa6b2f41e0ff1b74d84e7eaa94673f5?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p>
+</blockquote>
+</div></div>
+        </section>
+
+        <footer class="post-footer row">
+            <div class="small-12 columns">
+                <section class="post-tags">
+                    Tags: <a href="../../../../tag/ghost-tag/index.html">Ghost</a>, <a href="../../../../tag/docker/index.html">Docker</a>
+                </section>
+
+                <section class="share">
+                    <h5>Share this post:</h5>
+                    <a class="icon-twitter" href="https://twitter.com/share?text=Ghost%2C%20Dockerized.&amp;url=https://noiselabs.io/2018/01/22/ghost-docker/"
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                        <span class="hidden"><i class="fa fa-twitter-square"></i></span>
+                    </a>
+                    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://noiselabs.io/2018/01/22/ghost-docker/"
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                        <span class="hidden"><i class="fa fa-facebook-square"></i></span>
+                    </a>
+                    <a class="icon-google-plus" href="https://plus.google.com/share?url=https://noiselabs.io/2018/01/22/ghost-docker/"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                        <span class="hidden"><i class="fa fa-google-plus-square"></i></span>
+                    </a>
+                </section>
+            </div>
+        </footer>
+
+        <div class="row post-prev-next-pagination">
+            <div class="prev small-6 columns text-left">
+                    <div class="prev-next-label">
+                        <a href="../../../../2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/index.html">
+                            <i class="fa fa-angle-double-left"></i> Previous
+                        </a>
+                    </div>
+                    <a href="../../../../2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/index.html" class="title">
+                        Introducing SmartyBundle, a Smarty3 bundle for Symfony2
+                    </a>
+            </div>
+            <div class="next small-6 columns text-right">
+            </div>
+        </div>
+
+            <section class="author-info">
+                <div class="row">
+                    <section class="post-author small-12 columns">
+                            <img src="../../../../content/images/2018/01/2014-Hong-Kong-750x750-1.jpg" class="post-author-avatar" alt="Vítor Brandão">
+                            <span class="author-label">Author</span>
+                            <h1><a href="../../../../author/vitor/index.html" class="author-link-name">Vítor Brandão</a></h1>
+                    </section>
+                </div>
+            </section>
+
+        <section class="disqus">
+            <section class="disqus">
+    <div class="row">
+        <div class="small-12 columns">
+            <h2 class="comments-header">Comments</h2>
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                var disqus_shortname = 'noiselabs'; // required: replace example with your forum shortname
+
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+            <a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        </div>
+    </div>
+</section>
+        </section>
+
+    </article>
+
+</main>
+
+
+
+    <footer class="site-footer">
+    <div class="row expanded">
+        <div class="small-6 columns align-justify">
+            <ul class="no-bullet">
+                <li>&copy; 2017 <a href="mailto:vitor@noiselabs.io">Vítor Brandão</a>. All rights reserved.</li>
+                <li>Based on the ABC theme by <a href="http://pxt.be">pxt.be</a></li>
+                <li>Background photo by <a href="https://unsplash.com/@brxdlxy">Brad Huchteman</a></li>
+                <li>Proudly published with <a href="https://ghost.org">Ghost</a></li>
+            </ul>
+            <ul class="no-bullet">
+                <li><em><b>Noiselabs Consulting</b></em> is a <a href="http://team-neev.com" style="color: #00CCFF;"><em><b>Team Neev</b></em></a> partner.</li>
+                <li style="padding-top: 1em; padding-bottom: 1em;"><img src="../../../../assets/images/neev_white_wordmark.png?v=4e3f135229"></li>
+            </ul>
+        </div>
+        <div class="small-6 columns align-justify text-right">
+        </div>
+    </div>
+</footer>
+    <div class="big-search">
+    <i class="fa fa-times-circle big-search-close-btn js-close-search"></i>
+    <div class="big-search-container">
+        <div class="row">
+            <div class="small-12 columns">
+                <form class="big-search-form">
+                    <input class="big-search-form-input js-search-input" type="text" placeholder="Search...">
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class="small-12 columns">
+                <div class="big-search-results js-search-results"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="back-to-top js-back-to-top-btn hidden">
+        <i class="fa fa-angle-up"></i>
+    </div>
+
+    
+    <script type="text/javascript" src="../../../../assets/js/vendor/jquery-2.1.4.min.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/foundation.min.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/background-check.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/jquery.ghostHunter.min.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/images-loaded.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/reading-time.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/highlight.min.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/abc.js?v=4e3f135229"></script>
+</body>
+</html>

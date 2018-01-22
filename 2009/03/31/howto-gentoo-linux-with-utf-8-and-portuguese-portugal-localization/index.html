@@ -11,14 +11,15 @@
     <link rel="shortcut icon" href="../../../../favicon.ico">
 
     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
-    <script type="text/javascript" src="../../../../assets/js/vendor/webfont.js?v=711ddc6e7b"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/webfont.js?v=4e3f135229"></script>
     <script>
         WebFont.load({
             google: {
                 families: [
+                    'Roboto:300,300i,400,400i,700,700i',
                     'Roboto Slab:400,300',
-                    'Merriweather:400,300,300italic,400italic,700,700italic',
-                    'Source Sans Pro:200,300,400,600,700,900']
+                    'Source Sans Pro:200,300,400,600,700,900'
+                ]
             }
         });
     </script>
@@ -31,31 +32,31 @@
         ga('send', 'pageview');
     </script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../../../assets/css/highlightjs-github.min.css?v=711ddc6e7b">
-    <link rel="stylesheet" href="../../../../assets/css/style.css?v=711ddc6e7b">
+    <link rel="stylesheet" href="../../../../assets/css/highlightjs-github.min.css?v=4e3f135229">
+    <link rel="stylesheet" href="../../../../assets/css/style.css?v=4e3f135229">
 
-    <link rel="shortcut icon" href="../../../../favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/">
-    <meta name="referrer" content="no-referrer-when-downgrade">
-    <link rel="amphtml" href="https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/amp/">
+    <link rel="shortcut icon" href="../../../../favicon.ico" type="image/x-icon" />
+    <link rel="canonical" href="https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/" />
+    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="amphtml" href="https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/amp/" />
     
-    <meta property="og:site_name" content="Noiselabs">
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="Howto Gentoo Linux with UTF-8 and Portuguese (Portugal) localization">
-    <meta property="og:description" content="Purpose How to configure a Gentoo Linux system to use UTF-8 character encoding and Portuguese (Portugal) localization (language and keyboard). Background UTF-8 is a variable-length character encoding, which in this instance means that it uses 1 to 4 bytes per symbol. So, the first UTF-8 byte is used for encoding">
-    <meta property="og:url" content="https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/">
-    <meta property="article:published_time" content="2009-03-31T14:21:00.000Z">
-    <meta property="article:modified_time" content="2014-03-23T00:23:16.000Z">
-    <meta property="article:tag" content="Gentoo">
+    <meta property="og:site_name" content="Noiselabs" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Howto Gentoo Linux with UTF-8 and Portuguese (Portugal) localization" />
+    <meta property="og:description" content="Purpose How to configure a Gentoo Linux system to use UTF-8 character encoding and Portuguese (Portugal) localization (language and keyboard). Background UTF-8 is a variable-length character encoding, which in this instance means that it uses 1 to 4 bytes per symbol. So, the first UTF-8 byte is used for encoding" />
+    <meta property="og:url" content="https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/" />
+    <meta property="article:published_time" content="2009-03-31T14:21:00.000Z" />
+    <meta property="article:modified_time" content="2017-12-10T02:28:58.000Z" />
+    <meta property="article:tag" content="Gentoo" />
     
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Howto Gentoo Linux with UTF-8 and Portuguese (Portugal) localization">
-    <meta name="twitter:description" content="Purpose How to configure a Gentoo Linux system to use UTF-8 character encoding and Portuguese (Portugal) localization (language and keyboard). Background UTF-8 is a variable-length character encoding, which in this instance means that it uses 1 to 4 bytes per symbol. So, the first UTF-8 byte is used for encoding">
-    <meta name="twitter:url" content="https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/">
-    <meta name="twitter:label1" content="Written by">
-    <meta name="twitter:data1" content="Vítor Brandão">
-    <meta name="twitter:label2" content="Filed under">
-    <meta name="twitter:data2" content="Gentoo">
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Howto Gentoo Linux with UTF-8 and Portuguese (Portugal) localization" />
+    <meta name="twitter:description" content="Purpose How to configure a Gentoo Linux system to use UTF-8 character encoding and Portuguese (Portugal) localization (language and keyboard). Background UTF-8 is a variable-length character encoding, which in this instance means that it uses 1 to 4 bytes per symbol. So, the first UTF-8 byte is used for encoding" />
+    <meta name="twitter:url" content="https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/" />
+    <meta name="twitter:label1" content="Written by" />
+    <meta name="twitter:data1" content="Vítor Brandão" />
+    <meta name="twitter:label2" content="Filed under" />
+    <meta name="twitter:data2" content="Gentoo" />
     
     <script type="application/ld+json">
 {
@@ -71,19 +72,17 @@
         "name": "Vítor Brandão",
         "image": {
             "@type": "ImageObject",
-            "url": "https://noiselabs.io/content/images/2016/04/green-2.jpg",
-            "width": 450,
-            "height": 450
+            "url": "https://noiselabs.io/content/images/2018/01/2014-Hong-Kong-750x750-1.jpg",
+            "width": 750,
+            "height": 750
         },
-        "url": "https://noiselabs.io/author/vitor-brandao/",
-        "sameAs": [
-            "https://twitter.com/noiselabs"
-        ]
+        "url": "https://noiselabs.io/author/vitor/",
+        "sameAs": []
     },
     "headline": "Howto Gentoo Linux with UTF-8 and Portuguese (Portugal) localization",
     "url": "https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/",
     "datePublished": "2009-03-31T14:21:00.000Z",
-    "dateModified": "2014-03-23T00:23:16.000Z",
+    "dateModified": "2017-12-10T02:28:58.000Z",
     "keywords": "Gentoo",
     "description": "Purpose How to configure a Gentoo Linux system to use UTF-8 character encoding and Portuguese (Portugal) localization (language and keyboard). Background UTF-8 is a variable-length character encoding, which in this instance means that it uses 1 to 4 bytes per symbol. So, the first UTF-8 byte is used for encoding",
     "mainEntityOfPage": {
@@ -93,17 +92,10 @@
 }
     </script>
 
-    <script type="text/javascript" src="../../../../public/ghost-sdk.js?v=711ddc6e7b"></script>
-<script type="text/javascript">
-ghost.init({
-	clientId: "ghost-frontend",
-	clientSecret: "a703928d6198"
-});
-</script>
-    <meta name="generator" content="Ghost 1.16">
-    <link rel="alternate" type="application/rss+xml" title="Noiselabs" href="https://noiselabs.io/rss/index.rss">
+    <meta name="generator" content="Ghost 1.20" />
+    <link rel="alternate" type="application/rss+xml" title="Noiselabs" href="https://noiselabs.io/rss/" />
 
-    <script src="../../../../assets/js/vendor/modernizr.js?v=711ddc6e7b"></script>
+    <script src="../../../../assets/js/vendor/modernizr.js?v=4e3f135229"></script>
 </head>
 <body class="post-template tag-gentoo">
     
@@ -135,7 +127,7 @@ ghost.init({
     <a href="https://noiselabs.io" class="header-back-btn js-bg-check left">
         Noiselabs
     </a>
-    <i class="fa fa-fw fa-search main-nav-ico element-dark js-open-search right"></i>
+    <i class="fa fa-fw fa-search main-nav-ico js-bg-check js-open-search right"></i>
 </nav>
 <header class="post-view-header js-blog-bg-image no-cover">
     <div class="post-header-content">
@@ -172,33 +164,33 @@ pt_PT.UTF-8@euro UTF-8
 </code></pre>
 <p>There is one environment variable that needs to be set in order to use our new UTF-8 locales: <code>LC_CTYPE</code> (or optionally <code>LANG</code>, if you want to change the system language as well). Setting the locale globally should be done using <code>/etc/env.d/02locale</code>.</p>
 <pre><code># vi /etc/env.d/02locale
-LANG="pt_PT.UTF-8@euro"
+LANG=&quot;pt_PT.UTF-8@euro&quot;
 </code></pre>
 <p>Now update the update the environment after the change</p>
 <pre><code># env-update &amp;&amp; source /etc/profile
 </code></pre>
-<p>The keyboard layout used by the console is set in <code>/etc/conf.d/keymaps</code> by the <code>KEYMAP</code> variable. For a Portuguese keyboard use pt-latin1 or pt-latin9. Set also EXTENDED_KEYMAPS attributes like "euro".</p>
+<p>The keyboard layout used by the console is set in <code>/etc/conf.d/keymaps</code> by the <code>KEYMAP</code> variable. For a Portuguese keyboard use pt-latin1 or pt-latin9. Set also EXTENDED_KEYMAPS attributes like &quot;euro&quot;.</p>
 <pre><code># vi /etc/conf.d/keymaps&lt;/pre&gt;
-KEYMAP="pt-latin9"
-SET_WINDOWKEYS="yes"
-EXTENDED_KEYMAPS="backspace keypad euro"
+KEYMAP=&quot;pt-latin9&quot;
+SET_WINDOWKEYS=&quot;yes&quot;
+EXTENDED_KEYMAPS=&quot;backspace keypad euro&quot;
 </code></pre>
-<p>To enable UTF-8 on the console, you need to edit <code>/etc/rc.conf</code> and set <code>UNICODE="yes"</code>.</p>
+<p>To enable UTF-8 on the console, you need to edit <code>/etc/rc.conf</code> and set <code>UNICODE=&quot;yes&quot;</code>.</p>
 <pre><code># vi /etc/rc.conf
-UNICODE="yes"
+UNICODE=&quot;yes&quot;
 </code></pre>
 <p>The keyboard layout to be used by the X server is specified in <code>/etc/X11/xorg.conf</code> by the <code>XkbLayout</code> option.</p>
 <pre><code># vi /etc/X11/xorg.conf
-Section "InputDevice"
-Identifier  "Keyboard0"
-Driver  	"kbd"
-Option	  	"XkbLayout" "pt"
+Section &quot;InputDevice&quot;
+Identifier  &quot;Keyboard0&quot;
+Driver  	&quot;kbd&quot;
+Option	  	&quot;XkbLayout&quot; &quot;pt&quot;
 ...
 EndSection
 </code></pre>
 <p>There is also additional localisation variable called LINGUAS, which affects to localisation files that get installed in gettext-based programs, and decides used localisation for some specific software packages, such as <code>kde-base/kde-i18n</code> and <code>app-office/openoffice</code>. The variable takes in <em>space</em>-separated list of language codes, and suggested place to set it is <code>/etc/make.conf</code>:</p>
 <pre><code># vi /etc/make.conf
-LINGUAS="pt pt_PT en en_GB"
+LINGUAS=&quot;pt pt_PT en en_GB&quot;
 </code></pre>
 <p>And that's it! Hopefully your system should now be running in full UTF-8/Portuguese support. Good linuxing ;)</p>
 <h2 id="sources">Sources</h2>
@@ -212,18 +204,21 @@ LINGUAS="pt pt_PT en en_GB"
         <footer class="post-footer row">
             <div class="small-12 columns">
                 <section class="post-tags">
-                    Tags: <a href="../../../../tag/gentoo/">Gentoo</a>
+                    Tags: <a href="../../../../tag/gentoo/index.html">Gentoo</a>
                 </section>
 
                 <section class="share">
                     <h5>Share this post:</h5>
-                    <a class="icon-twitter" href="https://twitter.com/share?text=Howto%20Gentoo%20Linux%20with%20UTF-8%20and%20Portuguese%20(Portugal)%20localization&amp;url=https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <a class="icon-twitter" href="https://twitter.com/share?text=Howto%20Gentoo%20Linux%20with%20UTF-8%20and%20Portuguese%20(Portugal)%20localization&amp;url=https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/"
+                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                         <span class="hidden"><i class="fa fa-twitter-square"></i></span>
                     </a>
-                    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/"
+                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                         <span class="hidden"><i class="fa fa-facebook-square"></i></span>
                     </a>
-                    <a class="icon-google-plus" href="https://plus.google.com/share?url=https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <a class="icon-google-plus" href="https://plus.google.com/share?url=https://noiselabs.io/2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/"
+                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                         <span class="hidden"><i class="fa fa-google-plus-square"></i></span>
                     </a>
                 </section>
@@ -233,21 +228,21 @@ LINGUAS="pt pt_PT en en_GB"
         <div class="row post-prev-next-pagination">
             <div class="prev small-6 columns text-left">
                     <div class="prev-next-label">
-                        <a href="../../../../2008/10/16/gentoo-resume-wget-broken-downloads/">
+                        <a href="../../../../2008/10/16/gentoo-resume-wget-broken-downloads/index.html">
                             <i class="fa fa-angle-double-left"></i> Previous
                         </a>
                     </div>
-                    <a href="../../../../2008/10/16/gentoo-resume-wget-broken-downloads/" class="title">
+                    <a href="../../../../2008/10/16/gentoo-resume-wget-broken-downloads/index.html" class="title">
                         Resume wget broken downloads
                     </a>
             </div>
             <div class="next small-6 columns text-right">
                     <div class="prev-next-label">
-                        <a href="../../../../2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/">
+                        <a href="../../../../2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/index.html">
                             Next <i class="fa fa-angle-double-right"></i>
                         </a>
                     </div>
-                    <a href="../../../../2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/" class="title">
+                    <a href="../../../../2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/index.html" class="title">
                         How to prevent caching (force image reload) in PHP and/or JavaScript/jQuery
                     </a>
             </div>
@@ -256,10 +251,9 @@ LINGUAS="pt pt_PT en en_GB"
             <section class="author-info">
                 <div class="row">
                     <section class="post-author small-12 columns">
-                            <img src="../../../../content/images/2016/04/green-2.jpg" class="post-author-avatar" alt="Vítor Brandão">
+                            <img src="../../../../content/images/2018/01/2014-Hong-Kong-750x750-1.jpg" class="post-author-avatar" alt="Vítor Brandão">
                             <span class="author-label">Author</span>
-                            <h1><a href="../../../../author/vitor-brandao/" class="author-link-name">Vítor Brandão</a></h1>
-                            <p><a href="https://twitter.com/noiselabs" class="author-website">https://twitter.com/noiselabs</a></p>
+                            <h1><a href="../../../../author/vitor/index.html" class="author-link-name">Vítor Brandão</a></h1>
                     </section>
                 </div>
             </section>
@@ -298,14 +292,14 @@ LINGUAS="pt pt_PT en en_GB"
     <div class="row expanded">
         <div class="small-6 columns align-justify">
             <ul class="no-bullet">
-                <li>© 2017 <a href="mailto:vitor@noiselabs.io">Vítor Brandão</a>. All rights reserved.</li>
+                <li>&copy; 2017 <a href="mailto:vitor@noiselabs.io">Vítor Brandão</a>. All rights reserved.</li>
                 <li>Based on the ABC theme by <a href="http://pxt.be">pxt.be</a></li>
                 <li>Background photo by <a href="https://unsplash.com/@brxdlxy">Brad Huchteman</a></li>
                 <li>Proudly published with <a href="https://ghost.org">Ghost</a></li>
             </ul>
             <ul class="no-bullet">
                 <li><em><b>Noiselabs Consulting</b></em> is a <a href="http://team-neev.com" style="color: #00CCFF;"><em><b>Team Neev</b></em></a> partner.</li>
-                <li style="padding-top: 1em; padding-bottom: 1em;"><img src="../../../../assets/images/neev_white_wordmark.png?v=711ddc6e7b"></li>
+                <li style="padding-top: 1em; padding-bottom: 1em;"><img src="../../../../assets/images/neev_white_wordmark.png?v=4e3f135229"></li>
             </ul>
         </div>
         <div class="small-6 columns align-justify text-right">
@@ -335,13 +329,13 @@ LINGUAS="pt pt_PT en en_GB"
     </div>
 
     
-    <script type="text/javascript" src="../../../../assets/js/vendor/jquery-2.1.4.min.js?v=711ddc6e7b"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/foundation.min.js?v=711ddc6e7b"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/background-check.js?v=711ddc6e7b"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/jquery.ghostHunter.min.js?v=711ddc6e7b"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/images-loaded.js?v=711ddc6e7b"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/reading-time.js?v=711ddc6e7b"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/highlight.min.js?v=711ddc6e7b"></script>
-    <script type="text/javascript" src="../../../../assets/js/abc.js?v=711ddc6e7b"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/jquery-2.1.4.min.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/foundation.min.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/background-check.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/jquery.ghostHunter.min.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/images-loaded.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/reading-time.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/highlight.min.js?v=4e3f135229"></script>
+    <script type="text/javascript" src="../../../../assets/js/abc.js?v=4e3f135229"></script>
 </body>
 </html>

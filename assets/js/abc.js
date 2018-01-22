@@ -16,8 +16,6 @@ var abc = (function ($) {
 
     // change color according to the background
     headerTitles = function () {
-        return;
-
         if ($('.js-bg-check').length && $('.js-blog-bg-image').length) {
             var imgPath = $('.js-blog-bg-image').css('background-image');
             imgPath = imgPath && imgPath.match(/url\((['"])?(.*?)\1\)/);
