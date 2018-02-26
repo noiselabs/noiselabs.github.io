@@ -1,104 +1,339 @@
+<!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
 
     <title>Talks</title>
-    <meta name="description" content="">
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../assets/images/favicon.ico?v=6c85e349e4">
+    <link rel="shortcut icon" href="../favicon.ico">
 
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900%7CLora:400,700,400italic,700italic">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css?v=6c85e349e4">
+     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+    <script type="text/javascript" src="../assets/js/vendor/webfont.js?v=7770f17b35"></script>
+    <script>
+        WebFont.load({
+            custom: {
+                families: [
+                    'Lato:700,700i',
+                    'Roboto:300,300i,400,400i,700,700i',
+                    'Roboto Slab:400,300',
+                    'Source Sans Pro:200,300,400,600,700,900'
+                ]
+            }
+        });
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-77419315-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/highlightjs-github.min.css?v=7770f17b35">
+    <link rel="stylesheet" href="../assets/css/style.css?v=7770f17b35">
 
-    <link rel="canonical" href="index.html">
-    <meta name="referrer" content="origin">
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://noiselabs.io/talks/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
     
     <meta property="og:site_name" content="Noiselabs">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Talks">
     <meta property="og:url" content="https://noiselabs.io/talks/">
-    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://noiselabs.io/content/images/2018/02/everaldo-coelho-486011-unsplash-2.jpg">
+    <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Talks">
     <meta name="twitter:url" content="https://noiselabs.io/talks/">
+    <meta name="twitter:image" content="https://noiselabs.io/content/images/2018/02/everaldo-coelho-486011-unsplash-2.jpg">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Vítor Brandão">
+    <meta property="og:image:width" content="2560">
+    <meta property="og:image:height" content="965">
     
     <script type="application/ld+json">
 {
-    "@context": "http://schema.org",
+    "@context": "https://schema.org",
     "@type": "Article",
-    "publisher": "Noiselabs",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Noiselabs",
+        "logo": "https://noiselabs.io/favicon.ico"
+    },
     "author": {
         "@type": "Person",
         "name": "Vítor Brandão",
-        "image": "https://noiselabs.io/content/images/2016/04/green-2.jpg",
-        "sameAs": "https://twitter.com/noiselabs"
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://noiselabs.io/content/images/2018/01/2014-Hong-Kong-750x750-1.jpg",
+            "width": 750,
+            "height": 750
+        },
+        "sameAs": []
     },
     "headline": "Talks",
-    "url": "https://noiselabs.io/talks/"
+    "url": "https://noiselabs.io/talks/",
+    "image": {
+        "@type": "ImageObject",
+        "url": "https://noiselabs.io/content/images/2018/02/everaldo-coelho-486011-unsplash-2.jpg",
+        "width": 2560,
+        "height": 965
+    },
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://noiselabs.io/"
+    }
 }
     </script>
 
-    <meta name="generator" content="Ghost 0.7">
-    <link rel="alternate" type="application/rss+xml" title="Noiselabs" href="../rss/index.xml">
+    <script type="text/javascript" src="../public/ghost-sdk.min.js?v=7770f17b35"></script>
+<script type="text/javascript">
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "51bb8525e303"
+});
+</script>
+    <meta name="generator" content="Ghost 1.21">
+    <link rel="alternate" type="application/rss+xml" title="Noiselabs" href="https://noiselabs.io/rss/index.rss">
 
-    <script src="../assets/js/vendor/modernizr.js?v=6c85e349e4"></script>
+    <script src="../assets/js/vendor/modernizr.js?v=7770f17b35"></script>
 </head>
-<body class="post-template page-template page">
-    
-<nav class="main-nav">
-    <a href="../" class="header-back-btn js-bg-check left">
-        Noiselabs
-    </a>
-        <i class="fa fa-fw fa-bars main-nav-ico js-bg-check js-main-menu-open right"></i>
-    <i class="fa fa-fw fa-search main-nav-ico js-bg-check js-open-search right"></i>
-</nav>
-<header class="post-view-header js-blog-bg-image no-cover">
-    <div class="post-header-content">
-        <h1 class="post-title js-bg-check">Talks</h1>
+<body class="page-template page-talks">
+    <div class="sticky">
+    <nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+        <li class="name">
+            <h1>
+                <a href="../">Noiselabs</a>
+            </h1>
+        </li>
+        <li class="toggle-topbar menu-icon">
+            <a href="index.html#">
+                <span>Menu</span>
+            </a>
+        </li>
+    </ul>
+
+    <section class="top-bar-section">
+        <ul class="right">
+            <li class="divider">
+            </li><li class="page-blog">
+                <a href="../blog/">
+                    Blog
+                </a>
+            </li>
+            <li class="divider">
+            </li><li class="page-software-consultancy">
+                <a href="../software-consultancy/">
+                    Software Consultancy
+                </a>
+            </li>
+            <li class="divider">
+            </li><li class="page-open-source">
+                <a href="../open-source/">
+                    Open Source
+                </a>
+            </li>
+            <li class="divider">
+            </li><li class="page-talks">
+                <a href="index.html">
+                    Talks
+                </a>
+            </li>
+            <li class="divider">
+            </li><li class="has-dropdown">
+                <a href="index.html#">
+                    Contact
+                </a>
+                <ul class="dropdown contact">
+                    <li>
+                        <a href="mailto:vitor@noiselabs.io">
+                            <i class="far fa-fw fa-lg fa-envelope"></i>
+                            <span>vitor@noiselabs.io</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/noiselabs">
+                            <i class="fab fa-fw fa-lg fa-twitter"></i>
+                            <span>twitter.com/noiselabs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/vitorbrandao">
+                            <i class="fab fa-fw fa-lg fa-linkedin"></i>
+                            <span>linkedin.com/vitorbrandao</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/noiselabs">
+                            <i class="fab fa-fw fa-lg fa-github"></i>
+                            <span>github.com/noiselabs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/users/545442/noisebleed">
+                            <i class="fab fa-fw fa-lg fa-stack-overflow"></i>
+                            <span>stackoverflow.com/noisebleed</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="divider">
+            </li><li>
+                <a href="index.html#" class="js-open-search">
+                    <b><i class="fas fa-search fw fa-lg main-nav-ico element-light js-open-search"></i></b>
+                </a>
+            </li>
+        </ul>
+    </section>
+</nav></div>
+
+<header class="page-view-header page-talks js-blog-bg-image " style="background-image: url(../content/images/2018/02/everaldo-coelho-486011-unsplash-2.jpg)">
+    <div class="page-header-content">
+        <h1 class="page-title js-bg-check">Talks</h1>
     </div>
 </header>
 
-<main class="post-view-content row" role="main">
+<main class="page-view-content row" role="main">
     <article class="post page small-12 columns">
-        <section class="post-content">
-            
+        <section class="page-content">
+            <p>Sharing what you learned or what you built in the form of a talk is a great experience and <a href="https://noiselabs.io/open-source">another way</a> to contribute back to the Open Source community. It is also an excellent opportunity to meet interesting people and discuss ideas in person.</p>
+            <p>Here are a few talks that I (co-)presented at local user groups and conferences.</p>
+            <section class="talks">
+                <ul class="open-source-talk pricing-table">
+                    <li class="price">PHP Interoperability with PPI Framework</li>
+                    <li class="title">
+                        <i class="fas fa-map-marker"></i> 
+                         Presented at <a href="http://2015.northeastphp.org/session/php-interoperability-with-ppi-framework/">Northeast PHP</a>, August 2015.
+                    </li>
+                    <li class="title">
+                        <i class="fas fa-list-alt"></i> 
+                        <a href="https://speakerdeck.com/noiselabs/ppi-the-php-interoperability-framework">speakerdeck.com/noiselabs/ppi-the-php-interoperability-framework</a>
+                    </li>
+                    <li class="bullet-item">
+                        <script async class="speakerdeck-embed" data-id="b2eb842409c14d289535a547a410b33f" data-ratio="1.37081659973226" src="http://speakerdeck.com/assets/embed.js"></script>
+                    </li>
+                    <li class="description">
+                        <em>There's lot of buzz these days about PHP Interoperability (PHP-FIG, PSR). Paul and Vítor's talk will initially be on the benefits
+                        of PHP interoperability and what added value it brings to the PHP table. They will then dive straight into showing how to practically
+                        take advantage of Interoperability, in real-world projects by using the PPI Framework. PPI Framework goes beyond the basic
+                        PSR's that are in the PHP-FIG and takes things to the next level.</em>
+                    </li>
+                </ul>
+
+                <ul class="open-source-talk pricing-table">
+                    <li class="price">PPI - The PHP Interoperability Framework</li>
+                    <li class="title">
+                        <i class="fas fa-map-marker"></i> 
+                        Presented at
+                        <a href="https://www.meetup.com/php-sw/events/221484453/">PHPSW</a>, May 2015.
+                    </li>
+                    <li class="title">
+                        <i class="fas fa-list-alt"></i> 
+                        <a href="https://speakerdeck.com/noiselabs/ppi-the-php-interoperability-framework">speakerdeck.com/noiselabs/ppi-the-php-interoperability-framework</a>
+                    </li>
+                    <li class="bullet-item">
+                        <script async class="speakerdeck-embed" data-id="40b3102f1e4348cfa4faff328c621d85" data-ratio="1.37081659973226" src="http://speakerdeck.com/assets/embed.js"></script>
+                    </li>
+                    <li class="description">
+                        <em>Paul and Vítor will be showing off the newly released PPI 2.1, explaining what we've been working on and what extra value
+                        using an interop framework brings on top of just using a single standalone framework.</em>
+                    </li>
+                </ul>
+            </section>
+        </section>
+        <section class="page-credits">
+            <p>Credits: Header photo by
+                <a href="https://unsplash.com/photos/2GW4S08kd-8?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Everaldo Coelho</a> on
+                <a href="https://unsplash.com/collections/1547571/blog/6fa6b2f41e0ff1b74d84e7eaa94673f5?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a>
+            </p>
         </section>
     </article>
 </main>
 
 
     <footer class="site-footer">
-    <div class="row expanded">
-        <div class="small-6 columns align-justify">
+    <div class="row">
+        <div class="large-6 columns">
             <ul class="no-bullet">
-                <li>© 2016 <a href="mailto:vitor@noiselabs.org">Vítor Brandão</a>. All rights reserved.</li>
-                <li>Based on the ABC theme by <a href="http://pxt.be">pxt.be</a></li>
-                <li>Proudly published with <a href="https://ghost.org">Ghost</a></li>
+                <li class="neev-logo">
+                    <img src="../assets/images/neev_white_wordmark.png?v=7770f17b35">
+                </li>
+                <li>
+                    <em>Noiselabs Consulting</em> is a
+                    <a href="https://team-neev.com">Team Neev</a> partner.
+                </li>
+            </ul>
+            <ul class="no-bullet">
+                <li>Based on the ABC theme by
+                    <a href="http://pxt.be">pxt.be</a>
+                </li>
+                <li>Homepage photo by
+                    <a href="https://unsplash.com/photos/3r0Kchy-F_A?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Shreyas Malavalli</a>
+                </li>
+                <li>Proudly published with
+                    <a href="https://ghost.org">Ghost</a>
+                </li>
             </ul>
         </div>
-        <div class="small-6 columns align-justify text-right">
-                 <ul class="no-bullet">
-        <li>
-            <a href="../">Home</a>
-        </li>
-        <li>
-            <a href="../about/">About</a>
-        </li>
-        <li>
-            <a href="../projects/">Projects</a>
-        </li>
-        <li>
-            <a href="index.html">Talks</a>
-        </li>
-        <li>
-            <a href="../contact/">Contact</a>
-        </li>
-</ul>
+        <div class="large-6 columns">
+            <ul class="no-bullet">
+                <li>
+                    <a href="../blog/">Blog</a>
+                </li>
+                <li>
+                    <a href="../software-consultancy/">Software Consultancy</a>
+                </li>
+                <li>
+                    <a href="../open-source/">Open Source</a>
+                </li>
+                <li>
+                    <a href="index.html">Talks</a>
+                </li>
+            </ul>
+            <ul class="inline-list">
+                <li>
+                    <a href="mailto:vitor@noiselabs.io">
+                        <i class="far fa-fw fa-lg fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://twitter.com/noiselabs">
+                        <i class="fab fa-fw fa-lg fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/vitorbrandao">
+                        <i class="fab fa-fw fa-lg fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/noiselabs">
+                        <i class="fab fa-fw fa-lg fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://stackoverflow.com/users/545442/noisebleed">
+                        <i class="fab fa-fw fa-lg fa-stack-overflow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://noiselabs.io/rss/index.rss">
+                        <i class="fas fa-fw fa-lg fa-rss"></i>
+                    </a>
+                </li>
+
+        </ul></div>
+        
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+            <ul class="no-bullet">
+                <li>© 2018 <a href="mailto:vitor@noiselabs.io">Vítor Brandão</a>. All rights reserved.</li>
+            </ul>
         </div>
     </div>
 </footer>
@@ -119,42 +354,19 @@
         </div>
     </div>
 </div>
-        <div class="main-menu-ovrl js-main-menu-ovrl">
-            <i class="fa fa-times-circle main-menu-ovrl-close js-main-menu-close"></i>
-            <nav>
-                 <ul class="no-bullet">
-        <li>
-            <a href="../">Home</a>
-        </li>
-        <li>
-            <a href="../about/">About</a>
-        </li>
-        <li>
-            <a href="../projects/">Projects</a>
-        </li>
-        <li>
-            <a href="index.html">Talks</a>
-        </li>
-        <li>
-            <a href="../contact/">Contact</a>
-        </li>
-</ul>
-            </nav>
-        </div>
 
     <div class="back-to-top js-back-to-top-btn hidden">
         <i class="fa fa-angle-up"></i>
     </div>
 
     
-
-    <script type="text/javascript" src="../assets/js/vendor/jquery-2.1.4.min.js?v=6c85e349e4"></script>
-    <script type="text/javascript" src="../assets/js/vendor/foundation.min.js?v=6c85e349e4"></script>
-    <script type="text/javascript" src="../assets/js/vendor/background-check.js?v=6c85e349e4"></script>
-    <script type="text/javascript" src="../assets/js/vendor/ghost-hunter.js?v=6c85e349e4"></script>
-    <script type="text/javascript" src="../assets/js/vendor/images-loaded.js?v=6c85e349e4"></script>
-    <script type="text/javascript" src="../assets/js/vendor/reading-time.js?v=6c85e349e4"></script>
-    <script type="text/javascript" src="../assets/js/vendor/highlight.min.js?v=6c85e349e4"></script>
-    <script type="text/javascript" src="../assets/js/abc.js?v=6c85e349e4"></script>
-
+    <script type="text/javascript" src="../assets/js/vendor/jquery-2.1.4.min.js?v=7770f17b35"></script>
+    <script type="text/javascript" src="../assets/js/vendor/foundation.min.js?v=7770f17b35"></script>
+    <script type="text/javascript" src="../assets/js/vendor/background-check.js?v=7770f17b35"></script>
+    <script type="text/javascript" src="../assets/js/vendor/jquery.ghostHunter.min.js?v=7770f17b35"></script>
+    <script type="text/javascript" src="../assets/js/vendor/images-loaded.js?v=7770f17b35"></script>
+    <script type="text/javascript" src="../assets/js/vendor/reading-time.js?v=7770f17b35"></script>
+    <script type="text/javascript" src="../assets/js/vendor/highlight.min.js?v=7770f17b35"></script>
+    <script type="text/javascript" src="../assets/js/abc.js?v=7770f17b35"></script>
 </body>
+</html>

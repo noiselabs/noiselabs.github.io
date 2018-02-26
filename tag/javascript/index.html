@@ -10,12 +10,13 @@
 
     <link rel="shortcut icon" href="../../favicon.ico">
 
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
-    <script type="text/javascript" src="../../assets/js/vendor/webfont.js?v=2491ba31d4"></script>
+     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+    <script type="text/javascript" src="../../assets/js/vendor/webfont.js?v=3775c367cb"></script>
     <script>
         WebFont.load({
-            google: {
+            custom: {
                 families: [
+                    'Lato:700,700i',
                     'Roboto:300,300i,400,400i,700,700i',
                     'Roboto Slab:400,300',
                     'Source Sans Pro:200,300,400,600,700,900'
@@ -32,21 +33,21 @@
         ga('send', 'pageview');
     </script>
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../assets/css/highlightjs-github.min.css?v=2491ba31d4">
-    <link rel="stylesheet" href="../../assets/css/style.css?v=2491ba31d4">
+    <link rel="stylesheet" href="../../assets/css/highlightjs-github.min.css?v=3775c367cb">
+    <link rel="stylesheet" href="../../assets/css/style.css?v=3775c367cb">
 
-    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon" />
-    <link rel="canonical" href="https://noiselabs.io/tag/javascript/" />
-    <meta name="referrer" content="no-referrer-when-downgrade" />
+    <link rel="shortcut icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://noiselabs.io/tag/javascript/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
     
-    <meta property="og:site_name" content="Noiselabs" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="JavaScript - Noiselabs" />
-    <meta property="og:url" content="https://noiselabs.io/tag/javascript/" />
-    <meta property="article:modified_time" content="2018-01-22T19:01:59.000Z" />
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="JavaScript - Noiselabs" />
-    <meta name="twitter:url" content="https://noiselabs.io/tag/javascript/" />
+    <meta property="og:site_name" content="Noiselabs">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JavaScript - Noiselabs">
+    <meta property="og:url" content="https://noiselabs.io/tag/javascript/">
+    <meta property="article:modified_time" content="2018-01-22T19:01:59.000Z">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="JavaScript - Noiselabs">
+    <meta name="twitter:url" content="https://noiselabs.io/tag/javascript/">
     
     <script type="application/ld+json">
 {
@@ -66,26 +67,107 @@
 }
     </script>
 
-    <meta name="generator" content="Ghost 1.20" />
-    <link rel="alternate" type="application/rss+xml" title="Noiselabs" href="https://noiselabs.io/rss/" />
+    <script type="text/javascript" src="../../public/ghost-sdk.min.js?v=3775c367cb"></script>
+<script type="text/javascript">
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "51bb8525e303"
+});
+</script>
+    <meta name="generator" content="Ghost 1.21">
+    <link rel="alternate" type="application/rss+xml" title="Noiselabs" href="https://noiselabs.io/rss/index.rss">
 
-    <script src="../../assets/js/vendor/modernizr.js?v=2491ba31d4"></script>
+    <script src="../../assets/js/vendor/modernizr.js?v=3775c367cb"></script>
 </head>
 <body class="tag-template tag-javascript">
     
-<nav class="main-nav">
-    <a href="https://noiselabs.io" class="header-back-btn js-bg-check left">
-        Noiselabs
-    </a>
-    <i class="fa fa-fw fa-search main-nav-ico js-bg-check js-open-search right"></i>
-</nav>
-<header class="main-header js-blog-bg-image no-cover">
-    <div class="main-header-content">
-        <h1 class="page-title js-bg-check"><span>Noiselabs</span></h1>
-        <h2 class="page-description js-bg-check"><span>Software Consultancy</span></h2>
-    </div>
-</header>
+<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+        <li class="name">
+            <h1>
+                <a href="https://noiselabs.io/">Noiselabs</a>
+            </h1>
+        </li>
+        <li class="toggle-topbar menu-icon">
+            <a href="index.html#">
+                <span>Menu</span>
+            </a>
+        </li>
+    </ul>
 
+    <section class="top-bar-section">
+        <ul class="right">
+            <li class="divider">
+            <li class="page-blog">
+                <a href="https://noiselabs.io/blog/">
+                    Blog
+                </a>
+            </li>
+            <li class="divider">
+            <li class="page-software-consultancy">
+                <a href="https://noiselabs.io/software-consultancy/">
+                    Software Consultancy
+                </a>
+            </li>
+            <li class="divider">
+            <li class="page-open-source">
+                <a href="https://noiselabs.io/open-source/">
+                    Open Source
+                </a>
+            </li>
+            <li class="divider">
+            <li class="page-talks">
+                <a href="https://noiselabs.io/talks/">
+                    Talks
+                </a>
+            </li>
+            <li class="divider">
+            <li class="has-dropdown">
+                <a href="index.html#">
+                    Contact
+                </a>
+                <ul class="dropdown contact">
+                    <li>
+                        <a href="mailto:vitor@noiselabs.io">
+                            <i class="far fa-fw fa-lg fa-envelope"></i>
+                            <span>vitor@noiselabs.io</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/noiselabs">
+                            <i class="fab fa-fw fa-lg fa-twitter"></i>
+                            <span>twitter.com/noiselabs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/vitorbrandao">
+                            <i class="fab fa-fw fa-lg fa-linkedin"></i>
+                            <span>linkedin.com/vitorbrandao</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/noiselabs">
+                            <i class="fab fa-fw fa-lg fa-github"></i>
+                            <span>github.com/noiselabs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/users/545442/noisebleed">
+                            <i class="fab fa-fw fa-lg fa-stack-overflow"></i>
+                            <span>stackoverflow.com/noisebleed</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="divider">
+            <li>
+                <a href="index.html#" class="js-open-search">
+                    <b><i class="fas fa-search fw fa-lg main-nav-ico element-light js-open-search"></i></b>
+                </a>
+            </li>
+        </ul>
+    </section>
+</nav>
 <main id="content" class="content tag-template" role="main">
     <div class="tag-view-info">
         <span>
@@ -95,19 +177,23 @@
     <article class="post tag-php tag-javascript tag-jquery">
     <div class="post-article-container">
         <header class="post-header">
-            <time class="post-date" datetime="2010-02-12">February 12, 2010</time>
-            <h2 class="post-title"><a href="../../2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/index.html">How to prevent caching (force image reload) in PHP and/or JavaScript/jQuery</a></h2>
+            <ul class="inline-list">
+                <li>
+                    <time class="post-date" datetime="2010-02-12">February 12, 2010</time>
+                </li>
+                <li>
+                    <section class="post-meta">
+                        <i class="fas fa-fw fa-tags"></i> <a href="../php/">PHP</a>, <a href="index.html">JavaScript</a>, <a href="../jquery/">jQuery</a>
+                    </section>
+                </li>
+            </ul>
+            <h2 class="post-title"><a href="../../2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/">How to prevent caching (force image reload) in PHP and/or JavaScript/jQuery</a></h2>
         </header>
-        <section class="post-meta">
-            <img class="author-thumb" src="../../content/images/2018/01/2014-Hong-Kong-750x750-1.jpg" alt="Author image" nopin="nopin" />
-            <a href="../../author/vitor/index.html">Vítor Brandão</a>
-             on <a href="../php/index.html">PHP</a>, <a href="index.html">JavaScript</a>, <a href="../jquery/index.html">jQuery</a>
-        </section>
         <section class="post-desc">
-            If you are using images generated on-the-fly by a PHP script (or another server language), like I'm doing on my web application, you surely do not want images to be read from cache as your users will be seeing the same first generated image (saved into cache) and not the&hellip;
+            If you are using images generated on-the-fly by a PHP script (or another server language), like I'm doing on my web application, you surely do not want images to be read from cache as your users will be seeing the same first generated image (saved into cache) and not the…
         </section>
         <footer>
-            <a href="../../2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/index.html" class="post-read-more-button">Keep reading <i class="fa fa-angle-double-right"></i></a>
+            <a href="../../2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/" class="post-read-more-button">Keep reading <i class="fa fa-angle-double-right"></i></a>
         </footer>
     </div>
 </article>
@@ -118,20 +204,84 @@
 
 
     <footer class="site-footer">
-    <div class="row expanded">
-        <div class="small-6 columns align-justify">
+    <div class="row">
+        <div class="large-6 columns">
             <ul class="no-bullet">
-                <li>&copy; 2017 <a href="mailto:vitor@noiselabs.io">Vítor Brandão</a>. All rights reserved.</li>
-                <li>Based on the ABC theme by <a href="http://pxt.be">pxt.be</a></li>
-                <li>Background photo by <a href="https://unsplash.com/@brxdlxy">Brad Huchteman</a></li>
-                <li>Proudly published with <a href="https://ghost.org">Ghost</a></li>
+                <li class="neev-logo">
+                    <img src="../../assets/images/neev_white_wordmark.png?v=3775c367cb">
+                </li>
+                <li>
+                    <em>Noiselabs Consulting</em> is a
+                    <a href="https://team-neev.com">Team Neev</a> partner.
+                </li>
             </ul>
             <ul class="no-bullet">
-                <li><em><b>Noiselabs Consulting</b></em> is a <a href="http://team-neev.com" style="color: #00CCFF;"><em><b>Team Neev</b></em></a> partner.</li>
-                <li style="padding-top: 1em; padding-bottom: 1em;"><img src="../../assets/images/neev_white_wordmark.png?v=2491ba31d4"></li>
+                <li>Based on the ABC theme by
+                    <a href="http://pxt.be">pxt.be</a>
+                </li>
+                <li>Homepage photo by
+                    <a href="https://unsplash.com/photos/3r0Kchy-F_A?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Shreyas Malavalli</a>
+                </li>
+                <li>Proudly published with
+                    <a href="https://ghost.org">Ghost</a>
+                </li>
             </ul>
         </div>
-        <div class="small-6 columns align-justify text-right">
+        <div class="large-6 columns">
+            <ul class="no-bullet">
+                <li>
+                    <a href="https://noiselabs.io/blog/">Blog</a>
+                </li>
+                <li>
+                    <a href="https://noiselabs.io/software-consultancy/">Software Consultancy</a>
+                </li>
+                <li>
+                    <a href="https://noiselabs.io/open-source/">Open Source</a>
+                </li>
+                <li>
+                    <a href="https://noiselabs.io/talks/">Talks</a>
+                </li>
+            </ul>
+            <ul class="inline-list">
+                <li>
+                    <a href="mailto:vitor@noiselabs.io">
+                        <i class="far fa-fw fa-lg fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://twitter.com/noiselabs">
+                        <i class="fab fa-fw fa-lg fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/vitorbrandao">
+                        <i class="fab fa-fw fa-lg fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/noiselabs">
+                        <i class="fab fa-fw fa-lg fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://stackoverflow.com/users/545442/noisebleed">
+                        <i class="fab fa-fw fa-lg fa-stack-overflow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://noiselabs.io/rss/index.rss">
+                        <i class="fas fa-fw fa-lg fa-rss"></i>
+                    </a>
+                </li>
+
+        </ul></div>
+        
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+            <ul class="no-bullet">
+                <li>© 2018 <a href="mailto:vitor@noiselabs.io">Vítor Brandão</a>. All rights reserved.</li>
+            </ul>
         </div>
     </div>
 </footer>
@@ -158,13 +308,13 @@
     </div>
 
     
-    <script type="text/javascript" src="../../assets/js/vendor/jquery-2.1.4.min.js?v=2491ba31d4"></script>
-    <script type="text/javascript" src="../../assets/js/vendor/foundation.min.js?v=2491ba31d4"></script>
-    <script type="text/javascript" src="../../assets/js/vendor/background-check.js?v=2491ba31d4"></script>
-    <script type="text/javascript" src="../../assets/js/vendor/jquery.ghostHunter.min.js?v=2491ba31d4"></script>
-    <script type="text/javascript" src="../../assets/js/vendor/images-loaded.js?v=2491ba31d4"></script>
-    <script type="text/javascript" src="../../assets/js/vendor/reading-time.js?v=2491ba31d4"></script>
-    <script type="text/javascript" src="../../assets/js/vendor/highlight.min.js?v=2491ba31d4"></script>
-    <script type="text/javascript" src="../../assets/js/abc.js?v=2491ba31d4"></script>
+    <script type="text/javascript" src="../../assets/js/vendor/jquery-2.1.4.min.js?v=3775c367cb"></script>
+    <script type="text/javascript" src="../../assets/js/vendor/foundation.min.js?v=3775c367cb"></script>
+    <script type="text/javascript" src="../../assets/js/vendor/background-check.js?v=3775c367cb"></script>
+    <script type="text/javascript" src="../../assets/js/vendor/jquery.ghostHunter.min.js?v=3775c367cb"></script>
+    <script type="text/javascript" src="../../assets/js/vendor/images-loaded.js?v=3775c367cb"></script>
+    <script type="text/javascript" src="../../assets/js/vendor/reading-time.js?v=3775c367cb"></script>
+    <script type="text/javascript" src="../../assets/js/vendor/highlight.min.js?v=3775c367cb"></script>
+    <script type="text/javascript" src="../../assets/js/abc.js?v=3775c367cb"></script>
 </body>
 </html>

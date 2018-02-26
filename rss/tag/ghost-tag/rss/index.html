@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Ghost - Noiselabs]]></title><description><![CDATA[Software Consultancy]]></description><link>https://noiselabs.io/</link><image><url>https://noiselabs.io/favicon.png</url><title>Ghost - Noiselabs</title><link>https://noiselabs.io/</link></image><generator>Ghost 1.21</generator><lastBuildDate>Mon, 26 Feb 2018 19:44:18 GMT</lastBuildDate><atom:link href="https://noiselabs.io/tag/ghost-tag/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Ghost, Dockerized.]]></title><description><![CDATA[<div class="kg-card-markdown"><p>In this blogpost we'll see how to Dockerize a local Ghost app for fun and profit.</p>
+<blockquote>
+<p><em>In a rush? Already familiar with <a href="https://ghost.org/">Ghost</a>? Jump to the <a href="#dockerisingtheghostinstalation">technical bits</a>.</em></p>
+</blockquote>
+<h3 id="postingagain">Posting, again</h3>
+<p>It's been a *looong* time since my <a href="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/">last post</a>. The time has come to break the silence and start posting</p></div>]]></description><link>https://noiselabs.io/2018/01/22/ghost-docker/</link><guid isPermaLink="false">5a663528f7a7da00a1ee8531</guid><category><![CDATA[Ghost]]></category><category><![CDATA[Docker]]></category><dc:creator><![CDATA[Vítor Brandão]]></dc:creator><pubDate>Mon, 22 Jan 2018 20:25:03 GMT</pubDate><media:content url="https://noiselabs.io/content/images/2018/01/godslar-300303.jpg" medium="image"/><content:encoded><![CDATA[<div class="kg-card-markdown"><img src="https://noiselabs.io/content/images/2018/01/godslar-300303.jpg" alt="Ghost, Dockerized."><p>In this blogpost we'll see how to Dockerize a local Ghost app for fun and profit.</p>
+<blockquote>
+<p><em>In a rush? Already familiar with <a href="https://ghost.org/">Ghost</a>? Jump to the <a href="#dockerisingtheghostinstalation">technical bits</a>.</em></p>
+</blockquote>
+<h3 id="postingagain">Posting, again</h3>
+<p>It's been a *looong* time since my <a href="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/">last post</a>. The time has come to break the silence and start posting again. And what best way to make a comeback than with a blog post about blog posting? That's <em>meta</em>.</p>
+<p><img src="https://imgs.xkcd.com/comics/hofstadter.png" alt="Ghost, Dockerized."></p>
+<h3 id="fromwordpresstoghost">From Wordpress to Ghost</h3>
+<p>Last time I blogged I was using an hosted version of Wordpress on Blogetery.com (<a href="https://www.wired.com/2010/07/blogetery-al-qaeda/">Blogetery is no more</a>, nothing to link here) and prior to that on <a href="https://wordpress.com/">Wordpress.com</a> itself. It worked pretty well but I was nurturing the idea of ditching all that HTML markup and writting in <a href="https://daringfireball.net/projects/markdown/">Markdown</a> instead, and at the same time being able to use the new blog platform as a static site generator.</p>
+<p>After some research, in a competiton that included the likes of <a href="https://noiselabs.io/2018/01/22/ghost-docker/jekyllrb.com">Jekyll</a> and <a href="http://octopress.org/">Octopress</a> I decided to settle on <a href="https://ghost.org/">Ghost</a>.</p>
+<p>And here I am.</p>
+<blockquote>
+<p>I know, Ghost isn't a static site generator, but it has a <em>Santa's little helper</em>. More on that later.</p>
+</blockquote>
+<h2 id="ghostjustabloggingplatform">“Ghost: Just a Blogging Platform”</h2>
+<p>Ghost was founded in April 2013, backed by a successful <a href="https://www.kickstarter.com/projects/johnonolan/ghost-just-a-blogging-platform/description">Kickstarter campaign</a>, advertised as a <em>open source blogging platform which makes writing pleasurable and publishing simple</em> and with a Markdown-based editing environment. Looked great and under active development. Promising.</p>
+<p><img src="https://john.onolan.org/content/images/2014/Jun/g-1.jpg" alt="Ghost, Dockerized."></p>
+<p>Instead of the hosted version I've decided to install Ghost on my laptop and hack away. Moved my posts from the Wordpress installation and converted them to Markdown. A &quot;few&quot; <a href="https://www.npmjs.com/">npm</a> packages later I had Ghost running on my machine with my content. Happy days.</p>
+<h2 id="from0xto10">From <em>0.x</em> to <em>1.0</em></h2>
+<p>I ported my Wordpress posts initially to a Ghost <em>0.x</em> version and that's what powered <a href="https://noiselabs.io">https://noiselabs.io</a> since the beggining. Dependencies were directly installed on my OS. Life was simple.</p>
+<p>Or was it?</p>
+<p>Several months later I noticed the launch of <a href="https://blog.ghost.org/1-0/">Ghost 1.0</a> and decided to upgrade.</p>
+<p>Nope. Upgrade b0rked. The <em>0.1</em> to <em>1.0</em> migration proved to be quite a frustrating task, read impossible, with conflicting Node versions and whatnot. But hey, it's 2017, we don't let software such as Node roam free anymore. We <em>contain</em> it, right? Bad pun, sorry.</p>
+<p>Anyway, <a href="https://www.docker.com/">Docker</a> to the rescue.</p>
+<h2 id="dockerisingtheghostinstalation">Dockerising the Ghost instalation</h2>
+<p>Went back to the <a href="https://docs.ghost.org/v1.0.0/docs/install">Ghost instalation guide</a> and searched for Docker. Weirdly Docker is not mentioned in the installation docs even though a Docker image for Ghost does <a href="https://store.docker.com/images/ghost">exist</a>. The guide seemed to be entirely focused on a bare-metal setup.</p>
+<p><img src="https://noiselabs.io/content/images/2017/11/no-results-found-for-docker.png" alt="Ghost, Dockerized."></p>
+<p>Fear not. Inspired by the <a href="https://docs.ghost.org/v1/docs/install-local">local/dev</a> and <a href="https://docs.ghost.org/v1/docs/install">production</a> guides I set myself to <em>Dockerize</em> the Ghost setup.</p>
+<h2 id="enterghostbase">Enter Ghost-Base</h2>
+<blockquote>
+<p><em>Ghost-Base: A Dockerized environment ready for developing and deploying Ghost applications.</em></p>
+</blockquote>
+<p>The setup that I eventually settled on is now published on GitHub at<br>
+<a href="https://github.com/noiselabs/ghost-base">https://github.com/noiselabs/ghost-base</a> and it's meant to be used as a base layout for you Ghost setup. It includes <a href="https://docs.docker.com/compose/">docker-compose</a> files for <em>development</em> and <em>production</em> setups, with the ability to launch a Ghost app using the latest available version and with a <a href="https://www.mysql.com/">MySQL</a> database and a <a href="https://www.nginx.com/resources/wiki/">Nginx</a> reverse proxy.</p>
+<p><img src="https://noiselabs.io/content/images/2017/11/ghost-docker.png" alt="Ghost, Dockerized."></p>
+<p>The workflow will be roughly:</p>
+<ol>
+<li>Fine tune your theme using the <em>dev</em> environment</li>
+<li>Write posts in your <em>prod</em> environment</li>
+<li>(optional) Generate and preview static content using <a href="https://github.com/axitkhurana/buster">Buster</a></li>
+</ol>
+<h3 id="configuration">Configuration</h3>
+<p>Start by copying the example config provided in the <code>./config/.dist</code> folder to <code>./config/</code>. Four files are provided:</p>
+<pre><code>config/.dist
+├── config.development.json
+├── config.production.json
+├── development.env
+└── production.env
+</code></pre>
+<p>You'll need to edit <code>config/development.env</code> and <code>config/production.env</code> and fill the missing values for the database user and password.</p>
+<pre><code>ghost-base $ cp config/.dist/* config/
+
+ghost-base $ vim config/development.env
+MYSQL_DATABASE=ghost_dev
+MYSQL_USER=
+MYSQL_PASSWORD=
+MYSQL_ROOT_PASSWORD=
+NODE_ENV=development
+NPM_CONFIG_LOGLEVEL=debug
+
+ghost-base $ vim config/production.env
+MYSQL_DATABASE=ghost_prod
+MYSQL_USER=
+MYSQL_PASSWORD=
+MYSQL_ROOT_PASSWORD=
+NODE_ENV=production
+NPM_CONFIG_LOGLEVEL=info
+</code></pre>
+<h3 id="ghostdatabases">Ghost Database(s)</h3>
+<p>For both the development and production environments described below <a href="https://docs.docker.com/engine/admin/volumes/volumes/">Docker Volumes</a> are used to persist the Ghost database.</p>
+<p>More specifically the following setup is used:</p>
+<pre><code># docker-compose.override.yml:
+services:
+  db_dev:
+    image: mysql:8
+    env_file: config/development.env
+    volumes:
+      - ghost-db-dev-data:/var/lib/mysql:delegated
+volumes:
+  ghost-db-dev-data:
+
+
+# docker-compose.production.yml:
+services:
+  db_prod:
+    image: mysql:8
+    env_file: config/production.env
+    volumes:
+      - ghost-db-prod-data:/var/lib/mysql:delegated
+volumes:
+  ghost-db-prod-data:
+</code></pre>
+<p>If you don't mind using the same database instance for <em>dev</em> and <em>prod</em> environments then you can simplify the setup above by just using a simple volume, called <code>ghost-db-data</code> for example. You will end up with:</p>
+<pre><code># docker-compose.yml:
+service:
+  db:
+    image: mysql:8
+    env_file: config/development.env
+    volumes:
+      - ghost-db-data:/var/lib/mysql:delegated
+volumes:
+  ghost-db-data:
+</code></pre>
+<p>This is the setup that I personally use as I don't need to separate the data between my <em>dev</em> and <em>prod</em> environments. YMMV.</p>
+<p>On that note, <strong>please be aware</strong> that stopping your blog with <code>docker-compose down -v</code> or by running a cleanup task such as <code>docker system prune</code> when your blog is stopped will result in the Docker Volumes above being <em>removed</em>. <strong>Make sure you backup</strong> using the export functionality included in the <a href="https://noiselabs.io/ghost/#/settings/labs/">Labs section</a> of your Ghost app!</p>
+<h3 id="developmentenvironment">Development environment</h3>
+<p>To start your Ghost blog in development mode run:</p>
+<pre><code>ghost-base $ docker-compose up --build -d web
+</code></pre>
+<p>This development environment will use <a href="https://nodemon.io/"><em>nodemon</em></a> in order to pick up changes automatically and is especially useful if you are <a href="https://docs.ghost.org/docs/install-local#section-developing-themes">making changes to a theme</a>.</p>
+<p>Your Ghost blog will now be running on <a href="http://localhost:12368/">http://localhost:12368/</a>. Happy hacking.</p>
+<p>To stop it do:</p>
+<pre><code>ghost-base $ docker-compose stop web
+</code></pre>
+<h3 id="productionenvironment">Production environment</h3>
+<p>Once you're happy with the changes to your theme it's now time to boot your app in production mode. We are going to use <code>docker-compose.prod.yml</code> now:</p>
+<pre><code>ghost-base $ docker-compose -f docker-compose.yml \
+  -f docker-compose.prod.yml up --build -d ghost
+</code></pre>
+<p>Your Ghost blog will now be running on <a href="https://noiselabs.io/">https://noiselabs.io/</a>. Enjoy.</p>
+<p>To stop it do:</p>
+<pre><code>ghost-base $ docker-compose -f docker-compose.yml \
+  -f docker-compose.prod.yml stop web
+</code></pre>
+<h3 id="bonushostingongithubpages">Bonus: Hosting on GitHub Pages</h3>
+<p>To generate static content we'll need the last piece of the puzzle: <a href="https://github.com/axitkhurana/buster">Buster</a>.</p>
+<p>In their own words Buster is a:</p>
+<blockquote>
+<p><em>Super simple, Totally awesome, Brute force static site generator for Ghost.</em></p>
+</blockquote>
+<p>Ghost-Base ships with a <code>buster</code> service exposing a Python script that we will use to generate HTML files from a running Ghost instance.</p>
+<pre><code class="language-yaml"># docker-compose.yml:
+  buster:
+    image: noiselabs/buster
+    build: docker/buster
+    env_file: config/development.env
+    volumes:
+      - ./build/buster:/var/tmp/buster:delegated
+      - ./docker/buster/entrypoint.py:/usr/local/bin/entrypoint.py:delegated
+</code></pre>
+<p>To generate static content we will invoke <code>buster generate</code> against the <code>prod</code> setup which we left running:</p>
+<pre><code>$ docker-compose -f docker-compose.yml -f docker-compose.prod.yml \
+  run --rm buster generate
+</code></pre>
+<p>The static content (HTML, CSS, JS, images) is now available at <code>./build/buster</code> and can be pushed to GitHub. Simply follow the steps at <a href="https://pages.github.com/">https://pages.github.com/</a> for creating a repository that will include the files that we just generated.</p>
+<p>If you want to preview your static website before pushing it into the wild start the <code>live</code> service:</p>
+<pre><code>$ ghost-base $ docker-compose -f docker-compose.yml \
+  -f docker-compose.prod.yml up -d live
+</code></pre>
+<p>and head on to <a href="http://localhost:80">http://localhost:80</a>. If it looks good, ship it!</p>
+<p>To update my GitHub Pages repo with content generated by <code>Buster</code> I use <code>rsync</code>:</p>
+<pre><code>$ rsync -av --delete --cvs-exclude --exclude=/.git ./build/buster/* \
+  /path/to/my-username.github.io/
+</code></pre>
+<p>Then just:</p>
+<pre><code>$ cd /path/to/my-username.github.io/
+$ git commit -a -m 'website updated' &amp;&amp; git push
+</code></pre>
+<p>Wait a couple of minutes and <em>voilà</em>, enjoy your freshly updated website, quickly delivered by GitHub Pages and without an hackable (Ghost) admin panel or database behind it.</p>
+<hr>
+<p><em>Credits: Header photo by <a href="https://unsplash.com/photos/zboO0K1WfY4?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">郑 无忌</a> on <a href="https://unsplash.com/collections/1547571/blog/6fa6b2f41e0ff1b74d84e7eaa94673f5?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p>
+</div>]]></content:encoded></item></channel></rss>

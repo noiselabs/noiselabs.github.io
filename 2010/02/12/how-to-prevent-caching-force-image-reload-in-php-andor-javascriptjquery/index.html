@@ -10,12 +10,13 @@
 
     <link rel="shortcut icon" href="../../../../favicon.ico">
 
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
-    <script type="text/javascript" src="../../../../assets/js/vendor/webfont.js?v=2491ba31d4"></script>
+     <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
+    <script type="text/javascript" src="../../../../assets/js/vendor/webfont.js?v=3775c367cb"></script>
     <script>
         WebFont.load({
-            google: {
+            custom: {
                 families: [
+                    'Lato:700,700i',
                     'Roboto:300,300i,400,400i,700,700i',
                     'Roboto Slab:400,300',
                     'Source Sans Pro:200,300,400,600,700,900'
@@ -32,33 +33,33 @@
         ga('send', 'pageview');
     </script>
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../../../assets/css/highlightjs-github.min.css?v=2491ba31d4">
-    <link rel="stylesheet" href="../../../../assets/css/style.css?v=2491ba31d4">
+    <link rel="stylesheet" href="../../../../assets/css/highlightjs-github.min.css?v=3775c367cb">
+    <link rel="stylesheet" href="../../../../assets/css/style.css?v=3775c367cb">
 
-    <link rel="shortcut icon" href="../../../../favicon.ico" type="image/x-icon" />
-    <link rel="canonical" href="https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/" />
-    <meta name="referrer" content="no-referrer-when-downgrade" />
-    <link rel="amphtml" href="https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/amp/" />
+    <link rel="shortcut icon" href="../../../../favicon.ico" type="image/x-icon">
+    <link rel="canonical" href="https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <link rel="amphtml" href="https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/amp/">
     
-    <meta property="og:site_name" content="Noiselabs" />
-    <meta property="og:type" content="article" />
-    <meta property="og:title" content="How to prevent caching (force image reload) in PHP and/or JavaScript/jQuery" />
-    <meta property="og:description" content="If you are using images generated on-the-fly by a PHP script (or another server language), like I&#x27;m doing on my web application, you surely do not want images to be read from cache as your users will be seeing the same first generated image (saved into cache) and not the" />
-    <meta property="og:url" content="https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/" />
-    <meta property="article:published_time" content="2010-02-12T19:11:00.000Z" />
-    <meta property="article:modified_time" content="2017-12-10T02:28:50.000Z" />
-    <meta property="article:tag" content="PHP" />
-    <meta property="article:tag" content="JavaScript" />
-    <meta property="article:tag" content="jQuery" />
+    <meta property="og:site_name" content="Noiselabs">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="How to prevent caching (force image reload) in PHP and/or JavaScript/jQuery">
+    <meta property="og:description" content="If you are using images generated on-the-fly by a PHP script (or another server language), like I'm doing on my web application, you surely do not want images to be read from cache as your users will be seeing the same first generated image (saved into cache) and not the">
+    <meta property="og:url" content="https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/">
+    <meta property="article:published_time" content="2010-02-12T19:11:00.000Z">
+    <meta property="article:modified_time" content="2017-12-10T02:28:50.000Z">
+    <meta property="article:tag" content="PHP">
+    <meta property="article:tag" content="JavaScript">
+    <meta property="article:tag" content="jQuery">
     
-    <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="How to prevent caching (force image reload) in PHP and/or JavaScript/jQuery" />
-    <meta name="twitter:description" content="If you are using images generated on-the-fly by a PHP script (or another server language), like I&#x27;m doing on my web application, you surely do not want images to be read from cache as your users will be seeing the same first generated image (saved into cache) and not the" />
-    <meta name="twitter:url" content="https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/" />
-    <meta name="twitter:label1" content="Written by" />
-    <meta name="twitter:data1" content="Vítor Brandão" />
-    <meta name="twitter:label2" content="Filed under" />
-    <meta name="twitter:data2" content="PHP, JavaScript, jQuery" />
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="How to prevent caching (force image reload) in PHP and/or JavaScript/jQuery">
+    <meta name="twitter:description" content="If you are using images generated on-the-fly by a PHP script (or another server language), like I'm doing on my web application, you surely do not want images to be read from cache as your users will be seeing the same first generated image (saved into cache) and not the">
+    <meta name="twitter:url" content="https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/">
+    <meta name="twitter:label1" content="Written by">
+    <meta name="twitter:data1" content="Vítor Brandão">
+    <meta name="twitter:label2" content="Filed under">
+    <meta name="twitter:data2" content="PHP, JavaScript, jQuery">
     
     <script type="application/ld+json">
 {
@@ -94,13 +95,107 @@
 }
     </script>
 
-    <meta name="generator" content="Ghost 1.20" />
-    <link rel="alternate" type="application/rss+xml" title="Noiselabs" href="https://noiselabs.io/rss/" />
+    <script type="text/javascript" src="../../../../public/ghost-sdk.min.js?v=3775c367cb"></script>
+<script type="text/javascript">
+ghost.init({
+	clientId: "ghost-frontend",
+	clientSecret: "51bb8525e303"
+});
+</script>
+    <meta name="generator" content="Ghost 1.21">
+    <link rel="alternate" type="application/rss+xml" title="Noiselabs" href="https://noiselabs.io/rss/index.rss">
 
-    <script src="../../../../assets/js/vendor/modernizr.js?v=2491ba31d4"></script>
+    <script src="../../../../assets/js/vendor/modernizr.js?v=3775c367cb"></script>
 </head>
 <body class="post-template tag-php tag-javascript tag-jquery">
     
+<nav class="top-bar" data-topbar role="navigation">
+    <ul class="title-area">
+        <li class="name">
+            <h1>
+                <a href="https://noiselabs.io/">Noiselabs</a>
+            </h1>
+        </li>
+        <li class="toggle-topbar menu-icon">
+            <a href="index.html#">
+                <span>Menu</span>
+            </a>
+        </li>
+    </ul>
+
+    <section class="top-bar-section">
+        <ul class="right">
+            <li class="divider">
+            <li class="page-blog">
+                <a href="https://noiselabs.io/blog/">
+                    Blog
+                </a>
+            </li>
+            <li class="divider">
+            <li class="page-software-consultancy">
+                <a href="https://noiselabs.io/software-consultancy/">
+                    Software Consultancy
+                </a>
+            </li>
+            <li class="divider">
+            <li class="page-open-source">
+                <a href="https://noiselabs.io/open-source/">
+                    Open Source
+                </a>
+            </li>
+            <li class="divider">
+            <li class="page-talks">
+                <a href="https://noiselabs.io/talks/">
+                    Talks
+                </a>
+            </li>
+            <li class="divider">
+            <li class="has-dropdown">
+                <a href="index.html#">
+                    Contact
+                </a>
+                <ul class="dropdown contact">
+                    <li>
+                        <a href="mailto:vitor@noiselabs.io">
+                            <i class="far fa-fw fa-lg fa-envelope"></i>
+                            <span>vitor@noiselabs.io</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/noiselabs">
+                            <i class="fab fa-fw fa-lg fa-twitter"></i>
+                            <span>twitter.com/noiselabs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/vitorbrandao">
+                            <i class="fab fa-fw fa-lg fa-linkedin"></i>
+                            <span>linkedin.com/vitorbrandao</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/noiselabs">
+                            <i class="fab fa-fw fa-lg fa-github"></i>
+                            <span>github.com/noiselabs</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/users/545442/noisebleed">
+                            <i class="fab fa-fw fa-lg fa-stack-overflow"></i>
+                            <span>stackoverflow.com/noisebleed</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="divider">
+            <li>
+                <a href="index.html#" class="js-open-search">
+                    <b><i class="fas fa-search fw fa-lg main-nav-ico element-light js-open-search"></i></b>
+                </a>
+            </li>
+        </ul>
+    </section>
+</nav>
 
 
     <div class="reading-time-indicator js-post-sticky-header">
@@ -125,16 +220,9 @@
         </div>
     </div>
 
-<nav class="main-nav">
-    <a href="https://noiselabs.io" class="header-back-btn js-bg-check left">
-        Noiselabs
-    </a>
-    <i class="fa fa-fw fa-search main-nav-ico js-bg-check js-open-search right"></i>
-</nav>
-<header class="post-view-header js-blog-bg-image no-cover">
+<header class="post-view-header js-blog-bg-image post-how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery no-cover">
     <div class="post-header-content">
         <h1 class="post-title js-bg-check element-light">How to prevent caching (force image reload) in PHP and/or JavaScript/jQuery</h1>
-
     </div>
 </header>
 
@@ -143,12 +231,19 @@
     <article class="post tag-php tag-javascript tag-jquery">
         <section class="post-content-meta row">
             <div class="small-12 columns">
-                <span class="post-content-meta-attr">
-                    <i class="fas fa-clock"></i><time class="post-date" datetime="2010-02-12">12 February 2010</time>
-                </span>
-                <span class="post-content-meta-attr">
-                    <i class="fas fa-tags"></i><a href="../../../../tag/php/index.html">PHP</a>, <a href="../../../../tag/javascript/index.html">JavaScript</a>, <a href="../../../../tag/jquery/index.html">jQuery</a>
-                </span>
+                <ul class="inline-list">
+                    <li>
+                        <section class="post-date">
+                            <i class="far fa-fw fa-calendar-alt"></i>
+                            <time class="post-date" datetime="2010-02-12">February 12, 2010</time>
+                        </section>
+                    </li>
+                    <li>
+                        <section class="post-meta">
+                            <i class="fas fa-fw fa-tags"></i> <a href="../../../../tag/php/">PHP</a>, <a href="../../../../tag/javascript/">JavaScript</a>, <a href="../../../../tag/jquery/">jQuery</a>
+                        </section>
+                    </li>
+                </ul>
             </div>
         </section>
 
@@ -156,9 +251,9 @@
             <div class="small-12 columns"><div class="kg-card-markdown"><p>If you are <strong>using images generated on-the-fly by a PHP script</strong> (or another server language), like I'm doing on my web application, you surely do not want images to be read from cache as your users will be seeing the same first generated image (saved into cache) and not the new generated versions.</p>
 <p>You can play with some header commands and build a function like this...</p>
 <pre><code>function cacheKiller() {
-	header(&quot;Cache-Control: no-cache, must-revalidate&quot;);
-	header(&quot;Expires: Mon, 26 Jul 1997 05:00:00 GMT\n&quot;);
-	header(&quot;Last-Modified: &quot; . gmdate(&quot;D, d M Y H:i:s&quot;) . &quot; GMT&quot;);
+	header("Cache-Control: no-cache, must-revalidate");
+	header("Expires: Mon, 26 Jul 1997 05:00:00 GMT\n");
+	header("Last-Modified: " . gmdate("D, d M Y H:i:s") . " GMT");
 }
 </code></pre>
 <p>...but this will work for the whole page and not only for images.</p>
@@ -166,39 +261,35 @@
 <h3 id="php">PHP</h3>
 <p>In PHP it works like this:</p>
 <pre><code>// Generate a number that will never be repeated using the time function
-// that &quot;returns the current time measured in the number of seconds since
-// the Unix Epoch (January 1 1970 00:00:00 GMT)&quot;
+// that "returns the current time measured in the number of seconds since
+// the Unix Epoch (January 1 1970 00:00:00 GMT)"
 $cachekiller = time();
 
 // Include the generated number in the image URL
-&lt;img src=&quot;path/to/image.png?{$cachekiller}&quot;&gt;&lt;/pre&gt;
+&lt;img src="path/to/image.png?{$cachekiller}"&gt;&lt;/pre&gt;
 </code></pre>
 <h3 id="javascriptjquery">JavaScript / jQuery</h3>
 <p>If the image URL is built using JavaScript/jQuery the Math function is good choice to generate a random number.</p>
 <pre><code>// Generate random number between 1 and 1000.
 var cachekiller = Math.floor(Math.random()*1001);
 
-$(&quot;#thumbnail&quot;).attr(&quot;src&quot;, &quot;path/to/image.png?&quot;+cachekiller);</code></pre>
+$("#thumbnail").attr("src", "path/to/image.png?"+cachekiller);</code></pre>
 </div></div>
         </section>
 
         <footer class="post-footer row">
             <div class="small-12 columns">
                 <section class="share">
-                    <a href="https://twitter.com/intent/tweet?text=How%20to%20prevent%20caching%20(force%20image%20reload)%20in%20PHP%20and%2For%20JavaScript%2FjQuery&amp;url=https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/"
-                        onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <a href="https://twitter.com/intent/tweet?text=How%20to%20prevent%20caching%20(force%20image%20reload)%20in%20PHP%20and%2For%20JavaScript%2FjQuery&amp;url=https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                         <i class="fab fa-twitter-square"></i>
                     </a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/"
-                        onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                         <i class="fab fa-facebook-square"></i>
                     </a>
-                    <a href="https://plus.google.com/share?url=https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/"
-                       onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <a href="https://plus.google.com/share?url=https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                         <i class="fab fa-google-plus-square"></i>
                     </a>
-                     <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/"
-                        onclick="window.open(this.href, 'linkedin-share', 'width=650,height=420');return false;">
+                     <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://noiselabs.io/2010/02/12/how-to-prevent-caching-force-image-reload-in-php-andor-javascriptjquery/" onclick="window.open(this.href, 'linkedin-share', 'width=650,height=420');return false;">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </section>
@@ -209,21 +300,21 @@ $(&quot;#thumbnail&quot;).attr(&quot;src&quot;, &quot;path/to/image.png?&quot;+c
         <div class="row post-prev-next-pagination">
             <div class="prev small-6 columns text-left">
                     <div class="prev-next-label">
-                        <a href="../../../../2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/index.html">
+                        <a href="../../../../2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/">
                             <i class="fas fa-arrow-circle-left"></i> Previous
                         </a>
                     </div>
-                    <a href="../../../../2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/index.html" class="title">
+                    <a href="../../../../2009/03/31/howto-gentoo-linux-with-utf-8-and-portuguese-portugal-localization/" class="title">
                         Howto Gentoo Linux with UTF-8 and Portuguese (Portugal) localization
                     </a>
             </div>
             <div class="next small-6 columns text-right">
                     <div class="prev-next-label">
-                        <a href="../../18/check-utf-8-input-in-php-only-letters/index.html">
+                        <a href="../../18/check-utf-8-input-in-php-only-letters/">
                             Next <i class="fas fa-arrow-circle-right"></i>
                         </a>
                     </div>
-                    <a href="../../18/check-utf-8-input-in-php-only-letters/index.html" class="title">
+                    <a href="../../18/check-utf-8-input-in-php-only-letters/" class="title">
                         Check UTF-8 input in PHP: only letters
                     </a>
             </div>
@@ -262,20 +353,84 @@ $(&quot;#thumbnail&quot;).attr(&quot;src&quot;, &quot;path/to/image.png?&quot;+c
 
 
     <footer class="site-footer">
-    <div class="row expanded">
-        <div class="small-6 columns align-justify">
+    <div class="row">
+        <div class="large-6 columns">
             <ul class="no-bullet">
-                <li>&copy; 2017 <a href="mailto:vitor@noiselabs.io">Vítor Brandão</a>. All rights reserved.</li>
-                <li>Based on the ABC theme by <a href="http://pxt.be">pxt.be</a></li>
-                <li>Background photo by <a href="https://unsplash.com/@brxdlxy">Brad Huchteman</a></li>
-                <li>Proudly published with <a href="https://ghost.org">Ghost</a></li>
+                <li class="neev-logo">
+                    <img src="../../../../assets/images/neev_white_wordmark.png?v=3775c367cb">
+                </li>
+                <li>
+                    <em>Noiselabs Consulting</em> is a
+                    <a href="https://team-neev.com">Team Neev</a> partner.
+                </li>
             </ul>
             <ul class="no-bullet">
-                <li><em><b>Noiselabs Consulting</b></em> is a <a href="http://team-neev.com" style="color: #00CCFF;"><em><b>Team Neev</b></em></a> partner.</li>
-                <li style="padding-top: 1em; padding-bottom: 1em;"><img src="../../../../assets/images/neev_white_wordmark.png?v=2491ba31d4"></li>
+                <li>Based on the ABC theme by
+                    <a href="http://pxt.be">pxt.be</a>
+                </li>
+                <li>Homepage photo by
+                    <a href="https://unsplash.com/photos/3r0Kchy-F_A?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Shreyas Malavalli</a>
+                </li>
+                <li>Proudly published with
+                    <a href="https://ghost.org">Ghost</a>
+                </li>
             </ul>
         </div>
-        <div class="small-6 columns align-justify text-right">
+        <div class="large-6 columns">
+            <ul class="no-bullet">
+                <li>
+                    <a href="https://noiselabs.io/blog/">Blog</a>
+                </li>
+                <li>
+                    <a href="https://noiselabs.io/software-consultancy/">Software Consultancy</a>
+                </li>
+                <li>
+                    <a href="https://noiselabs.io/open-source/">Open Source</a>
+                </li>
+                <li>
+                    <a href="https://noiselabs.io/talks/">Talks</a>
+                </li>
+            </ul>
+            <ul class="inline-list">
+                <li>
+                    <a href="mailto:vitor@noiselabs.io">
+                        <i class="far fa-fw fa-lg fa-envelope"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://twitter.com/noiselabs">
+                        <i class="fab fa-fw fa-lg fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/vitorbrandao">
+                        <i class="fab fa-fw fa-lg fa-linkedin"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/noiselabs">
+                        <i class="fab fa-fw fa-lg fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://stackoverflow.com/users/545442/noisebleed">
+                        <i class="fab fa-fw fa-lg fa-stack-overflow"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://noiselabs.io/rss/index.rss">
+                        <i class="fas fa-fw fa-lg fa-rss"></i>
+                    </a>
+                </li>
+
+        </ul></div>
+        
+    </div>
+    <div class="row">
+        <div class="large-12 columns">
+            <ul class="no-bullet">
+                <li>© 2018 <a href="mailto:vitor@noiselabs.io">Vítor Brandão</a>. All rights reserved.</li>
+            </ul>
         </div>
     </div>
 </footer>
@@ -302,13 +457,13 @@ $(&quot;#thumbnail&quot;).attr(&quot;src&quot;, &quot;path/to/image.png?&quot;+c
     </div>
 
     
-    <script type="text/javascript" src="../../../../assets/js/vendor/jquery-2.1.4.min.js?v=2491ba31d4"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/foundation.min.js?v=2491ba31d4"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/background-check.js?v=2491ba31d4"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/jquery.ghostHunter.min.js?v=2491ba31d4"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/images-loaded.js?v=2491ba31d4"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/reading-time.js?v=2491ba31d4"></script>
-    <script type="text/javascript" src="../../../../assets/js/vendor/highlight.min.js?v=2491ba31d4"></script>
-    <script type="text/javascript" src="../../../../assets/js/abc.js?v=2491ba31d4"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/jquery-2.1.4.min.js?v=3775c367cb"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/foundation.min.js?v=3775c367cb"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/background-check.js?v=3775c367cb"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/jquery.ghostHunter.min.js?v=3775c367cb"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/images-loaded.js?v=3775c367cb"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/reading-time.js?v=3775c367cb"></script>
+    <script type="text/javascript" src="../../../../assets/js/vendor/highlight.min.js?v=3775c367cb"></script>
+    <script type="text/javascript" src="../../../../assets/js/abc.js?v=3775c367cb"></script>
 </body>
 </html>
