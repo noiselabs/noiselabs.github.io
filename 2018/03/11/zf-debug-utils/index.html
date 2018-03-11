@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
 
-    <title>Introducing SmartyBundle, a Smarty3 bundle for Symfony2</title>
+    <title>Debugging Zend Framework routes with ZF Debug Utils</title>
 
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,33 +37,27 @@
     <link rel="stylesheet" href="../../../../assets/css/style.css?v=97b2c0f7e8">
 
     <link rel="shortcut icon" href="../../../../favicon.ico" type="image/x-icon">
-    <link rel="canonical" href="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/">
+    <link rel="canonical" href="https://noiselabs.io/2018/03/11/zf-debug-utils/">
     <meta name="referrer" content="no-referrer-when-downgrade">
-    <link rel="amphtml" href="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/amp/">
+    <link rel="amphtml" href="https://noiselabs.io/2018/03/11/zf-debug-utils/amp/">
     
     <meta property="og:site_name" content="Noiselabs">
     <meta property="og:type" content="article">
-    <meta property="og:title" content="Introducing SmartyBundle, a Smarty3 bundle for Symfony2">
-    <meta property="og:description" content="Hello all! I've released yesterday the first version of SmartyBundle on GitHub. SmartyBundle SmartyBundle is a Symfony2  bundle that provides integration for the Smarty3 template engine. It will allow the usage of the Smarty template engine in Symfony2, instead of Twig or PHP templates. SmartyBundle is released under a LPGLv3">
-    <meta property="og:url" content="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/">
-    <meta property="og:image" content="https://noiselabs.io/content/images/2018/01/mikael-kristenson-242079.jpg">
-    <meta property="article:published_time" content="2011-12-04T22:30:00.000Z">
-    <meta property="article:modified_time" content="2018-01-28T18:40:52.000Z">
-    <meta property="article:tag" content="Symfony">
-    <meta property="article:tag" content="Smarty">
-    <meta property="article:tag" content="SmartyBundle">
-    
+    <meta property="og:title" content="Debugging Zend Framework routes with ZF Debug Utils">
+    <meta property="og:description" content="Debugging Zend Framework 2 routes and specifically why a given route wouldn't match to a controller was one of my pains while working with ZF2 applications. After spending too much time debugging them I decided to put together a ZF2 module - Noiselabs\ZfDebugModule - to help me visualize what">
+    <meta property="og:url" content="https://noiselabs.io/2018/03/11/zf-debug-utils/">
+    <meta property="og:image" content="https://noiselabs.io/content/images/2018/03/routing-match-route-header.jpg">
+    <meta property="article:published_time" content="2018-03-11T17:18:30.000Z">
+    <meta property="article:modified_time" content="2018-03-11T19:03:31.000Z">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Introducing SmartyBundle, a Smarty3 bundle for Symfony2">
-    <meta name="twitter:description" content="Hello all! I've released yesterday the first version of SmartyBundle on GitHub. SmartyBundle SmartyBundle is a Symfony2  bundle that provides integration for the Smarty3 template engine. It will allow the usage of the Smarty template engine in Symfony2, instead of Twig or PHP templates. SmartyBundle is released under a LPGLv3">
-    <meta name="twitter:url" content="https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/">
-    <meta name="twitter:image" content="https://noiselabs.io/content/images/2018/01/mikael-kristenson-242079.jpg">
+    <meta name="twitter:title" content="Debugging Zend Framework routes with ZF Debug Utils">
+    <meta name="twitter:description" content="Debugging Zend Framework 2 routes and specifically why a given route wouldn't match to a controller was one of my pains while working with ZF2 applications. After spending too much time debugging them I decided to put together a ZF2 module - Noiselabs\ZfDebugModule - to help me visualize what">
+    <meta name="twitter:url" content="https://noiselabs.io/2018/03/11/zf-debug-utils/">
+    <meta name="twitter:image" content="https://noiselabs.io/content/images/2018/03/routing-match-route-header.jpg">
     <meta name="twitter:label1" content="Written by">
     <meta name="twitter:data1" content="Vítor Brandão">
-    <meta name="twitter:label2" content="Filed under">
-    <meta name="twitter:data2" content="Symfony, Smarty, SmartyBundle">
-    <meta property="og:image:width" content="1440">
-    <meta property="og:image:height" content="960">
+    <meta property="og:image:width" content="2868">
+    <meta property="og:image:height" content="1356">
     
     <script type="application/ld+json">
 {
@@ -91,18 +85,17 @@
         "url": "https://noiselabs.io/author/vitor/",
         "sameAs": []
     },
-    "headline": "Introducing SmartyBundle, a Smarty3 bundle for Symfony2",
-    "url": "https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/",
-    "datePublished": "2011-12-04T22:30:00.000Z",
-    "dateModified": "2018-01-28T18:40:52.000Z",
+    "headline": "Debugging Zend Framework routes with ZF Debug Utils",
+    "url": "https://noiselabs.io/2018/03/11/zf-debug-utils/",
+    "datePublished": "2018-03-11T17:18:30.000Z",
+    "dateModified": "2018-03-11T19:03:31.000Z",
     "image": {
         "@type": "ImageObject",
-        "url": "https://noiselabs.io/content/images/2018/01/mikael-kristenson-242079.jpg",
-        "width": 1440,
-        "height": 960
+        "url": "https://noiselabs.io/content/images/2018/03/routing-match-route-header.jpg",
+        "width": 2868,
+        "height": 1356
     },
-    "keywords": "Symfony, Smarty, SmartyBundle",
-    "description": "Hello all! I&#x27;ve released yesterday the first version of SmartyBundle on GitHub. SmartyBundle SmartyBundle is a Symfony2  bundle that provides integration for the Smarty3 template engine. It will allow the usage of the Smarty template engine in Symfony2, instead of Twig or PHP templates. SmartyBundle is released under a LPGLv3",
+    "description": "Debugging Zend Framework 2 routes and specifically why a given route wouldn&#x27;t match to a controller was one of my pains while working with ZF2 applications. After spending too much time debugging them I decided to put together a ZF2 module - Noiselabs\\ZfDebugModule - to help me visualize what",
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "https://noiselabs.io/"
@@ -122,7 +115,7 @@ ghost.init({
 
     <script src="../../../../assets/js/vendor/modernizr.js?v=97b2c0f7e8"></script>
 </head>
-<body class="post-template tag-symfony tag-smarty tag-smartybundle">
+<body class="post-template">
     
 <nav class="top-bar" data-topbar role="navigation">
     <ul class="title-area">
@@ -226,7 +219,7 @@ ghost.init({
                     <a class="blog-logo" href="https://noiselabs.io"><i class="fa fa fa-chevron-left"></i></a>
                 </div>
                 <div class="read-estimation-content">
-                    <div class="title">Introducing SmartyBundle, a Smarty3 bundle for Symfony2</div>
+                    <div class="title">Debugging Zend Framework routes with ZF Debug Utils</div>
                     <div class="estimated-time">
                         <span class="js-word-count"></span> words - <span class="eta"></span> read.
                     </div>
@@ -235,27 +228,27 @@ ghost.init({
         </div>
     </div>
 
-<header class="post-view-header js-blog-bg-image post-introducing-smartybundle-a-smarty3-bundle-for-symfony2 " style="background-image: url(../../../../content/images/2018/01/mikael-kristenson-242079.jpg)">
+<header class="post-view-header js-blog-bg-image post-zf-debug-utils " style="background-image: url(../../../../content/images/2018/03/routing-match-route-header.jpg)">
     <div class="post-header-content">
-        <h1 class="post-title js-bg-check element-light">Introducing SmartyBundle, a Smarty3 bundle for Symfony2</h1>
+        <h1 class="post-title js-bg-check element-light">Debugging Zend Framework routes with ZF Debug Utils</h1>
     </div>
 </header>
 
 <main class="post-view-content" role="main">
 
-    <article class="post tag-symfony tag-smarty tag-smartybundle">
+    <article class="post">
         <section class="post-content-meta row">
             <div class="small-12 columns">
                 <ul class="inline-list">
                     <li>
                         <section class="post-date">
                             <i class="far fa-fw fa-calendar-alt"></i>
-                            <time class="post-date" datetime="2011-12-04">December 04, 2011</time>
+                            <time class="post-date" datetime="2018-03-11">March 11, 2018</time>
                         </section>
                     </li>
                     <li>
                         <section class="post-meta">
-                            <i class="fas fa-fw fa-tags"></i> <a href="../../../../tag/symfony/">Symfony</a>, <a href="../../../../tag/smarty/">Smarty</a>, <a href="../../../../tag/smartybundle/">SmartyBundle</a>
+                            
                         </section>
                     </li>
                 </ul>
@@ -263,41 +256,78 @@ ghost.init({
         </section>
 
         <section class="post-content row">
-            <div class="small-12 columns"><div class="kg-card-markdown"><p>Hello all! I've released yesterday the first version of <a href="https://github.com/noiselabs/SmartyBundle">SmartyBundle</a> on GitHub.</p>
-<h2 id="smartybundle">SmartyBundle</h2>
-<p><strong>SmartyBundle</strong> is a <a href="http://symfony.com/">Symfony2</a>  <a href="http://symfony.com/doc/current/book/page_creation.html#page-creation-bundles">bundle</a> that provides integration for the <a href="http://www.smarty.net/">Smarty3</a> template engine. It will allow the usage of the Smarty template engine in Symfony2, instead of Twig or PHP templates. SmartyBundle is released under a LPGLv3 license. To download it you may:</p>
-<p>Git-clone-it:</p>
-<pre><code>$ git clone https://github.com/noiselabs/SmartyBundle.git&lt;/pre&gt;
+            <div class="small-12 columns"><div class="kg-card-markdown"><p>Debugging <a href="https://framework.zend.com/manual/2.4/en/index.html">Zend Framework 2</a> routes and specifically why a given route wouldn't match to a controller was one of my pains while working with ZF2 applications.</p>
+<p>After spending too much time debugging them I decided to put together a ZF2 module - <code>Noiselabs\ZfDebugModule</code> - to help me visualize what was going on. Another <em>"scratch your own itch"</em> kind of <a href="https://en.wikipedia.org/wiki/Open-source_software">OSS</a> project.</p>
+<blockquote>
+<p>The project and Composer package is however, confusingly named <code>noiselabs/zf-debug-utils</code>. You're welcome.</p>
+</blockquote>
+<p>This project is available at <a href="https://github.com/noiselabs/zf-debug-utils">github.com/noiselabs/zf-debug-utils</a> and licensed under the <a href="https://github.com/noiselabs/zf-debug-utils/blob/master/LICENSE">MIT License</a>.</p>
+<h2 id="installation">Installation</h2>
+<p>Installation is a no-brainer through <a href="https://getcomposer.org/">Composer</a>:</p>
+<pre><code class="language-bash">composer require noiselabs/zf-debug-utils
 </code></pre>
-<p>or download the repository as a zip file:</p>
-<pre><code>$ wget https://github.com/noiselabs/SmartyBundle/zipball/master
+<p>The ZF2 module can then be enabled by adding it to <code>your-zf-app/config/application.config.php</code>.</p>
+<pre><code class="language-php">&lt;?php
+'modules' =&gt; [
+    // other ZF modules
+    'Noiselabs\ZfDebugModule',
+],
 </code></pre>
-<p>Full documentation is available on <a href="https://github.com/noiselabs/SmartyBundle/blob/master/Resources/doc/index.rst">GitHub</a> and after download in the <em>Resources/doc/</em> folder.</p>
-<h2 id="whatissymfony">What is Symfony</h2>
-<p>Symfony is a Open Source PHP Web Development Framework. It is currently my PHP framework of choice that first grabbed my attention by its <a href="http://symfony.com/components">standalone components</a> and got me back to PHP after digging into the, Python-based, <a href="http://turbogears.org/">TurboGears</a> Web framework.</p>
-<h2 id="whatissmarty">What is Smarty</h2>
-<p>Smarty is a template engine for PHP, facilitating the separation of presentation (HTML/CSS) from application logic. Version 3 brings some important improvements like the addition of template inheritance and a complete code rewrite to make use of new PHP5 capabilities.</p>
-<h2 id="tryit">Try it!</h2>
-<p>I welcome everyone interested to try it, test it and to improve its code by sending comments, suggestions and GitHub pull requests. Bugs and feature requests are tracked on <a href="https://github.com/noiselabs/SmartyBundle/issues">GitHub</a>.</p>
-<p>Thanks and see you soon.</p>
-<hr>
-<p><em>Credits: Header photo by <a href="https://unsplash.com/photos/MYXf7tGEntk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Mikael Kristenson</a> on <a href="https://unsplash.com/collections/1547571/blog/6fa6b2f41e0ff1b74d84e7eaa94673f5?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p>
+<h2 id="configuration">Configuration</h2>
+<p><code>ZfDebugModule</code> is <em>config-free</em>™. Enjoy the silence. For now.</p>
+<h2 id="whatsinside">What's inside?</h2>
+<p>A WebUI and Console commands are provided to help you debug ZF2 routes. More tools can be added as new itches need to be scratched.</p>
+<h3 id="webui">WebUI</h3>
+<p>Web URLs are by default mounted at <code>/_debug</code>. After installing this module simply navigate to <code>/_debug</code> and you should see the home screen. If you are using the <a href="https://github.com/zendframework/ZendSkeletonApplication">ZendSkeletonApplication</a> the home URL should look similar to <code>http://127.0.0.1:8080/_debug</code>.</p>
+<h3 id="console">Console</h3>
+<p>If you prefer to use the Console, type <code>php public/index.php</code> at the terminal to see a summary of the available commands.</p>
+<p><img src="../../../../content/images/2018/03/summary.png" alt="Console - Summary" title="Console - Summary"></p>
+<h2 id="routing">Routing</h2>
+<p>Routing is the first debug component made available. You have the possibility to list all routes or match a URL to a route.</p>
+<p><img src="../../../../content/images/2018/03/index-routing.png" alt="Home - Routing" title="Home - Routing"></p>
+<h3 id="listallroutes">List all Routes</h3>
+<h4 id="webui">WebUI</h4>
+<p>Navigate to <code>/_debug/routes/list</code> or in the Home screen click in <code>List all Routes</code>. These are all the routes available in current application. Each column is sortable and you can filter results by using the search input.</p>
+<p><img src="../../../../content/images/2018/03/routing-list-all-routes.png" alt="List all routes" title="List all routes"></p>
+<h4 id="console">Console</h4>
+<pre><code>$ php index.php zfdebug routes list
+</code></pre>
+<p><img src="../../../../content/images/2018/03/route-list.png" alt="Console - List routes" title="Console - List routes"></p>
+<h3 id="matcharoute">Match a Route</h3>
+<h4 id="webui">WebUI</h4>
+<p>Navigate to <code>/_debug/routes/match</code> or in the Home screen click in <code>Match a Route</code>. Provide an HTTP method such as "GET" or "POST" plus a base URL (omit the scheme) and hit <code>Find Route</code>. If the URL matches a route in your application you should see something similar to the following picture. You can see details such as the route URL, controller and action.</p>
+<p><img src="../../../../content/images/2018/03/routing-match-route.png" alt="Match a Route" title="Match a Route"></p>
+<h4 id="console">Console</h4>
+<pre><code>$ php index.php zfdebug routes match GET /_debug/routes/match
+</code></pre>
+<p><img src="../../../../content/images/2018/03/route-match.png" alt="Console - Route match" title="Console - Route match"></p>
+<h3 id="exportallroutesincsvformat">Export all routes in CSV format</h3>
+<h4 id="console">Console</h4>
+<p>It is possible to have the output of the <a href="index.html#list-all-routes">List all Routes</a> feature saved into a CSV file. The generated file can then be loaded by spreadsheet applications and used in reports. Exciting!</p>
+<p>Note that the export feature is at the moment only available via the Console.</p>
+<pre><code>$ php index.php zfdebug routes export
+</code></pre>
+<p><img src="../../../../content/images/2018/03/route-export.png" alt="Console - Route export" title="Console - Export all routes"></p>
+<p> </p>
+<p>And that's all folks. Hope it can help you too. Less time debugging ZF routes means more time to debug ZF factories. Hooray.</p>
+<p>Jokes aside, ZF2 is a <strong>great</strong> PHP Framework. Have fun with it<sup>[1]</sup>.</p>
+<p><small><em>[1] and profit if you can, profit is good too.</em></small></p>
 </div></div>
         </section>
 
         <footer class="post-footer row">
             <div class="small-12 columns">
                 <section class="share">
-                    <a href="https://twitter.com/intent/tweet?text=Introducing%20SmartyBundle%2C%20a%20Smarty3%20bundle%20for%20Symfony2&amp;url=https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                    <a href="https://twitter.com/intent/tweet?text=Debugging%20Zend%20Framework%20routes%20with%20ZF%20Debug%20Utils&amp;url=https://noiselabs.io/2018/03/11/zf-debug-utils/" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                         <i class="fab fa-twitter-square"></i>
                     </a>
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://noiselabs.io/2018/03/11/zf-debug-utils/" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                         <i class="fab fa-facebook-square"></i>
                     </a>
-                    <a href="https://plus.google.com/share?url=https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                    <a href="https://plus.google.com/share?url=https://noiselabs.io/2018/03/11/zf-debug-utils/" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
                         <i class="fab fa-google-plus-square"></i>
                     </a>
-                     <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://noiselabs.io/2011/12/04/introducing-smartybundle-a-smarty3-bundle-for-symfony2/" onclick="window.open(this.href, 'linkedin-share', 'width=650,height=420');return false;">
+                     <a href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://noiselabs.io/2018/03/11/zf-debug-utils/" onclick="window.open(this.href, 'linkedin-share', 'width=650,height=420');return false;">
                         <i class="fab fa-linkedin"></i>
                     </a>
                 </section>
@@ -308,23 +338,15 @@ ghost.init({
         <div class="row post-prev-next-pagination">
             <div class="prev small-6 columns text-left">
                     <div class="prev-next-label">
-                        <a href="../../../04/25/failed-to-submit-batch-buffer-xorg/">
+                        <a href="../../../01/22/ghost-docker/">
                             <i class="fas fa-arrow-circle-left"></i> Previous
                         </a>
                     </div>
-                    <a href="../../../04/25/failed-to-submit-batch-buffer-xorg/" class="title">
-                        Failed to submit batch buffer (Xorg)
+                    <a href="../../../01/22/ghost-docker/" class="title">
+                        Ghost, Dockerized.
                     </a>
             </div>
             <div class="next small-6 columns text-right">
-                    <div class="prev-next-label">
-                        <a href="../../../../2018/01/22/ghost-docker/">
-                            Next <i class="fas fa-arrow-circle-right"></i>
-                        </a>
-                    </div>
-                    <a href="../../../../2018/01/22/ghost-docker/" class="title">
-                        Ghost, Dockerized.
-                    </a>
             </div>
         </div>
         </section>

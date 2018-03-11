@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Noiselabs]]></title><description><![CDATA[Software Consultancy]]></description><link>https://noiselabs.io/</link><image><url>https://noiselabs.io/favicon.png</url><title>Noiselabs</title><link>https://noiselabs.io/</link></image><generator>Ghost 1.21</generator><lastBuildDate>Tue, 27 Feb 2018 08:33:22 GMT</lastBuildDate><atom:link href="https://noiselabs.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Ghost, Dockerized.]]></title><description><![CDATA[<div class="kg-card-markdown"><p>In this blogpost we'll see how to Dockerize a local Ghost app for fun and profit.</p>
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:media="http://search.yahoo.com/mrss/"><channel><title><![CDATA[Noiselabs]]></title><description><![CDATA[Software Consultancy]]></description><link>https://noiselabs.io/</link><image><url>https://noiselabs.io/favicon.png</url><title>Noiselabs</title><link>https://noiselabs.io/</link></image><generator>Ghost 1.21</generator><lastBuildDate>Sun, 11 Mar 2018 19:09:33 GMT</lastBuildDate><atom:link href="https://noiselabs.io/rss/" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Debugging Zend Framework routes with ZF Debug Utils]]></title><description><![CDATA[<div class="kg-card-markdown"><p>Debugging <a href="https://framework.zend.com/manual/2.4/en/index.html">Zend Framework 2</a> routes and specifically why a given route wouldn't match to a controller was one of my pains while working with ZF2 applications.</p>
+<p>After spending too much time debugging them I decided to put together a ZF2 module - <code>Noiselabs\ZfDebugModule</code> - to help me visualize what</p></div>]]></description><link>https://noiselabs.io/2018/03/11/zf-debug-utils/</link><guid isPermaLink="false">5aa551d0c8634a009631681d</guid><dc:creator><![CDATA[Vítor Brandão]]></dc:creator><pubDate>Sun, 11 Mar 2018 17:18:30 GMT</pubDate><media:content url="https://noiselabs.io/content/images/2018/03/routing-match-route-header.jpg" medium="image"/><content:encoded><![CDATA[<div class="kg-card-markdown"><img src="https://noiselabs.io/content/images/2018/03/routing-match-route-header.jpg" alt="Debugging Zend Framework routes with ZF Debug Utils"><p>Debugging <a href="https://framework.zend.com/manual/2.4/en/index.html">Zend Framework 2</a> routes and specifically why a given route wouldn't match to a controller was one of my pains while working with ZF2 applications.</p>
+<p>After spending too much time debugging them I decided to put together a ZF2 module - <code>Noiselabs\ZfDebugModule</code> - to help me visualize what was going on. Another <em>&quot;scratch your own itch&quot;</em> kind of <a href="https://en.wikipedia.org/wiki/Open-source_software">OSS</a> project.</p>
+<blockquote>
+<p>The project and Composer package is however, confusingly named <code>noiselabs/zf-debug-utils</code>. You're welcome.</p>
+</blockquote>
+<p>This project is available at <a href="https://github.com/noiselabs/zf-debug-utils">github.com/noiselabs/zf-debug-utils</a> and licensed under the <a href="https://github.com/noiselabs/zf-debug-utils/blob/master/LICENSE">MIT License</a>.</p>
+<h2 id="installation">Installation</h2>
+<p>Installation is a no-brainer through <a href="https://getcomposer.org/">Composer</a>:</p>
+<pre><code class="language-bash">composer require noiselabs/zf-debug-utils
+</code></pre>
+<p>The ZF2 module can then be enabled by adding it to <code>your-zf-app/config/application.config.php</code>.</p>
+<pre><code class="language-php">&lt;?php
+'modules' =&gt; [
+    // other ZF modules
+    'Noiselabs\ZfDebugModule',
+],
+</code></pre>
+<h2 id="configuration">Configuration</h2>
+<p><code>ZfDebugModule</code> is <em>config-free</em>™. Enjoy the silence. For now.</p>
+<h2 id="whatsinside">What's inside?</h2>
+<p>A WebUI and Console commands are provided to help you debug ZF2 routes. More tools can be added as new itches need to be scratched.</p>
+<h3 id="webui">WebUI</h3>
+<p>Web URLs are by default mounted at <code>/_debug</code>. After installing this module simply navigate to <code>/_debug</code> and you should see the home screen. If you are using the <a href="https://github.com/zendframework/ZendSkeletonApplication">ZendSkeletonApplication</a> the home URL should look similar to <code>http://127.0.0.1:8080/_debug</code>.</p>
+<h3 id="console">Console</h3>
+<p>If you prefer to use the Console, type <code>php public/index.php</code> at the terminal to see a summary of the available commands.</p>
+<p><img src="https://noiselabs.io/content/images/2018/03/summary.png" alt="Debugging Zend Framework routes with ZF Debug Utils" title="Console - Summary"></p>
+<h2 id="routing">Routing</h2>
+<p>Routing is the first debug component made available. You have the possibility to list all routes or match a URL to a route.</p>
+<p><img src="https://noiselabs.io/content/images/2018/03/index-routing.png" alt="Debugging Zend Framework routes with ZF Debug Utils" title="Home - Routing"></p>
+<h3 id="listallroutes">List all Routes</h3>
+<h4 id="webui">WebUI</h4>
+<p>Navigate to <code>/_debug/routes/list</code> or in the Home screen click in <code>List all Routes</code>. These are all the routes available in current application. Each column is sortable and you can filter results by using the search input.</p>
+<p><img src="https://noiselabs.io/content/images/2018/03/routing-list-all-routes.png" alt="Debugging Zend Framework routes with ZF Debug Utils" title="List all routes"></p>
+<h4 id="console">Console</h4>
+<pre><code>$ php index.php zfdebug routes list
+</code></pre>
+<p><img src="https://noiselabs.io/content/images/2018/03/route-list.png" alt="Debugging Zend Framework routes with ZF Debug Utils" title="Console - List routes"></p>
+<h3 id="matcharoute">Match a Route</h3>
+<h4 id="webui">WebUI</h4>
+<p>Navigate to <code>/_debug/routes/match</code> or in the Home screen click in <code>Match a Route</code>. Provide an HTTP method such as &quot;GET&quot; or &quot;POST&quot; plus a base URL (omit the scheme) and hit <code>Find Route</code>. If the URL matches a route in your application you should see something similar to the following picture. You can see details such as the route URL, controller and action.</p>
+<p><img src="https://noiselabs.io/content/images/2018/03/routing-match-route.png" alt="Debugging Zend Framework routes with ZF Debug Utils" title="Match a Route"></p>
+<h4 id="console">Console</h4>
+<pre><code>$ php index.php zfdebug routes match GET /_debug/routes/match
+</code></pre>
+<p><img src="https://noiselabs.io/content/images/2018/03/route-match.png" alt="Debugging Zend Framework routes with ZF Debug Utils" title="Console - Route match"></p>
+<h3 id="exportallroutesincsvformat">Export all routes in CSV format</h3>
+<h4 id="console">Console</h4>
+<p>It is possible to have the output of the <a href="#list-all-routes">List all Routes</a> feature saved into a CSV file. The generated file can then be loaded by spreadsheet applications and used in reports. Exciting!</p>
+<p>Note that the export feature is at the moment only available via the Console.</p>
+<pre><code>$ php index.php zfdebug routes export
+</code></pre>
+<p><img src="https://noiselabs.io/content/images/2018/03/route-export.png" alt="Debugging Zend Framework routes with ZF Debug Utils" title="Console - Export all routes"></p>
+<p>&nbsp;</p>
+<p>And that's all folks. Hope it can help you too. Less time debugging ZF routes means more time to debug ZF factories. Hooray.</p>
+<p>Jokes aside, ZF2 is a <strong>great</strong> PHP Framework. Have fun with it<sup>[1]</sup>.</p>
+<p><small><em>[1] and profit if you can, profit is good too.</em></small></p>
+</div>]]></content:encoded></item><item><title><![CDATA[Ghost, Dockerized.]]></title><description><![CDATA[<div class="kg-card-markdown"><p>In this blogpost we'll see how to Dockerize a local Ghost app for fun and profit.</p>
 <blockquote>
 <p><em>In a rush? Already familiar with <a href="https://ghost.org/">Ghost</a>? Jump to the <a href="#dockerisingtheghostinstalation">technical bits</a>.</em></p>
 </blockquote>
@@ -496,26 +553,4 @@ LINGUAS=&quot;pt pt_PT en en_GB&quot;
 </code></pre>
 <p>Resume partial file:</p>
 <pre><code># wget -c http://build.chromium.org/buildbot/archives/chromium.tgz</code></pre>
-</div>]]></content:encoded></item><item><title><![CDATA[Emerge of subversion fails on java-config]]></title><description><![CDATA[<div class="kg-card-markdown"><h2 id="theproblem">The problem</h2>
-<p>I was trying to install dev-util/subversion but emerge failed when java-config was called.</p>
-<p>The output:</p>
-<pre><code>Traceback (most recent call last):
-File &quot;/usr/bin/java-config-2&quot;, line 8, in &amp;lt;module&amp;gt;
-from java_config_2 import __version__
-ImportError: No module named java_config_2&</code></pre></div>]]></description><link>https://noiselabs.io/2008/09/25/gentoo-emerge-of-subversion-fails-on-java-config/</link><guid isPermaLink="false">5a663527f7a7da00a1ee8508</guid><category><![CDATA[Gentoo]]></category><dc:creator><![CDATA[Vítor Brandão]]></dc:creator><pubDate>Thu, 25 Sep 2008 14:56:00 GMT</pubDate><content:encoded><![CDATA[<div class="kg-card-markdown"><h2 id="theproblem">The problem</h2>
-<p>I was trying to install dev-util/subversion but emerge failed when java-config was called.</p>
-<p>The output:</p>
-<pre><code>Traceback (most recent call last):
-File &quot;/usr/bin/java-config-2&quot;, line 8, in &amp;lt;module&amp;gt;
-from java_config_2 import __version__
-ImportError: No module named java_config_2&lt;/span&gt;
-</code></pre>
-<h2 id="possiblesolutionspanh4">Possible solution</h2>
-<p>python-updater was not executed after a python upgrade so run it now:</p>
-<pre><code># python-updater -iv
-</code></pre>
-<h2 id="sources">Sources</h2>
-<ul>
-<li><a href="http://bugs.gentoo.org/show_bug.cgi?id=236131">Gentoo Bug 236131 - Stabilize dev-util/subversion-1.5.1</a></li>
-</ul>
 </div>]]></content:encoded></item></channel></rss>
